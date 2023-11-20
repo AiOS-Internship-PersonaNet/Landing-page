@@ -1,0 +1,9 @@
+/* styles.css */
+.border-text-blue {
+  color: white;
+  -webkit-text-stroke: 1px #3b82f6; /* For Webkit browsers like Chrome and Safari */
+  text-stroke: 1px #3b82f6; /* For other browsers */
+}
+
+
+
