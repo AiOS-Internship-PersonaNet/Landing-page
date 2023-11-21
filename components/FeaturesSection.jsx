@@ -13,8 +13,6 @@ const projectsData = [
     description: " Users can create digital personas based on their interests, allowing them to showcase various facets of their personality.",
     image: "/images/1pic.png",
     tag: ["All", "Persona Creation"],
-    gitUrl: "/",
-    previewUrl: "/",
   },
   {
     id: 2,
@@ -22,42 +20,36 @@ const projectsData = [
     description: " Allow users to customize their personas extensively, including avatars, backgrounds, fonts, and colors to reflect their personalities vividly.",
     image: "/images/1pic.png",
     tag: ["All", "Persona Customization"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },,
+   
+  },
   {
     id: 3,
     title: "One-on-One Chat",
     description: "Enable direct messaging between users' personas, fostering deeper connections and private interactions. Incorporate multimedia sharing, emojis, and GIFs to enrich conversations.",
+    image: "/images/chat.png",
     tag: ["All", "One-on-One Chat"],
-    gitUrl: "https://github.com/YodanyCuadros/PIg-name",
-    previewUrl: "https://pig-game-yodany.netlify.app/",
   },
   {
     id: 5,
     title: "Engagement Features",
     description: "Like, comment, or react to conversations to encourage interaction and community engagement. Voting or rating system for conversations to surface popular or trending discussions.",
     tag: ["All", "Personalized Feed"],
-    gitUrl: "/",
-    previewUrl: "/",
+   
   },
   {
     id: 6,
     title: "User Persona Page",
     description: "A dedicated page showcasing all conversations initiated by a specific user's persona.Displaying persona profiles, including details, interests, and the conversations they've engaged in.",
     image: "/images/6.png",
-    tag: ["All", "Fullstack"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All"],
+  
   },
   {
     id: 7,
     title: "Notifications System",
     description: "Real-time or periodic alerts notifying users about new conversations, replies, or engagement on their initiated discussions.Personalized notifications based on users' interests and activities within the platform.",
     image: "/images/6.png",
-    tag: ["All", "Fullstack"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All"],
   },
 ];
 
