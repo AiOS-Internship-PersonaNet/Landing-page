@@ -192,7 +192,7 @@ const FeaturesSection = () => {
           height: '70%', // Adjust the height of the right border
           border: '2px solid rgba(255, 255, 255, 0.6)',
           borderRadius: '20px', // Making the right border curved
-          zIndex: '1', // Ensure the right border is above the background
+          zIndex: '1', 
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -237,7 +237,7 @@ const FeaturesSection = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(to right, #ff00cc, #333399)', // Your desired gradient or color
+          background: 'linear-gradient(to right, #ff00cc, #333399)', 
           opacity: 0.4,
           zIndex: -1, // Behind other elements
         }}
@@ -249,10 +249,7 @@ const FeaturesSection = () => {
 
       {/* Particles */}
       {generateRandomParticles()}
-     
-
-      {/* Rest of your content */}
-      {/* Your existing content */}
+      
     </section>
   );
 };
