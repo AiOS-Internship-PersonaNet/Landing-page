@@ -16,8 +16,6 @@ const navLinks = [
   }
 ];
 
-// ... (other imports remain the same)
-
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
