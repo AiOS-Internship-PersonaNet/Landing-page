@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Circle = ({ color, top, left, opacity }) => {
   const circleStyle = {
     position: 'absolute',
@@ -7,7 +8,7 @@ const Circle = ({ color, top, left, opacity }) => {
     height: '400px',
     borderRadius: '50%',
     overflow: 'hidden',
-    backgroundColor: color, // Just the color string without rgba
+    background: `linear-gradient(to bottom, ${color}, rgba(0, 0, 0, 0.5))`, // Just the color string without rgba
     opacity: opacity, // Opacity as a separate property
     top: `${top}px`,
     left: `${left}px`,

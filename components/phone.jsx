@@ -1,16 +1,21 @@
 "use client";
 import React, { useRef } from "react";
-import headPic from '/public/images/headPic.png';
 import Circle from './Circle';
 
 const Phone = (index) => {
+  const containerStyle = {
+    position: 'relative',
+    overflow: 'hidden',
+    width: '80%',
+    height: '50%',
+    maxWidth: '500px', // Set a fixed width for the phone container
+  };
 
   const background = {
     width: '35%',
-    height: '85%',
-    minWidth: '30%',
+    height: '90%',
     borderRadius: '10% 10% 0 0',
-    background: 'linear-gradient(to bottom, #2e2e2e, #9c9c9c)',
+    background: 'linear-gradient(to bottom, #222222, #4A4A4A)',
     overflow: 'hidden',
     position: 'absolute',
     top: '70%',
@@ -18,14 +23,17 @@ const Phone = (index) => {
     transform: 'translate(-50%, -50%)',
     boxShadow: 'inset 0 0 30px rgba(0, 0, 0, 0.5)',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     flexDirection: 'column',
+    rowGap: '0px',
   };
+  
 
   const title = {
     fontSize: '5vw',
-    zIndex:'5'
+    zIndex: '3',
+    marginTop:'-10%'
   };
 
   const Button = {
@@ -38,34 +46,61 @@ const Phone = (index) => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex:'5'
+    zIndex: '1',
+    marginTop: '10px',
   };
 
   const Text = {
     paddingBottom: '1vw',
-    zIndex:'5'
+    zIndex: '1',
+    marginTop: '-10px',
+    fontSize: '1vw',
+  };
+
+  const overlay = {
+    position: 'absolute',
+    width: '95%',
+    height: '8%',
+    background: 'linear-gradient(to bottom, transparent, black)',
+    borderRadius: '8px',
+    zIndex: '3',
+    bottom: '0%',
+  };
+
+  const circle = {
+    filter: 'blur(50px)',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex: '-6',
   };
 
   return (
-    
     <div style={background}>
-    <Circle color="purple" opacity={1} top={20} left={0} width={10} height={10} zIndex={-6} style={{ filter: 'blur(5px)', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
-    <Circle color="#6f74ff" opacity={1} top={50} left={300}  width={30} height={30} zIndex={-6} style={{ filter: 'blur(5px)', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
-    <img
-      src={headPic}
-      alt="img"
-      style={{ maxWidth: '100%', marginBottom: '20px', borderRadius: '8px', zIndex: '4' }}
-    />
-        <h1 style={title}>
-          Persona<span style={{ color: '#ff52f8' }}>NET</span>
-        </h1>
-        <h2 style={Text}>
-          Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
-        </h2>
-        <button style={Button}>Sign Up</button>
-       
-    </div>
+      <Circle color="#FF00EC" opacity={1} top={20} left={0} width={'5px'} height={5} style={circle} />
+      <Circle color="#0008FF" opacity={1} top={50} left={300} width={30} height={30} style={circle} />
 
+      <div style={containerStyle}>
+        <img
+          src={'/images/headPic.png'}
+          alt="img"
+          style={{ display: 'flex', width: '95%', alignItems: 'center', maxWidth: '100%', borderRadius: '8px', zIndex: '1', height: '100%' }}
+        />
+
+        <div style={overlay}></div>
+      </div>
+
+      <h1 style={title}>
+        Persona<span style={{ color: '#ff52f8' }}>NET</span>
+      </h1>
+
+      <h2 style={Text}>
+        Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
+      </h2>
+
+      <button style={Button}>Sign Up</button>
+    </div>
   );
 };
 

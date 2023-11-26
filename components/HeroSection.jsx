@@ -6,17 +6,27 @@ import Phone from './phone';
 
 const HeroSection = () => {
 
-  
-
   return (
     <section style={{ overflow: 'hidden' }}className="flex flex-col items-center justify-center h-screen w-full bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5 rounded-lg  transition relative">
       {/* Background Image */}
+
+      <div
+        style={{
+          position: 'absolute',
+          top: 100,
+          left: 0,
+          width: '100%',
+          height: '20%', // Adjust the height as needed
+          background: 'linear-gradient(to bottom, #0c0c0c, transparent)',
+        }}></div>
+
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: `url('/images/background.png')`, // Path to your image
           backgroundPosition: 'center', // Center the background image
           backgroundSize: 'cover', // Adjust the background size
+          
         }}
       ></div>
 
@@ -26,10 +36,15 @@ const HeroSection = () => {
       <Circle color="purple" top={280} left={1000} opacity={0.6}/>
       <Circle color="#3137fd" top={400} left={650} opacity={0.5}/>
       <Circle color="#3137fd" top={550} left={1200} opacity={0.6}/>
-      
+      <Circle color="purple" top={280} left={1300} opacity={0.4}/>
+      <Circle color="#3137fd" top={200} left={1500} opacity={0.4}/>
+      <Circle color="purple" top={280} left={1600} opacity={0.4}/>
+      <Circle color="#3137fd" top={400} left={1800} opacity={0.4}/>
+      <Circle color="#3137fd" top={550} left={2000} opacity={0.4}/>
      {/* phone */}
-     <Phone />
-
+     
+        <Phone />
+      
      <div
         style={{
           position: 'absolute',
