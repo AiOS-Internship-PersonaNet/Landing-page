@@ -30,7 +30,7 @@ const BenefitsSection = () => {
       description: 'Description 2',
       additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
     },
-    // feature objects here...
+    // Your feature objects here...
   ];
 
   const controlsArray = FEATURES.map(() => useAnimation());
