@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Circle from './Circle';
+import NavLink from "./NavLink";
+import Link from "next/link";
 
 const Phone = (index) => {
 
@@ -39,7 +41,8 @@ const Phone = (index) => {
   };
 
   const background = {
-    width: '35%',
+    width: '650px',
+    manWidth: '600px',
     height: '90%',
     borderRadius: '10% 10% 0 0',
     background: 'linear-gradient(to bottom, #232323, #4A4A4A)',
@@ -62,18 +65,12 @@ const Phone = (index) => {
   
 
   const title = {
-    fontSize: '5vw',
+    fontSize: '80px',
     zIndex: '3',
     marginTop:'-10%'
   };
 
-  const handleButtonHover = () => {
-    setIsButtonHovered(true);
-  };
 
-  const handleButtonLeave = () => {
-    setIsButtonHovered(false);
-  };
 
   const Button = {
     background: 'linear-gradient(to bottom, #dfc700, #d0bb00)',
@@ -88,6 +85,8 @@ const Phone = (index) => {
     zIndex: '1',
     marginTop: '10px',
     transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out', // Slow down the transition
+    fontSize: '20px',
+    fontWeight: 'bold'
   };
 
 
@@ -99,7 +98,8 @@ const Phone = (index) => {
     paddingBottom: '1vw',
     zIndex: '1',
     marginTop: '-10px',
-    fontSize: '1vw',
+    fontSize: '20px',
+    zIndex:'3'
   };
 
   const overlay = {
@@ -113,7 +113,7 @@ const Phone = (index) => {
   };
 
   const circle = (top, left, width, height) => ({
-    filter: 'blur(50px)',
+    filter: 'blur(500px)',
     position: 'absolute',
     top: `${top}%`,
     left: `${left}%`,
@@ -123,6 +123,11 @@ const Phone = (index) => {
     zIndex: '-6',
   });
 
+  const navLinks = [
+    {
+      path:"#signUp"
+    },
+  ]
   return (
 
       <div style={background}>
@@ -134,7 +139,7 @@ const Phone = (index) => {
           <img
             src={'/images/headPic.png'}
             alt="img"
-            style={{ display: 'flex', width: '95%', alignItems: 'center', maxWidth: '100%', borderRadius: '8px', zIndex: '1', height: '100%', }}
+            style={{ display: 'flex', width: '455px', alignItems: 'center', maxWidth: '455px', borderRadius: '8px', zIndex: '1', height: '100%', maxHeight: '100%'}}
           />
 
           <div style={overlay}></div>
@@ -148,9 +153,11 @@ const Phone = (index) => {
           Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
         </h2>
 
-        <button style={Button}  onMouseEnter={handleButtonHover} onMouseLeave={handleButtonLeave}>Sign Up</button>
+        {navLinks.map((link) => (
+          <a href={link.path} style={Button}>Sign Up</a>
+        ))}
       </div>
   );
 };
 
-export default Phone;
+export default Phone; 
