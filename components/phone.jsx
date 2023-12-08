@@ -34,17 +34,15 @@ const Phone = (index) => {
   const containerStyle = {
     position: 'relative',
     overflow: 'hidden',
-    width: '80%',
-    height: '45%',
+    width: '95%', 
+    height: 'auto',
     maxWidth: '500px', // Set a fixed width for the phone container
-
   };
 
   const background = {
-    width: '650px',
-    manWidth: '600px',
-    height: '90%',
-    borderRadius: '10% 10% 0 0',
+    width: window.innerWidth <= 600 ? '100%' : '32%',
+    height: '70vh',
+    borderRadius: '30px 30px 0 0',
     background: 'linear-gradient(to bottom, #232323, #4A4A4A)',
     overflow: 'hidden',
     position: 'absolute',
@@ -61,11 +59,13 @@ const Phone = (index) => {
 
     transition: 'transform 1s ease-out, opacity 1s ease-out', // Apply a smooth transition
     opacity: initialPosition.includes('fadeIn') ? 1 : 0, // Initial opacity is set based on the class
+
+   
   };
   
 
   const title = {
-    fontSize: '80px',
+    fontSize:'4vw',
     zIndex: '3',
     marginTop:'-10%'
   };
@@ -74,9 +74,9 @@ const Phone = (index) => {
 
   const Button = {
     background: 'linear-gradient(to bottom, #dfc700, #d0bb00)',
-    width: isButtonHovered ? '55%' : '50%', // Adjust the width on hover
-    height: isButtonHovered ? '10%' : '8%', // Adjust the height on hover
-    color: 'black',
+    width: '55%', // Adjust the width on hover
+    height: '8%', // Adjust the height on hover
+    color: '#4A4A4A',
     borderRadius: '50px',
     boxShadow: '0 0 30px rgba(0, 0, 0, 0.5)',
     display: 'flex',
@@ -85,7 +85,7 @@ const Phone = (index) => {
     zIndex: '1',
     marginTop: '10px',
     transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out', // Slow down the transition
-    fontSize: '20px',
+    fontSize: '2.5vw',
     fontWeight: 'bold'
   };
 
@@ -98,19 +98,26 @@ const Phone = (index) => {
     paddingBottom: '1vw',
     zIndex: '1',
     marginTop: '-10px',
-    fontSize: '20px',
-    zIndex:'3'
+    fontSize:`calc(1vw + .5rem)`,
+    zIndex:'3',
   };
 
-  const overlay = {
-    position: 'absolute',
+  const imgStyle = {
+    position: 'relative', // Make the container relative to position pseudo-element
+    display: 'flex',
     width: '95%',
-    height: '8%',
-    background: 'linear-gradient(to bottom, transparent, black)',
+    alignItems: 'center',
+    justifyContent:'center',
+    left:'4%',
+    maxWidth: '455px',
     borderRadius: '8px',
-    zIndex: '3',
-    bottom: '0%',
+    zIndex: '1',
+    height: 'auto',
+    maxHeight: 'calc(100% - 2vw)',
+    transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out',
+  
   };
+
 
   const circle = (top, left, width, height) => ({
     filter: 'blur(500px)',
@@ -132,17 +139,15 @@ const Phone = (index) => {
 
       <div style={background}>
         <Circle color="#FF00EC" opacity={1} top={20} left={0} width={'5px'} height={5} style={circle(20, 50, 10, 10)} />
-        <Circle color="#0008FF" opacity={1} top={50} left={300} width={30} height={30} style={circle(50, 70, 30, 30)} />
-        <Circle color="#FF00EC" opacity={.7} top={80} right={900} width={'5px'} height={5} style={circle(20, 50, 10, 10)} />
-        <Circle color="#0008FF" opacity={.7} top={150} left={500} width={30} height={30} style={circle(50, 70, 30, 30)} />
+        <Circle color="#0008FF" opacity={1} top={50} left={300} width={30} height={30} style={circle(20, 50, 10, 10)} />
+        <Circle color="#0008FF" opacity={.7} top={80} right={900} width={'5px'} height={5} style={circle(20, 50, 10, 10)} />
+        <Circle color="#FF00EC" opacity={.7} top={150} left={500} width={30} height={30} style={circle(50, 70, 30, 30)} />
         <div style={containerStyle}>
           <img
             src={'/images/headPic.png'}
             alt="img"
-            style={{ display: 'flex', width: '455px', alignItems: 'center', maxWidth: '455px', borderRadius: '8px', zIndex: '1', height: '100%', maxHeight: '100%'}}
+            style={imgStyle}
           />
-
-          <div style={overlay}></div>
         </div>
 
         <h1 style={title}>
@@ -156,6 +161,17 @@ const Phone = (index) => {
         {navLinks.map((link) => (
           <a href={link.path} style={Button}>Sign Up</a>
         ))}
+
+<div
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: '100%',
+          height: '20%', // Adjust the height as needed
+          background: 'linear-gradient(to bottom, transparent, #0c0c0c)',
+        }}
+      ></div>
       </div>
   );
 };

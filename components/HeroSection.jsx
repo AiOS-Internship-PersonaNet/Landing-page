@@ -38,15 +38,28 @@ const HeroSection = () => {
 
 
       <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-center justify-center"
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-end justify-center"
         style={{
           backgroundImage: `url('/images/background.png')`, // Path to your image
           backgroundPosition: 'center', // Center the background image
-          backgroundSize: 'cover', // Adjust the background size
+          backgroundSize: 'fill', // Adjust the background size
+          backgroundRepeat: 'no-repeat',
+          bottom:'0',
+          top: 'auto',
           transform: `translate(0, 0) ${initialPosition}`,
           transition: 'transform 1s ease-out', // Apply a smooth transition
         }}
-      ></div>
+      >
+
+<div
+    className="absolute bottom-0 left-0 w-full h-1/4"
+    style={{
+      background: 'linear-gradient(to bottom, rgba(12, 12, 12, 0) 20%, #0c0c0c 80%)',
+      zIndex: '1',
+      filter: 'blur(20px)', // Adjust the blur effect
+    }}
+  ></div>
+      </div>
 
        {/* Circles */}
           <Circle color="purple" top={280} left={0} opacity={0.5}/>
@@ -65,16 +78,7 @@ const HeroSection = () => {
      
         <Phone />
       
-     <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          width: '100%',
-          height: '20%', // Adjust the height as needed
-          background: 'linear-gradient(to bottom, transparent, #0c0c0c)',
-        }}
-      ></div>
+     
 
       {/* Mobile Device Frame */}
       <div className="relative max-w-[90%]">
