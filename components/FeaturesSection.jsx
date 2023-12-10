@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const FeaturesSection = () => {
   const [middleBorderHovered, setMiddleBorderHovered] = useState(false);
   const [leftBorderHovered, setLeftBorderHovered] = useState(false);
   const [rightBorderHovered, setRightBorderHovered] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   const handleMiddleBorderHover = () => {
     setMiddleBorderHovered(true);
@@ -74,6 +75,18 @@ const FeaturesSection = () => {
     return particles;
   };
 
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    updateWindowWidth();
+    window.addEventListener('resize', updateWindowWidth);
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth);
+    };
+  }, []);
+
   return (
     <section
       id="features"
@@ -94,49 +107,47 @@ const FeaturesSection = () => {
 
       {/* Middle border */}
       <motion.div
-  className="middle-border"
+        className="middle-border"
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: middleBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
+          width: '30%',
+          height: '70%',
+          border: '2px solid rgba(255, 255, 255, 0.6)',
+          borderRadius: '20px',
+          zIndex: '1',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          transition: 'transform 0.3s ease, background-color 0.3s ease',
+          backgroundColor: middleBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          fontSize: windowWidth <= 768 ? '0.4em' : '1em',
+        }}
+        onMouseEnter={handleMiddleBorderHover}
+        onMouseLeave={handleMiddleBorderLeave}
+      >
+        {/* Persona Creation Content */}
+        <h2 style={{ fontSize: middleBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>Express Your True Self</h2>
+        <img
+          src="/images/background2.png"
+          alt="Description of the image"
+          style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
+        />
+      <p
   style={{
-    position: 'absolute',
-    top: '50%',
-    left: '50%', // Adjusted left position for the middle border
-    transform: 'translate(-50%, -50%)',
-    width: '30%', // Adjust the width of the middle border to create space
-    height: '70%', // Adjust the height of the middle border
-    border: '2px solid rgba(255, 255, 255, 0.6)',
-    borderRadius: '20px', // Making the middle border curved
-    zIndex: '1', // Ensure the middle border is above the background
-    boxSizing: 'border-box', // Include border in element size
-    padding: '20px', // Padding for content inside the middle border
-    backgroundColor: middleBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)', // Background inside the middle border
-    color: 'white', // Text color inside the middle border
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    transition: 'transform 0.3s ease, background-color 0.3s ease', // Adding transition property for both transform and background-color
-    transform: middleBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
+    fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
+    opacity: middleBorderHovered ? '1' : '0',
+    transition: 'opacity 0.3s ease',
   }}
-  onMouseEnter={handleMiddleBorderHover}
-  onMouseLeave={handleMiddleBorderLeave}
 >
-  {/* Persona Creation Content */}
-  <h2 style={{ fontSize: middleBorderHovered ? (window.innerWidth <= 768 ? '1.5em' : '2em') : '1.5em' }}>Express Your True Self</h2>
-  <img
-    src="/images/background2.png"
-    alt="Description of the image"
-    style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
-  />
-  <p
-    style={{
-      fontSize: window.innerWidth <= 768 ? '0.5em' : '1em',
-      opacity: middleBorderHovered ? '1' : '0', // Initially hidden
-      transition: 'opacity 0.3s ease', // Transition for opacity
-    }}
-  >
-    With our innovative persona creation tool, you're not just building a profile; you're crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.
-  </p>
-</motion.div>
+  With our innovative persona creation tool, you're not just building a profile; you're crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.
+</p>
+
+      </motion.div>
 
       {/* Left border */}
       <motion.div
@@ -144,36 +155,37 @@ const FeaturesSection = () => {
         style={{
           position: 'absolute',
           top: '50%',
-          left: 'calc(50% - 33%)', // Adjust left position for spacing
+          left: 'calc(50% - 33%)',
           transform: leftBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
-          width: '30%', // Adjust the width of the left border
-          height: '70%', // Adjust the height of the left border
+          width: '30%',
+          height: '70%',
           border: '2px solid rgba(255, 255, 255, 0.6)',
-          borderRadius: '20px', // Making the left border curved
-          zIndex: '1', // Ensure the left border is above the background
+          borderRadius: '20px',
+          zIndex: '1',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'center',
-          transition: 'transform 0.3s ease, background-color 0.3s ease', // Adding transition for backgroundColor
-          backgroundColor: leftBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)', // Background inside the left border
+          transition: 'transform 0.3s ease, background-color 0.3s ease',
+          backgroundColor: leftBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          fontSize: windowWidth <= 768 ? '0.4em' : '1em',
         }}
         onMouseEnter={handleLeftBorderHover}
         onMouseLeave={handleLeftBorderLeave}
       >
         {/* Unleash Your Personality Content */}
-        <h2 style={{ fontSize: leftBorderHovered ? (window.innerWidth <= 768 ? '1.5em' : '2em') : '1.5em' }}>
+        <h2 style={{ fontSize: leftBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>
           Unleash Your Personality
         </h2>
         <img
           src="/images/persona.png"
           alt="Description of the image"
-          style={{ maxWidth: '60%', height: 'auto', margin: '10px 0' }}
+          style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
         />
-        <p
+         <p
           style={{
-            fontSize: window.innerWidth <= 768 ? '0.5em' : '1em',
+            fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
             opacity: leftBorderHovered ? '1' : '0', // Initially hidden
             transition: 'opacity 0.3s ease',
           }}
@@ -184,48 +196,50 @@ const FeaturesSection = () => {
 
       {/* Right border */}
       <motion.div
-  className="right-border"
-  style={{
-    position: 'absolute',
-    top: '50%',
-    left: 'calc(50% + 33%)', // Adjust left position for spacing
-    transform: rightBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
-    width: '30%', // Adjust the width of the right border
-    height: '70%', // Adjust the height of the right border
-    border: '2px solid rgba(255, 255, 255, 0.6)',
-    borderRadius: '20px', // Making the right border curved
-    zIndex: '1', // Ensure the right border is above the background
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    transition: 'transform 0.3s ease, background-color 0.3s ease', // Adding transition for backgroundColor
-    backgroundColor: rightBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)', // Background inside the right border
-  }}
-  onMouseEnter={handleRightBorderHover}
-  onMouseLeave={handleRightBorderLeave}
->
-  {/* Real-Time Engagement and Notifications Content */}
-  <h2 style={{ fontSize: rightBorderHovered ? (window.innerWidth <= 768 ? '1.5em' : '2em') : '1.5em' }}>Real-Time Engagement and Notifications</h2>
-  <div style={{ padding: '10px', borderRadius: '10px' }}>
-    <img
-      src="/images/chat.png"
-      alt="Description of the image"
-      style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
-    />
-  </div>
-  <p
+        className="right-border"
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: 'calc(50% + 33%)',
+          transform: rightBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
+          width: '30%',
+          height: '70%',
+          border: '2px solid rgba(255, 255, 255, 0.6)',
+          borderRadius: '20px',
+          zIndex: '1',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          transition: 'transform 0.3s ease, background-color 0.3s ease',
+          backgroundColor: rightBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          fontSize: windowWidth <= 768 ? '0.4em' : '1em',
+        }}
+        onMouseEnter={handleRightBorderHover}
+        onMouseLeave={handleRightBorderLeave}
+      >
+        {/* Real-Time Engagement and Notifications Content */}
+        <h2 style={{ fontSize: rightBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>Real-Time Engagement and Notifications</h2>
+        <div style={{ padding: '10px', borderRadius: '10px' }}>
+          <img
+            src="/images/chat.png"
+            alt="Description of the image"
+            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          />
+        </div>
+        <p
     style={{
-      fontSize: window.innerWidth <= 768 ? '0.5em' : '1em',
+      fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
       opacity: rightBorderHovered ? '1' : '0', // Initially hidden
       transition: 'opacity 0.3s ease',
     }}
   >
     Stay engaged with real-time updates. Whether your persona is getting likes, comments, or matched with like-minded users, you're always in the loop.
   </p>
-</motion.div>
+      </motion.div>
 
+      
       {/* Animated Background */}
       <motion.div
         className="animated-background"
@@ -235,20 +249,18 @@ const FeaturesSection = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(to right, #ff00cc, #333399)', // Your desired gradient or color
+          background: 'linear-gradient(to right, #ff00cc, #333399)',
           opacity: 0.4,
-          zIndex: -1, // Behind other elements
+          zIndex: -1,
         }}
         initial={{ opacity: 0.4 }}
         animate={{
-          opacity: 0.7, // Animate the opacity for a subtle effect
+          opacity: 0.7,
         }}
       ></motion.div>
 
       {/* Particles */}
       {generateRandomParticles()}
-      
-    
     </section>
   );
 };
