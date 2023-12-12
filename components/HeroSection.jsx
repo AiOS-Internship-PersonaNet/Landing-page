@@ -30,7 +30,7 @@ const HeroSection = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: '#0c0c0c', // Set the background color
+        backgroundColor: 'black', // Set the background color
       }}
     ></div>
       
@@ -40,7 +40,7 @@ const HeroSection = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-end justify-center"
         style={{
-          backgroundImage: `url('/images/background.png')`, // Path to your image
+          background: 'radial-gradient(circle at 0% 0%, #844eea, #5527f5, #041069)',
           backgroundPosition: 'center', // Center the background image
           backgroundSize: 'fill', // Adjust the background size
           backgroundRepeat: 'no-repeat',
@@ -51,27 +51,9 @@ const HeroSection = () => {
         }}
       >
 
-<div
-    className="absolute bottom-0 left-0 w-full h-1/4"
-    style={{
-      background: 'linear-gradient(to bottom, rgba(12, 12, 12, 0) 20%, #0c0c0c 80%)',
-      zIndex: '1',
-      filter: 'blur(20px)', // Adjust the blur effect
-    }}
-  ></div>
       </div>
 
-       {/* Circles */}
-          <Circle color="purple" top={280} left={0} opacity={0.5}/>
-          <Circle color="#3137fd" top={200} left={300} opacity={0.6}/>
-          <Circle color="purple" top={280} left={1000} opacity={0.6}/>
-          <Circle color="#3137fd" top={400} left={650} opacity={0.5}/>
-          <Circle color="#3137fd" top={550} left={1200} opacity={0.6}/>
-          <Circle color="purple" top={280} left={1300} opacity={0.4}/>
-          <Circle color="#3137fd" top={200} left={1500} opacity={0.4}/>
-          <Circle color="purple" top={280} left={1600} opacity={0.4}/>
-          <Circle color="#3137fd" top={400} left={1800} opacity={0.4}/>
-          <Circle color="#3137fd" top={550} left={2000} opacity={0.4}/>
+
 
           
      {/* phone */}

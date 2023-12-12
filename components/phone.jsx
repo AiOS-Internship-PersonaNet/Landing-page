@@ -1,13 +1,21 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Circle from './Circle';
-import NavLink from "./NavLink";
-import Link from "next/link";
+import styled from 'styled-components';
+import SignupForm from './SignupForm'; 
 
 const Phone = (index) => {
 
   const [initialPosition, setInitialPosition] = useState('translateY(100%)');
   const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [isSignupVisible, setIsSignupVisible] = useState(false);
+
+  const handleSignupClick = () => {
+    setIsSignupVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsSignupVisible(false);
+  };
 
   useEffect(() => {
     // Set a timeout to delay the animation start
@@ -29,77 +37,64 @@ const Phone = (index) => {
     return () => clearTimeout(fadeTimeout);
   }, []);
 
+  const Container = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 10vw;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
-  const containerStyle = {
-    position: 'relative',
-    overflow: 'hidden',
-    width: '95%', 
-    height: 'auto',
-    maxWidth: '500px', // Set a fixed width for the phone container
-  };
-
-  const background = {
-    width: window.innerWidth <= 600 ? '100%' : '32%',
-    height: '70vh',
-    borderRadius: '30px 30px 0 0',
-    background: 'linear-gradient(to bottom, #232323, #4A4A4A)',
-    overflow: 'hidden',
-    position: 'absolute',
-    bottom:0,
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    boxShadow: 'inset 0 0 30px rgba(0, 0, 0, 0.5)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    rowGap: '0px',
-    transform: `translate(-50%, 0) ${initialPosition}`,
-
-    transition: 'transform 1s ease-out, opacity 1s ease-out', // Apply a smooth transition
-    opacity: initialPosition.includes('fadeIn') ? 1 : 0, // Initial opacity is set based on the class
-
-   
-  };
-  
+  const textLayout = {
+    display:'flex',
+    flexDirection:'column',
+    alignItems:'center',
+    justifyContent: 'center'
+  }
 
   const title = {
-    fontSize:'4vw',
+    fontSize:'68px',
     zIndex: '3',
-    marginTop:'-10%'
+    position: 'relative',
   };
-
-
 
   const Button = {
-    background: 'linear-gradient(to bottom, #dfc700, #d0bb00)',
-    width: '55%', // Adjust the width on hover
-    height: '8%', // Adjust the height on hover
-    color: '#4A4A4A',
-    borderRadius: '50px',
-    boxShadow: '0 0 30px rgba(0, 0, 0, 0.5)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: '1',
-    marginTop: '10px',
-    transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out', // Slow down the transition
-    fontSize: '2.5vw',
-    fontWeight: 'bold'
+    "--glow-color": "#ff52f8", // Neon pink color
+    "--glow-spread-color": "rgba(191, 123, 255, 0.781)",
+    "--enhanced-glow-color": "rgb(231, 206, 255)",
+    "--btn-color": "rgb(100, 61, 136)",
+    border: ".25em solid var(--glow-color)",
+    padding: "1em 3em",
+    color: "var(--glow-color)",
+    fontSize: "15px",
+    fontWeight: "bold",
+    backgroundColor: "var(--btn-color)",
+    borderRadius: "1em",
+    outline: "none",
+    boxShadow:
+      "0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color)",
+    textShadow: "0 0 .5em var(--glow-color)",
+    position: "relative",
+    transition: "all 0.3s",
+    cursor: "pointer",
   };
-
-
   if (isButtonHovered) {
-    Button.transform = 'translateY(-5px)';
+    Button.transform = "translateY(-5px)";
+    Button.backgroundColor = "var(--glow-color)"; // Change background on hover
+    Button.boxShadow = "0 0 1em .25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color)";
+    Button.color = "rgba(76, 0, 39, 0.8)";
   }
 
   const Text = {
     paddingBottom: '1vw',
-    zIndex: '1',
+    zIndex: '4',
     marginTop: '-10px',
-    fontSize:`calc(1vw + .5rem)`,
-    zIndex:'3',
+    position: 'relative',
   };
 
   const imgStyle = {
@@ -117,62 +112,38 @@ const Phone = (index) => {
     transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out',
   
   };
+ 
+  
 
 
-  const circle = (top, left, width, height) => ({
-    filter: 'blur(500px)',
-    position: 'absolute',
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: 'translate(-50%, -50%)',
-    width: `${width}px`,
-    height: `${height}px`,
-    zIndex: '-6',
-  });
-
-  const navLinks = [
-    {
-      path:"#signUp"
-    },
-  ]
   return (
 
-      <div style={background}>
-        <Circle color="#FF00EC" opacity={1} top={20} left={0} width={'5px'} height={5} style={circle(20, 50, 10, 10)} />
-        <Circle color="#0008FF" opacity={1} top={50} left={300} width={30} height={30} style={circle(20, 50, 10, 10)} />
-        <Circle color="#0008FF" opacity={.7} top={80} right={900} width={'5px'} height={5} style={circle(20, 50, 10, 10)} />
-        <Circle color="#FF00EC" opacity={.7} top={150} left={500} width={30} height={30} style={circle(50, 70, 30, 30)} />
-        <div style={containerStyle}>
-          <img
-            src={'/images/headPic.png'}
-            alt="img"
-            style={imgStyle}
-          />
-        </div>
+  <Container >
+    <div>
+      <img
+        src={'/images/headPic.png'}
+        alt="img"
+        style={imgStyle}
+      />
+    </div>
 
-        <h1 style={title}>
-          Persona<span style={{ color: '#ff52f8' }}>NET</span>
-        </h1>
+    <div style={textLayout}>
+      <h1 style={title}>
+        Persona<span style={{ color: '#ff52f8' }}>NET</span>
+      </h1>
 
-        <h2 style={Text}>
-          Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
-        </h2>
+      <h2 style={Text}>
+        Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
+      </h2>
 
-        {navLinks.map((link) => (
-          <a href={link.path} style={Button}>Sign Up</a>
-        ))}
+      <button style={Button}
+          onMouseEnter={() => setIsButtonHovered(true)}
+          onMouseLeave={() => setIsButtonHovered(false)}
+          onClick={handleSignupClick}> Sign Up </button>
 
-<div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          width: '100%',
-          height: '20%', // Adjust the height as needed
-          background: 'linear-gradient(to bottom, transparent, #0c0c0c)',
-        }}
-      ></div>
-      </div>
+      {isSignupVisible && <SignupForm onClose={handleCloseModal} />}
+    </div>
+  </Container>  
   );
 };
 
