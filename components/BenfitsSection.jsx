@@ -48,48 +48,7 @@ const BenefitsSection = () => {
     }
   }, [controlsArray, inView]);
 
-  const generateRandomParticles = () => {
-    const particleVariants = {
-      initial: {
-        opacity: 1,
-        scale: 1,
-      },
-      animate: {
-        opacity: 1,
-        scale: [1, 1.2, 1],
-        rotate: [0, 360],
-        transition: {
-          duration: 2,
-          ease: 'linear',
-          repeat: Infinity,
-          repeatType: 'reverse',
-        },
-      },
-    };
-
-    const particles = [];
-    for (let i = 0; i < 30; i++) {
-      particles.push(
-        <motion.div
-          key={i}
-          className="particle"
-          style={{
-            backgroundColor: '#FFFFFF',
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            position: 'absolute',
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-          }}
-          variants={particleVariants}
-          initial="initial"
-          animate="animate"
-        ></motion.div>
-      );
-    }
-    return particles;
-  };
+  
 
   return (
     <section
@@ -150,24 +109,11 @@ const BenefitsSection = () => {
             width={440}
             height={500}
             className="feature-phone"
-            style={{ opacity: '0.7' }}
+            style={{ opacity: '1' }}
           />
         </div>
       </div>
 
-      {/* Particle container */}
-      <motion.div
-        className="particle-container"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        {generateRandomParticles()}
-      </motion.div>
     </section>
   );
 };

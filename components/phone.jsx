@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styled from 'styled-components';
+import styled,  { keyframes } from 'styled-components';
 import SignupForm from './SignupForm'; 
 
 const Phone = (index) => {
@@ -43,22 +43,18 @@ const Phone = (index) => {
   justify-content: center;
   align-items: center;
   text-align: center;
-  column-gap: 10vw;
-
+  column-gap: 25vw;
+  margin-left:10%;
   @media (max-width: 768px) {
     flex-direction: column;
+    row-gap: 100px;
   }
 `;
 
-  const textLayout = {
-    display:'flex',
-    flexDirection:'column',
-    alignItems:'center',
-    justifyContent: 'center'
-  }
+  
 
   const title = {
-    fontSize:'68px',
+    fontSize:'67px',
     zIndex: '3',
     position: 'relative',
   };
@@ -80,8 +76,9 @@ const Phone = (index) => {
       "0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color)",
     textShadow: "0 0 .5em var(--glow-color)",
     position: "relative",
-    transition: "all 0.3s",
+    transition: "all 1s",
     cursor: "pointer",
+    transition: "all 0.3s ease-in-out",
   };
   if (isButtonHovered) {
     Button.transform = "translateY(-5px)";
@@ -97,37 +94,63 @@ const Phone = (index) => {
     position: 'relative',
   };
 
-  const imgStyle = {
-    position: 'relative', // Make the container relative to position pseudo-element
-    display: 'flex',
-    width: '95%',
-    alignItems: 'center',
-    justifyContent:'center',
-    left:'4%',
-    maxWidth: '455px',
-    borderRadius: '8px',
-    zIndex: '1',
-    height: 'auto',
-    maxHeight: 'calc(100% - 2vw)',
-    transition: 'width 0.5s ease-in-out, height 0.5s ease-in-out',
-  
-  };
- 
-  
+  const ImageContainer = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px; 
+  row-gap:15px;
+`;
 
 
-  return (
+  const hoverAnimation = keyframes`
+  from {
+    transform: scale(2.5);
+  }
+  to {
+    transform: scale(2.3); // Adjust the scale factor as needed
+  }
+`;
 
-  <Container >
-    <div>
-      <img
-        src={'/images/headPic.png'}
-        alt="img"
-        style={imgStyle}
-      />
-    </div>
+const HoverableImg = styled.img`
+  position: relative;
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px; // Increase this value to make the image wider
+  border-radius: 8px;
+  z-index: 1;
+  height: auto;
+  max-height: calc(100% - 2vw);
+  animation: ${hoverAnimation} 2s infinite alternate; 
 
-    <div style={textLayout}>
+  @media (max-width: 768px) {
+    margin-left:30%
+  }
+
+`;
+
+return (
+  <Container>
+    <ImageContainer>
+      <div>
+        <HoverableImg
+          src={'/images/heroPic.png'}
+          alt="img"
+        />
+      </div>
+    </ImageContainer>
+
+    <ButtonContainer>
       <h1 style={title}>
         Persona<span style={{ color: '#ff52f8' }}>NET</span>
       </h1>
@@ -136,15 +159,19 @@ const Phone = (index) => {
         Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
       </h2>
 
-      <button style={Button}
-          onMouseEnter={() => setIsButtonHovered(true)}
-          onMouseLeave={() => setIsButtonHovered(false)}
-          onClick={handleSignupClick}> Sign Up </button>
+      <button
+        style={Button}
+        onMouseEnter={() => setIsButtonHovered(true)}
+        onMouseLeave={() => setIsButtonHovered(false)}
+        onClick={handleSignupClick}
+      >
+        Sign Up
+      </button>
 
       {isSignupVisible && <SignupForm onClose={handleCloseModal} />}
-    </div>
-  </Container>  
-  );
+    </ButtonContainer>
+  </Container>
+);
 };
 
-export default Phone; 
+export default Phone;

@@ -50,30 +50,7 @@ const FeaturesSection = () => {
     },
   };
 
-  const generateRandomParticles = () => {
-    const particles = [];
-    for (let i = 0; i < 30; i++) {
-      particles.push(
-        <motion.div
-          key={i}
-          className="particle"
-          style={{
-            backgroundColor: '#FFFFFF',
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            position: 'absolute',
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-          }}
-          variants={particleVariants}
-          initial="initial"
-          animate="animate"
-        ></motion.div>
-      );
-    }
-    return particles;
-  };
+ 
 
   const updateWindowWidth = () => {
     setWindowWidth(window.innerWidth);
@@ -241,26 +218,7 @@ const FeaturesSection = () => {
 
       
       {/* Animated Background */}
-      <motion.div
-        className="animated-background"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          background: 'linear-gradient(to right, #ff00cc, #333399)',
-          opacity: 0.4,
-          zIndex: -1,
-        }}
-        initial={{ opacity: 0.4 }}
-        animate={{
-          opacity: 0.7,
-        }}
-      ></motion.div>
-
-      {/* Particles */}
-      {generateRandomParticles()}
+      
     </section>
   );
 };

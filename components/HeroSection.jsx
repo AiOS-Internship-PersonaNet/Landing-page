@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import '/styles.css';
-import Circle from './Circle';
 import Phone from './phone';
+import Design from "./Design";
 
 
 const HeroSection = () => {
@@ -20,47 +20,33 @@ const HeroSection = () => {
   }, []);
 
 
+
+
   return (
-    <section style={{ overflow: 'hidden',}}className="flex flex-col items-center justify-center h-screen w-full bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5 rounded-lg  transition relative">
-       {/* Background Color */}
-    <div
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'black', // Set the background color
-      }}
-    ></div>
+    <section style={{ overflow: 'hidden',}} className="flex flex-col items-center justify-center h-screen w-full  hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5 rounded-lg  transition relative">
+
       
-      {/* Background Image */}
-
-
-      <div
+    <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-end justify-center"
         style={{
-          background: 'radial-gradient(circle at 0% 0%, #844eea, #5527f5, #041069)',
+          background: 'radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138)',
           backgroundPosition: 'center', // Center the background image
-          backgroundSize: 'fill', // Adjust the background size
+          backgroundSize: 'fill', 
           backgroundRepeat: 'no-repeat',
           bottom:'0',
           top: 'auto',
-          transform: `translate(0, 0) ${initialPosition}`,
-          transition: 'transform 1s ease-out', // Apply a smooth transition
+          zIndex: '0'
         }}
-      >
+      ></div>
 
-      </div>
-
-
-
-          
-     {/* phone */}
      
-        <Phone />
+
+
+    <Design id="tsparticles" style={{ zIndex: '0' }}/>
+
+    <Phone/>
+
       
-     
 
       {/* Mobile Device Frame */}
       <div className="relative max-w-[90%]">
@@ -82,6 +68,8 @@ const HeroSection = () => {
         ></div>
       </div>
       {/* End of Mobile Device Frame */}
+
+
     </section>
   );
 };
