@@ -7,17 +7,20 @@ import { FiMenu, FiArrowRight } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <nav className="bg-black p-4 border-b-[1px] border-black flex items-center justify-between relative z-50">
       <NavLeft setIsOpen={setIsOpen} />
-      
-      <NavLink text="Features" path="#features" />
+
+      <div className="hidden lg:flex space-x-6">
+        <NavLink text="Features" path="#features" />
+        <NavLink text="Benefits" path="#benefits" />
+      </div>
+
       {isOpen && <NavMenu isOpen={isOpen} />}
     </nav>
   );
 };
-
 
 
 const Logo = () => {
@@ -52,6 +55,7 @@ const NavLeft = ({ setIsOpen }) => {
         className="block lg:hidden text-white text-2xl"
         onClick={() => setIsOpen((pv) => !pv)}
       >
+        
         <FiMenu />
       </motion.button>
       <Logo />
@@ -90,7 +94,8 @@ const NavMenu = ({ isOpen }) => {
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
       <MenuLink text="Features" />
-      <NavLink text="Features" path="#features" />
+      <MenuLink text="Benefits" />
+      <NavLink text="Benefits" path="#benefits" />
       
     </motion.div>
   );
