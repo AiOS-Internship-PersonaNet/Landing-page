@@ -1,16 +1,10 @@
 FROM node:18
 
-WORKDIR /usr/src/app
-
+WORKDIR /app
 COPY package*.json ./
-
 RUN npm install
-
 COPY . .
+RUN npm run build
 
-# Your app binds to port 3000 so you'll use the EXPOSE instruction to have it mapped by the docker daemon
 EXPOSE 3000
-
-
-
-CMD ["npm", "run","build"]
+CMD ["npm", "start"]
