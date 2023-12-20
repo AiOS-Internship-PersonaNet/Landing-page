@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const FeaturesSection = () => {
   const [middleBorderHovered, setMiddleBorderHovered] = useState(false);
@@ -31,26 +32,6 @@ const FeaturesSection = () => {
   const handleRightBorderLeave = () => {
     setRightBorderHovered(false);
   };
-
-  const particleVariants = {
-    initial: {
-      opacity: 1,
-      scale: 1,
-    },
-    animate: {
-      opacity: 1,
-      scale: [1, 1.2, 1],
-      rotate: [0, 360],
-      transition: {
-        duration: 2,
-        ease: 'linear',
-        repeat: Infinity,
-        repeatType: 'reverse',
-      },
-    },
-  };
-
- 
 
   const updateWindowWidth = () => {
     setWindowWidth(window.innerWidth);
@@ -107,21 +88,24 @@ const FeaturesSection = () => {
         onMouseEnter={handleMiddleBorderHover}
         onMouseLeave={handleMiddleBorderLeave}
       >
-        {/* Persona Creation Content */}
-        <h2 style={{ fontSize: middleBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>Express Your True Self</h2>
-        <img
-          src="/images/background2.png"
-          alt="Description of the image"
-          style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
-        />
-      <p
-  style={{
-    fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
-    opacity: middleBorderHovered ? '1' : '0',
-    transition: 'opacity 0.3s ease',
-  }}
+        {/* Express Your True Self Content */}
+        <h2 className={`${middleBorderHovered ? 'text-lg' : 'text-xl'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+  Express Your True Self
+</h2>
+        <Image
+  src="/images/background2.png"
+  alt="Description of the image"
+  width={800} 
+  height={600} 
+  style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
+/>
+
+<p
+  className={`${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-sm' : 'text-base'} opacity-${middleBorderHovered ? '100' : '0'} transition-opacity duration-300 ${middleBorderHovered ? '' : 'hidden'}`}
+  onMouseEnter={handleMiddleBorderHover}
+  onMouseLeave={handleMiddleBorderLeave}
 >
-  With our innovative persona creation tool, you're not just building a profile; you're crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.
+  With our innovative persona creation tool, you&apos;re not just building a profile; you&apos;re crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.
 </p>
 
       </motion.div>
@@ -152,23 +136,23 @@ const FeaturesSection = () => {
         onMouseLeave={handleLeftBorderLeave}
       >
         {/* Unleash Your Personality Content */}
-        <h2 style={{ fontSize: leftBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>
-          Unleash Your Personality
-        </h2>
-        <img
-          src="/images/persona.png"
-          alt="Description of the image"
-          style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
-        />
-         <p
-          style={{
-            fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
-            opacity: leftBorderHovered ? '1' : '0', // Initially hidden
-            transition: 'opacity 0.3s ease',
-          }}
-        >
-          Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.
-        </p>
+        <h2 className={`${leftBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+  Unleash Your Personality
+</h2>
+
+        <Image
+  src="/images/persona.png"
+  alt="Description of the image"
+  width={800} 
+  height={600} 
+  style={{ maxWidth: '70%', height: 'auto', margin: '10px 0' }}
+/>
+
+<p
+  className={`${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-sm' : 'text-base'} opacity-${leftBorderHovered ? '100' : '0'} transition-opacity duration-300 ${leftBorderHovered ? '' : 'hidden'}`}
+>
+  Create multiple personas that showcase every aspect of your personality. Whether it&apos;s engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.
+</p>
       </motion.div>
 
       {/* Right border */}
@@ -197,28 +181,45 @@ const FeaturesSection = () => {
         onMouseLeave={handleRightBorderLeave}
       >
         {/* Real-Time Engagement and Notifications Content */}
-        <h2 style={{ fontSize: rightBorderHovered ? (window.innerWidth <= 768 ? '1em' : '1em') : '1.5em' }}>Real-Time Engagement and Notifications</h2>
-        <div style={{ padding: '10px', borderRadius: '10px' }}>
-          <img
-            src="/images/chat.png"
-            alt="Description of the image"
-            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
-          />
-        </div>
-        <p
-    style={{
-      fontSize: window.innerWidth <= 768 ? '0.5em' : '0.8em',
-      opacity: rightBorderHovered ? '1' : '0', // Initially hidden
-      transition: 'opacity 0.3s ease',
-    }}
-  >
-    Stay engaged with real-time updates. Whether your persona is getting likes, comments, or matched with like-minded users, you're always in the loop.
-  </p>
+        <h2 className={`${rightBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+  Real-Time Engagement and Notifications
+</h2>
+
+        <Image
+  src="/images/chat.png"
+  alt="Description of the image"
+  width={800} 
+  height={600} 
+  style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+/>
+
+<p
+  className={`${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-sm' : 'text-base'} opacity-${rightBorderHovered ? '100' : '0'} transition-opacity duration-300 ${rightBorderHovered ? '' : 'hidden'}`}
+  onMouseEnter={handleRightBorderHover}
+  onMouseLeave={handleRightBorderLeave}
+>
+  Stay engaged with real-time updates. Whether your persona is getting likes, comments, or matched with like-minded users, you&apos;re always in the loop.
+</p>
       </motion.div>
 
-      
       {/* Animated Background */}
-      
+      <motion.div
+        className="animated-background"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'linear-gradient(to right, #ff00cc, #333399)',
+          opacity: 0.4,
+          zIndex: -1,
+        }}
+        initial={{ opacity: 0.4 }}
+        animate={{
+          opacity: 0.7,
+        }}
+      ></motion.div>
     </section>
   );
 };
