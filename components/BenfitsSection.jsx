@@ -8,32 +8,30 @@ const BenefitsSection = () => {
   const FEATURES = [
     {
       title: 'Express Your True Self',
-      
       description: 'Description 1',
       additionalText: `With our innovative persona creation tool, you're not just building a profile; you're crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.`,
     },
     {
       title: 'Unleash Your Personality',
-      
       description: 'Description 2',
       additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
     },
     {
       title: 'Unleash Your Personality',
-      
       description: 'Description 2',
       additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
     },
     {
       title: 'Unleash Your Personality',
-      
       description: 'Description 2',
       additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
     },
     // Your feature objects here...
   ];
-
+  /* eslint-disable react-hooks/rules-of-hooks */
   const controlsArray = FEATURES.map(() => useAnimation());
+  
+
   const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
 
   useEffect(() => {
@@ -48,8 +46,6 @@ const BenefitsSection = () => {
     }
   }, [controlsArray, inView]);
 
-  
-
   return (
     <section
       ref={ref}
@@ -62,43 +58,47 @@ const BenefitsSection = () => {
             <h2 className="font-bold text-white text-7xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8">Our Benefits</h2>
           </div>
           <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[-50px]">
-            {FEATURES.map((feature, index) => (
-              <motion.li
-                key={index}
-                className="flex w-full flex-1 flex-col items-start"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 0.5 },
-                  },
-                }}
-                animate={controlsArray[index]}
-                initial="hidden"
-                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }} // Hover effect
-              >
-                <motion.div
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  className="rounded-full p-4 lg:p-7 bg-green-50"
+            {FEATURES.map((feature, index) => {
+              // Call useAnimation inside the map function
+              const controls = controlsArray[index];
+
+              return (
+                <motion.li
+                  key={index}
+                  className="flex w-full flex-1 flex-col items-start"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                  animate={controls}
+                  initial="hidden"
+                  whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
                 >
-                  {/* Use your feature icon here */}
-                  <Image src="/path/to/your/feature/icon.png" alt="icon" width={28} height={28} />
-                </motion.div>
-                <motion.h2
-                  className="font-bold text-base lg:text-xl mt-5 capitalize"
-                >
-                  {feature.title}
-                </motion.h2>
-                <motion.p
-                  className="text-sm lg:text-base mt-3 text-gray-500"
-                >
-                  {feature.additionalText}
-                </motion.p>
-              </motion.li>
-            ))}
+                  <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="rounded-full p-4 lg:p-7 bg-green-50"
+                  >
+                    <Image src="/path/to/your/feature/icon.png" alt="icon" width={28} height={28} />
+                  </motion.div>
+                  <motion.h2
+                    className="font-bold text-base lg:text-xl mt-5 capitalize"
+                  >
+                    {feature.title}
+                  </motion.h2>
+                  <motion.p
+                    className="text-sm lg:text-base mt-3 text-gray-500"
+                  >
+                    {feature.additionalText}
+                  </motion.p>
+                </motion.li>
+              );
+            })}
           </ul>
         </div>
 
@@ -109,11 +109,10 @@ const BenefitsSection = () => {
             width={440}
             height={500}
             className="feature-phone"
-            style={{ opacity: '1' }}
+            style={{ opacity: '0.7' }}
           />
         </div>
       </div>
-
     </section>
   );
 };
