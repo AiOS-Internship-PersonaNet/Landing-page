@@ -1,7 +1,7 @@
 FROM node:18 AS base
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # ---- Build ----
 FROM base AS build
