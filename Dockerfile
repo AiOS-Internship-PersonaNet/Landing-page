@@ -1,23 +1,28 @@
-# Base Image
-FROM node:18
-
-# Set working directory
+FROM node:18 AS base
 WORKDIR /app
-
-# Copy package files and install dependencies
-# Setting the production environment ensures that only production dependencies are installed
-ENV NODE_ENV=production
 COPY package*.json ./
 RUN npm ci
 
-# Copy the rest of the application code
+# ---- Build ----
+FROM base AS build
+WORKDIR /app
 COPY . .
-
-# Build the app for production
 RUN npm run build
 
-# Expose the default port for Next.js
+# ---- Release ----
+FROM node:18-slim AS release
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=build /app/next.config.js ./
+COPY --from=build /app/public ./public
+COPY --from=build /app/.next ./.next
+COPY --from=build /app/node_modules ./node_modules
+
+# Install `serve` to run the application
+RUN npm install -g serve
+
+# Expose the port the app runs on
 EXPOSE 3000
 
-# Start the production server
-CMD ["npm", "start"]
+# Start the application
+CMD ["serve", "-s", "build"]
