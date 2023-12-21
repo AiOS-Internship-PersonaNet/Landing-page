@@ -7,24 +7,28 @@ import { useInView } from 'react-intersection-observer';
 const BenefitsSection = () => {
   const FEATURES = [
     {
-      title: 'Express Your True Self',
+      title: 'AI-Powered Personas:',
       description: 'Description 1',
-      additionalText: `With our innovative persona creation tool, you're not just building a profile; you're crafting a digital identity. Answer a few simple questions and let our AI weave a persona that truly represents you.`,
+      img:"/images/background2.png",
+      additionalText: `Create distinct AI Personas for different life aspects like work or hobbies.`,
     },
     {
-      title: 'Unleash Your Personality',
+      title: 'Unique Social Media Experience:',
       description: 'Description 2',
-      additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
+      img:"/images/headPic.png",
+      additionalText: `A new, easy,and fun social media platform.`,
     },
     {
-      title: 'Unleash Your Personality',
+      title: 'AI Business Personas:',
       description: 'Description 2',
-      additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
+      img:"/images/chat.png",
+      additionalText: `Helps in refining marketing and communication strategies based on user interactions and preferences.`,
     },
     {
-      title: 'Unleash Your Personality',
+      title: 'Authentic Online Presence:',
       description: 'Description 2',
-      additionalText: `Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.`,
+      img:"/images/background2.png",
+      additionalText: `Enables a more genuine self-representation, free from common social media issues.`,
     },
     // Your feature objects here...
   ];
@@ -84,7 +88,7 @@ const BenefitsSection = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="rounded-full p-4 lg:p-7 bg-green-50"
                   >
-                    <Image src="/path/to/your/feature/icon.png" alt="icon" width={28} height={28} />
+                    <Image src= {feature.img} alt="icon" width={28} height={28} />
                   </motion.div>
                   <motion.h2
                     className="font-bold text-base lg:text-xl mt-5 capitalize"
