@@ -1,12 +1,6 @@
-# Base Image
-FROM node:18
-
-# Set working directory
+FROM node:18 as build-stage
 WORKDIR /app
 
-# Copy package files and install dependencies
-# Setting the production environment ensures that only production dependencies are installed
-ENV NODE_ENV=production
 COPY package*.json ./
 RUN npm install
 
