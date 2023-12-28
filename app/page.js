@@ -7,6 +7,13 @@ import Footer from '/components/Footer'
 import BenfitsSection from '/components/BenfitsSection'
 import OppoScroll from '/components/OppoScroll';
 
+
+
+
+
+
+
+
 export default function Home() {
   
 
@@ -15,12 +22,16 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <NavBar />
       <HeroSection />
-      <FeaturesSection />
-      <BenfitsSection/>
       <OppoScroll/>
-     
-      <Footer />
+      <FeaturesSection />
+       <BenfitsSection/>
+       <Footer />
 
-   </main>
+
+      
+     
+      
+   
+    </main>
   )
 }
