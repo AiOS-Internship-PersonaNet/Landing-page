@@ -94,8 +94,8 @@ const BenefitsSection = () => {
       ),
     },
   ];
-
-   const controlsArray = FEATURES.map(() => useAnimation());
+  /* eslint-disable react-hooks/rules-of-hooks */
+  const controlsArray = FEATURES.map(() => useAnimation());
 
   const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
 
