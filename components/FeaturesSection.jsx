@@ -208,7 +208,7 @@ const FeaturesSection = () => {
           width: '100%',
           height: '70%',
           position: 'absolute',
-          top: '55%',
+          top: '54%',
           transform: 'translateY(-50%)',
         }}
       >
