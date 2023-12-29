@@ -147,7 +147,7 @@ const FeaturesSection = () => {
           <p
             className={`${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-sm' : 'text-base'} opacity-${leftBorderHovered ? '100' : '0'} transition-opacity duration-300 ${leftBorderHovered ? '' : 'hidden'}`}
           >
-            Create multiple personas that showcase every aspect of your personality. Whether it's engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.
+             Create multiple personas that showcase every aspect of your personality. Whether it&apos;s engaging in lively debates or sharing a laugh, your personas represent the multifaceted nature of your identity.
           </p>
         </motion.div>
       )}
