@@ -8,10 +8,11 @@ RUN npm install
 COPY . .
 
 # Build the app for production
-RUN npm run build
+#RUN npm run build
 
 # Expose the default port for Next.js
 EXPOSE 3000
 
 # Start the production server
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
