@@ -1,86 +1,72 @@
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; 
-import { useCallback, useMemo,useEffect, useState  } from "react";
+import { useCallback, useMemo,  } from "react";
+
 
 const Design = (props) => {
-  const getParticleOptions = () => {
-    const baseOptions = {
+
+  const options = useMemo(() => {
+    
+    return {
       background: {
-        color: "transparent",
+        color: "transparent", // this sets a background color for the canvas
       },
       fullScreen: {
-        enable: true,
+        enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
       },
       interactivity: {
         events: {
           onHover: {
-            enable: true,
-            mode: "repulse",
+            enable: true, // enables the hover event
+            mode: "repulse", // make the particles run away from the cursor
+          
           },
           resize: true,
         },
         modes: {
           push: {
-            quantity: 10,
+            quantity: 10, // number of particles to add on click
           },
           repulse: {
-            distance: 100,
+            distance: 100, // distance of the particles from the cursor
           },
         },
       },
       particles: {
         links: {
-          enable: true,
-          distance: 200,
-          color: "#cfcfcf",
+          enable: true, // enabling this will make particles linked together
+          distance: 200, // maximum distance for linking the particles
         },
         number: {
-          value: 65,
+          value:  60,
         },
         move: {
-          enable: true,
-          speed: { min: 1, max: 1.5 },
+          enable: true, // enabling this will make particles move in the canvas
+          speed: { min: 1, max: 1.5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {
-          value: { min: 0.3, max: 0.7 },
+          value: { min: 0.3, max: 0.7 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 5 }, // let's randomize the particles size a bit
         },
         color: {
-          value: "#cfcfcf",
+          value: "#1111111", // Set the color to black
         },
       },
     };
-
-    if (window.innerWidth < 600) {
-      // Adjust particle options for smaller screens
-      baseOptions.particles.number.value = 10;
-      // Add other adjustments as needed
-    }
-
-    return baseOptions;
-  };
-
-  const [options, setOptions] = useState(() => getParticleOptions());
-
-  const particlesInit = useCallback((engine) => {
-    loadSlim(engine);
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setOptions(getParticleOptions());
-    };
+  
+  const particlesInit = useCallback((engine) => {
+    loadSlim(engine);
+    
+  }, []);
 
-    window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); // empty dependency array means this effect runs only once, similar to componentDidMount
 
-  return <Particles id={props.id} init={particlesInit} options={options} />;
+
+  return (<Particles id={props.id} init={particlesInit} options={options} />);
 };
 
 export default Design;
