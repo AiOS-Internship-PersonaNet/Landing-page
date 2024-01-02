@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import '/styles.css';
-import Phone from './phone';
+import Phone from './Phone';
 import Design from "./Design";
 
 
