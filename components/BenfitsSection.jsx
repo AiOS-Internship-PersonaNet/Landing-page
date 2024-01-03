@@ -122,7 +122,7 @@ const BenefitsSection = () => {
           <div className="relative">
             <h2 className="font-bold text-white text-7xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8">Our Benefits</h2>
           </div>
-          <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[-50px]">
+          <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[30px]">
             {FEATURES.map((feature, index) => {
               const controls = controlsArray[index];
 
@@ -144,7 +144,7 @@ const BenefitsSection = () => {
                 >
                   {feature.icon && (
                     <motion.div
-                      className="border-2 border-white rounded-full p-3 shadow-md"
+                      className="border-2 border-white rounded-full p-5 shadow-md"
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1 }}
@@ -166,27 +166,13 @@ const BenefitsSection = () => {
 
         {/* Phone Image - Below FEATURES on larger screens */}
         <div className="hidden lg:flex flex-1 lg:min-h-[300px] order-first lg:order-none">
-          <Image
-            src="/images/phone.png"
-            alt="phone"
-            width={440}
-            height={500}
-            className="feature-phone"
-            style={{ opacity: '0.7' }}
-          />
+          
         </div>
       </div>
 
       {/* Phone Image - After FEATURES on smaller screens */}
       <div className="lg:hidden flex justify-center mt-8">
-        <Image
-          src="/images/phone.png"
-          alt="phone"
-          width={300}
-          height={340}
-          className="feature-phone"
-          style={{ opacity: '0.7' }}
-        />
+        
       </div>
     </section>
   );

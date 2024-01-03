@@ -187,7 +187,7 @@ const FeaturesSection = () => {
             alt="Description of the image"
             width={800}
             height={600}
-            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+            style={{ maxWidth: '90%', height: 'auto', margin: '10px 0' }}
           />
           <p
             className={`${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-sm' : 'text-base'} opacity-${rightBorderHovered ? '100' : '0'} transition-opacity duration-300 ${rightBorderHovered ? '' : 'hidden'}`}
