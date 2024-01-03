@@ -96,7 +96,6 @@ const BenefitsSection = () => {
   ];
   /* eslint-disable react-hooks/rules-of-hooks */
   const controlsArray = FEATURES.map(() => useAnimation());
-
   const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
 
   useEffect(() => {
@@ -118,6 +117,7 @@ const BenefitsSection = () => {
       className="flex-col flex-center overflow-hidden bg-feature-bg bg-center bg-no-repeat py-8 lg:py-16 mt-[-20px] lg:mt-[-40px] relative"
     >
       <div className="max-container padding-container relative w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-stretch">
+        {/* FEATURES */}
         <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-16">
           <div className="relative">
             <h2 className="font-bold text-white text-7xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8">Our Benefits</h2>
@@ -164,7 +164,8 @@ const BenefitsSection = () => {
           </ul>
         </div>
 
-        <div className="flex flex-1 lg:min-h-[300px] order-first lg:order-none">
+        {/* Phone Image - Below FEATURES on larger screens */}
+        <div className="hidden lg:flex flex-1 lg:min-h-[300px] order-first lg:order-none">
           <Image
             src="/images/phone.png"
             alt="phone"
@@ -174,6 +175,18 @@ const BenefitsSection = () => {
             style={{ opacity: '0.7' }}
           />
         </div>
+      </div>
+
+      {/* Phone Image - After FEATURES on smaller screens */}
+      <div className="lg:hidden flex justify-center mt-8">
+        <Image
+          src="/images/phone.png"
+          alt="phone"
+          width={300}
+          height={340}
+          className="feature-phone"
+          style={{ opacity: '0.7' }}
+        />
       </div>
     </section>
   );
