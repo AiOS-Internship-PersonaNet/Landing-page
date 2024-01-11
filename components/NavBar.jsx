@@ -33,6 +33,7 @@ const Logo = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="fill-white"
+    
     >
       <path
         d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
@@ -108,6 +109,7 @@ const MenuLink = ({ text }) => {
       rel="nofollow"
       href="#"
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
+      
     >
       <motion.span variants={menuLinkArrowVariants}>
         <FiArrowRight className="h-[30px] text-white" />

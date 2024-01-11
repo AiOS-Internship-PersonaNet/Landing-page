@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const BenefitsSection = () => {
   const FEATURES = [
     {
-      title: 'AI-Powered Personas:',
+      title: 'AI-Powered Personas',
       description: 'Description 1',
       img: '/images/icon1.png',
       additionalText: `Create distinct AI Personas for different life aspects like work or hobbies.`,
@@ -28,7 +28,7 @@ const BenefitsSection = () => {
       ),
     },
     {
-      title: 'Unique Social Media Experience:',
+      title: 'Unique Social Media Experience',
       description: 'Description 2',
       img: '/images/headPic.png',
       additionalText: `A new, easy, and fun social media platform.`,
@@ -50,7 +50,7 @@ const BenefitsSection = () => {
       ),
     },
     {
-      title: 'AI Business Personas:',
+      title: 'AI Business Personas',
       description: 'Description 2',
       img: '/images/chat.png',
       additionalText: `Helps in refining marketing and communication strategies based on user interactions and preferences.`,
@@ -72,7 +72,7 @@ const BenefitsSection = () => {
       ),
     },
     {
-      title: 'Authentic Online Presence:',
+      title: 'Authentic Online Presence',
       description: 'Description 2',
       img: '/images/background2.png',
       additionalText: `Enables a more genuine self-representation, free from common social media issues.`,
@@ -120,7 +120,7 @@ const BenefitsSection = () => {
         {/* FEATURES */}
         <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-16">
           <div className="relative">
-            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8">Our Benefits</h2>
+            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8" style={{paddingLeft:25}}>Our Benefits</h2>
           </div>
           <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[30px]">
             {FEATURES.map((feature, index) => {

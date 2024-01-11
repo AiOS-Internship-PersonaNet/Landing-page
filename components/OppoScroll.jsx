@@ -13,12 +13,13 @@ const OppScroll = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "75%",
+            zIndex:4
           }}
         ></motion.div>
       </div>
       <div className="flex items-center">
         <div>
-        <p className="font-bold text-xl md:text-2xl text-white my-8 md:my-8">
+        <p className="font-bold text-xl md:text-2xl text-white my-8 md:my-8" style={{fontSize:30}}>
             What is PersonaNet?
           </p>
           <p className="text-base md:text-lg text-white my-4 md:my-6">
