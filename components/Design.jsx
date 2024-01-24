@@ -3,7 +3,7 @@ import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo,useEffect, useState  } from "react";
 
 const Design = (props) => {
-  const getParticleOptions = () => {
+ /* const getParticleOptions = () => {
     const baseOptions = {
       background: {
         color: "transparent",
@@ -80,7 +80,7 @@ const Design = (props) => {
     };
   }, []); // empty dependency array means this effect runs only once, similar to componentDidMount
 
-  return <Particles id={props.id} init={particlesInit} options={options} />;
+  return <Particles id={props.id} init={particlesInit} options={options} />;*/
 };
 
 export default Design;
