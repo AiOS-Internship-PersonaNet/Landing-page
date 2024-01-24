@@ -29,7 +29,8 @@ const HeroSection = () => {
     <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-end justify-center"
         style={{
-          background: 'radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138)',
+          //background: 'radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138)',
+          background:'#f2f2f2',
           backgroundPosition: 'center', // Center the background image
           backgroundSize: 'fill', 
           backgroundRepeat: 'no-repeat',
