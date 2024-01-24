@@ -1,0 +1,66 @@
+/* Reset margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Snap scroll container styling */
+  .snap-scroll-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh; /* Set the height according to your design */
+    scroll-snap-type: y mandatory;
+    
+  }
+  
+  /* Individual snap scroll sections styling */
+  .snap-scroll-section {
+    scroll-snap-align: start;
+    height: 100vh; /* Each section takes up the entire viewport height */
+    padding: 50px;
+    background-color: #131212;
+    opacity: 0;
+  
+    transform: translateY(20px); /* Initial position off-screen */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  
+    /* Animation only for sections with the 'visible' class */
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Heading styling */
+  h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    color: #e4e4e4;
+  }
+  
+
+  /* Transparent scrollbar */
+.snap-scroll-container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .snap-scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  .snap-scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }

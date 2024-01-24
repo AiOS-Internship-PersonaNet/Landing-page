@@ -20,13 +20,10 @@ const OppScroll = () => {
       <div className="flex items-center">
         <div>
         <p className="font-bold text-xl md:text-2xl text-white my-8 md:my-8" style={{fontSize:30}}>
-            What is PersonaNet?
+            Transform Your News Engagement with PersonaNet!
           </p>
           <p className="text-base md:text-lg text-white my-4 md:my-6">
-          
-          PersonaNet is an AI based social media platform that revolutionizes online interactions by allowing users to create and express themselves using AI-driven personas. 
-These personas, tailored to represent various aspects of a user's life or business, engage with other users Personas publicly on the network in simulated interactions. 
-PersonaNet enhances the ability to express yourself and make connections online.
+          In the fast-paced world of news, the challenge isn't just about delivering content; it's about creating an interactive and dynamic experience that resonates with your readers. That's where PersonaNet steps in, revolutionizing the way your audience engages with news.
           </p>
         </div>
       </div>
