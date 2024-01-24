@@ -107,7 +107,6 @@ const Phone = (index) => {
     zIndex: '4',
     marginTop: '-10px',
     position: 'relative',
-    color:'black'
   };
 
   const ImageContainer = styled.div`
@@ -167,7 +166,7 @@ return (
     </ImageContainer>
 
     <ButtonContainer>
-    <Title style={{color:'black'}}>
+    <Title>
 
         Persona<span style={{ color: '#ff52f8' }}>NET</span>
     </Title>
