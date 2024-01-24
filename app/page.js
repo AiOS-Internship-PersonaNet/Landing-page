@@ -5,6 +5,7 @@ import FeaturesSection from '/components/FeaturesSection'
 import Footer from '/components/Footer'
 import BenfitsSection from '/components/BenfitsSection'
 import OppoScroll from '/components/OppoScroll';
+import SnapScrollComponent from '@/components/snapscroll';
 
 
 
@@ -32,6 +33,7 @@ export default function Home() {
      
       <BenfitsSection/>
       
+      <SnapScrollComponent/>
      
       <Footer />
 
