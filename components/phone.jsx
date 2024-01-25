@@ -75,8 +75,8 @@ const Phone = (index) => {
 `;
 
   const Button = {
-    "--glow-color": "rgb(255, 82, 248, 0.481)", // Neon pink color
-    "--glow-spread-color": "rgba(191, 123, 255, 0.381)",
+    "--glow-color": "rgb(255, 82, 248, 0.581)", // Neon pink color
+    "--glow-spread-color": "rgba(191, 123, 255, 0.581)",
     "--enhanced-glow-color": "rgb(231, 206, 255)",
     "--btn-color": "rgb(100, 61, 136)",
     border: ".25em solid var(--glow-color)",

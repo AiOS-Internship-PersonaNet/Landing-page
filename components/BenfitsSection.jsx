@@ -163,7 +163,9 @@ const BenefitsSection = () => {
                   <motion.p className="text-sm lg:text-base mt-3 text-gray-500 text-center">
                     {feature.additionalText}
                   </motion.p>
+                  
                 </motion.li>
+
               );
             })}
           </ul>

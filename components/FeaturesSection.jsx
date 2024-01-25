@@ -60,7 +60,7 @@ const FeaturesSection = () => {
         backgroundColor:'#f2f2f2'
       }}
     >
-      <h2 className="text-black text-3xl lg:text-5xl font-bold  mt-0 mb-4 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:20}}>
+      <h2 className="  text-black text-3xl lg:text-5xl font-bold  mt-0 mb-10 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:30}}>
         Our Features
       </h2>
 
