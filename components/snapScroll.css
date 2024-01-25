@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
   }
+
   
   /* Snap scroll container styling */
   .snap-scroll-container {
@@ -10,18 +11,17 @@ body, html {
     flex-direction: column;
     overflow-y: scroll;
     height: 100vh; /* Set the height according to your design */
-    scroll-snap-type: y mandatory;
+    background-color: #ffffff;
     
   }
   
   /* Individual snap scroll sections styling */
   .snap-scroll-section {
     scroll-snap-align: start;
-    height: 100vh; /* Each section takes up the entire viewport height */
-    padding: 50px;
-    background-color: #131212;
+    height: 100%; /* Each section takes up the entire viewport height */
+    
+    background-color: #ffffff00;
     opacity: 0;
-  
     transform: translateY(20px); /* Initial position off-screen */
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   
@@ -39,8 +39,8 @@ body, html {
   }
   
   /* Heading styling */
-  h2 {
-    color: #ffffff;
+  .h2 {
+    color: #000000;
     font-size: 20px;
     font-weight: 900;
     padding-bottom: 10px;
@@ -48,13 +48,13 @@ body, html {
   
   /* Paragraph styling */
   p {
-    color: #e4e4e4;
+    color: #000000;
   }
   
 
   /* Transparent scrollbar */
 .snap-scroll-container::-webkit-scrollbar {
-    width: 12px;
+    width: 0px;
   }
   
   .snap-scroll-container::-webkit-scrollbar-thumb {

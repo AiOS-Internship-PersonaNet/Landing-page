@@ -114,13 +114,13 @@ const BenefitsSection = () => {
     <section
       ref={ref}
       id="benefits"
-      className="flex-col flex-center overflow-hidden bg-feature-bg bg-center bg-no-repeat py-8 lg:py-16 mt-[-20px] lg:mt-[-40px] relative"
+      className="flex-col flex-center overflow-hidden bg-feature-bg bg-center bg-no-repeat py-8  lg:py-16 mt-[-20px] lg:mt-[-40px] relative"
     >
       <div className="max-container padding-container relative w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-stretch">
         {/* FEATURES */}
-        <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-16">
+        <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-4 lg:mb-40 sm:ml-10">
           <div className="relative">
-            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8" style={{paddingLeft:25}}>Our Benefits</h2>
+            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8 " style={{paddingLeft:20}}>Our Benefits</h2>
           </div>
           <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[30px]">
             {FEATURES.map((feature, index) => {
