@@ -20,7 +20,7 @@ const SnapScrollComponent = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
+    handleScroll(); // Initial check..
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
