@@ -114,22 +114,27 @@ const BenefitsSection = () => {
     <section
       ref={ref}
       id="benefits"
-      className="flex-col flex-center overflow-hidden bg-feature-bg bg-center bg-no-repeat py-8  lg:py-16 mt-[-20px] lg:mt-[-40px] relative"
+      className="flex-col items-center overflow-hidden bg-feature-bg bg-center bg-no-repeat py-8 lg:py-16 mt-[-20px] lg:mt-[-40px] relative"
     >
-      <div className="max-container padding-container relative w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-stretch">
+      <div style={{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
+      }}
+      className="max-container padding-container relative w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-stretch">
         {/* FEATURES */}
-        <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-4 lg:mb-40 sm:ml-10">
+        <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-4 lg:mb-20 sm:ml-10">
           <div className="relative">
-            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-0 mb-6 lg:mb-8 " style={{paddingLeft:20}}>Our Benefits</h2>
+            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-8 mb-6 lg:mb-10 text-center" style={{paddingLeft:20}}>Our Benefits</h2>
           </div>
           <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[30px]">
             {FEATURES.map((feature, index) => {
               const controls = controlsArray[index];
-
+  
               return (
                 <motion.li
                   key={index}
-                  className="flex w-full flex-1 flex-col items-start"
+                  className="flex w-full flex-1 flex-col items-center"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: {
@@ -155,7 +160,7 @@ const BenefitsSection = () => {
                   <motion.h2 className="font-bold text-base lg:text-xl mt-5 capitalize">
                     {feature.title}
                   </motion.h2>
-                  <motion.p className="text-sm lg:text-base mt-3 text-gray-500">
+                  <motion.p className="text-sm lg:text-base mt-3 text-gray-500 text-center">
                     {feature.additionalText}
                   </motion.p>
                 </motion.li>
@@ -163,19 +168,14 @@ const BenefitsSection = () => {
             })}
           </ul>
         </div>
-
-        {/* Phone Image - Below FEATURES on larger screens */}
-        <div className="hidden lg:flex flex-1 lg:min-h-[300px] order-first lg:order-none">
-          
-        </div>
+  
+      
       </div>
-
-      {/* Phone Image - After FEATURES on smaller screens */}
-      <div className="lg:hidden flex justify-center mt-8">
-        
-      </div>
+  
+     
     </section>
   );
+  
 };
 
 export default BenefitsSection;

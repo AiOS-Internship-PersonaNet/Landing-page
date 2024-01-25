@@ -19,7 +19,6 @@ body, html {
   .snap-scroll-section {
     scroll-snap-align: start;
     height: 100%; /* Each section takes up the entire viewport height */
-    
     background-color: #ffffff00;
     opacity: 0;
     transform: translateY(20px); /* Initial position off-screen */

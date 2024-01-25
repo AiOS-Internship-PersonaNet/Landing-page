@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#333', color: '#fff', textAlign: 'center', padding: '20px 0' , zIndex:'3'}}>
       
-      <p style={{ margin: '10px 0', fontSize: '0.8em' }}>© {new Date().getFullYear()} PersonaNet. All rights reserved.</p>
+      <p style={{ margin: '10px 0', fontSize: '0.8em', color: 'white' }}>© {new Date().getFullYear()} PersonaNet. All rights reserved.</p>
     </footer>
   );
 };

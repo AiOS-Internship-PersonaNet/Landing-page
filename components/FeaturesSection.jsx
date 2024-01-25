@@ -57,10 +57,10 @@ const FeaturesSection = () => {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        
+        backgroundColor:'#f2f2f2'
       }}
     >
-      <h2 className="text-3xl lg:text-5xl font-bold  mt-0 mb-4 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:20}}>
+      <h2 className="text-black text-3xl lg:text-5xl font-bold  mt-0 mb-4 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:20}}>
         Our Features
       </h2>
 
@@ -90,7 +90,7 @@ const FeaturesSection = () => {
         onMouseLeave={handleMiddleBorderLeave}
       >
         {/* Express Your True Self Content */}
-        <h2 style={{fontSize:25, paddingBottom:10}} className={`${middleBorderHovered ? 'text-lg' : 'text-xl'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC' }} className={`${middleBorderHovered ? 'text-lg' : 'text-xl'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Express Your True Self
         </h2>
         <Image
@@ -137,7 +137,7 @@ const FeaturesSection = () => {
         onMouseLeave={handleLeftBorderLeave}
       >
         {/* Unleash Your Personality Content */}
-        <h2 style={{fontSize:25, paddingBottom:10}} className={`${leftBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC'}} className={`${leftBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Unleash Your Personality
         </h2>
 
@@ -182,7 +182,7 @@ const FeaturesSection = () => {
         onMouseLeave={handleRightBorderLeave}
       >
         {/* Real-Time Engagement and Notifications Content */}
-        <h2 style={{fontSize:25, paddingBottom:10}} className={`${rightBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC'}} className={`${rightBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Real-Time Engagement and Notifications
         </h2>
 
