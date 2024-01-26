@@ -9,10 +9,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black p-4 border-b-[1px] border-black flex items-center justify-between relative z-50">
+    <nav className="bg-black p-4 border-b-[1px] border-black flex items-center justify-between relative z-50 pl-10">
       <NavLeft setIsOpen={setIsOpen} />
 
-      <div className="hidden lg:flex space-x-6">
+      <div className="hidden lg:flex space-x-6 pr-10">
         <NavLink text="Features" path="#features" />
         <NavLink text="Benefits" path="#benefits" />
       </div>

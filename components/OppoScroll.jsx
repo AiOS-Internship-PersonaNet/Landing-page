@@ -13,7 +13,9 @@ const OppScroll = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "75%",
-            zIndex:4
+            zIndex:4,
+            alignItems: "center",
+            justifyContent:'center',
           }}
         ></motion.div>
       </div>

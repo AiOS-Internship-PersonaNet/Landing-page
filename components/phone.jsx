@@ -47,7 +47,7 @@ const Phone = (index) => {
   margin-left:10%;
   @media (max-width: 768px) {
     flex-direction: column;
-    row-gap: 100px;
+    row-gap: 35%;
   }
 `;
 
@@ -124,6 +124,10 @@ const ButtonContainer = styled.div`
   align-items: center;
   margin-left: 10px; 
   row-gap:15px;
+
+  @media (max-width: 768px) {
+    margin-right:16%
+  }
 `;
 
 
@@ -167,25 +171,25 @@ return (
     </ImageContainer>
 
     <ButtonContainer>
-    <Title style={{color:'black'}}>
+      <Title style={{color:'black'}}>
 
-        Persona<span style={{ color: '#ff52f8' }}>NET</span>
-    </Title>
+          Persona<span style={{ color: '#ff52f8' }}>NET</span>
+      </Title>
 
-      <h2 style={Text}>
-        Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
-      </h2>
+        <h2 style={Text}>
+          Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
+        </h2>
 
-      <button
-        style={Button}
-        onMouseEnter={() => setIsButtonHovered(true)}
-        onMouseLeave={() => setIsButtonHovered(false)}
-        onClick={handleSignupClick}
-      >
-        Sign Up
-      </button>
+        <button
+          style={Button}
+          onMouseEnter={() => setIsButtonHovered(true)}
+          onMouseLeave={() => setIsButtonHovered(false)}
+          onClick={handleSignupClick}
+        >
+          Sign Up
+        </button>
 
-      {isSignupVisible && <SignupForm onClose={handleCloseModal} />}
+        {isSignupVisible && <SignupForm onClose={handleCloseModal} />}
     </ButtonContainer>
   </Container>
 );
