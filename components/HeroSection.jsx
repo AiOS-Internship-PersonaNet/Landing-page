@@ -23,7 +23,7 @@ const HeroSection = () => {
 
 
   return (
-    <section style={{ overflow: 'hidden',}} className="flex flex-col items-center justify-center h-screen w-full  hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5 rounded-lg  transition relative">
+    <section style={{ overflow: 'hidden',}} className="flex flex-col items-center justify-center h-screen w-full  hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5   transition relative">
 
       
     <div

@@ -19,6 +19,8 @@ const OppScroll = () => {
           }}
         ></motion.div>
       </div>
+
+      
       <div className="flex items-center">
         <div>
         <p className="font-bold text-xl md:text-2xl text-white my-8 md:my-8" style={{fontSize:30}}>

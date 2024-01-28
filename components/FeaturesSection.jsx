@@ -60,7 +60,7 @@ const FeaturesSection = () => {
         backgroundColor:'#f2f2f2'
       }}
     >
-      <h2 className="  text-black text-3xl lg:text-5xl font-bold  mt-0 mb-10 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:30}}>
+      <h2 className="  text-black text-3xl lg:text-5xl font-light  mt-0 mb-10 md:mt-0 md:mb-8 absolute top-0 left-1/2 transform -translate-x-1/2" style={{paddingTop:30}}>
         Our Features
       </h2>
 
@@ -74,7 +74,7 @@ const FeaturesSection = () => {
           transform: middleBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
           width: '30%',
           height: '70%',
-          border: '2px solid rgba(255, 255, 255, 0.6)',
+          border: '1px solid grey',
           borderRadius: '20px',
           zIndex: '1',
           display: 'flex',
@@ -83,14 +83,14 @@ const FeaturesSection = () => {
           alignItems: 'center',
           textAlign: 'center',
           transition: 'transform 0.3s ease, background-color 0.3s ease',
-          backgroundColor: middleBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          backgroundColor:'transparent',
           fontSize: windowWidth <= 768 ? '0.4em' : '1em',
         }}
         onMouseEnter={handleMiddleBorderHover}
         onMouseLeave={handleMiddleBorderLeave}
       >
         {/* Express Your True Self Content */}
-        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC' }} className={`${middleBorderHovered ? 'text-lg' : 'text-xl'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'black' }} className={`${middleBorderHovered ? 'text-lg' : 'text-xl'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Express Your True Self
         </h2>
         <Image
@@ -121,7 +121,7 @@ const FeaturesSection = () => {
           transform: leftBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
           width: '30%',
           height: '70%',
-          border: '2px solid rgba(255, 255, 255, 0.6)',
+          border: '1px solid grey',
           borderRadius: '20px',
           zIndex: '1',
           display: 'flex',
@@ -130,14 +130,14 @@ const FeaturesSection = () => {
           alignItems: 'center',
           textAlign: 'center',
           transition: 'transform 0.3s ease, background-color 0.3s ease',
-          backgroundColor: leftBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          backgroundColor:  'transparent',
           fontSize: windowWidth <= 768 ? '0.4em' : '1em',
         }}
         onMouseEnter={handleLeftBorderHover}
         onMouseLeave={handleLeftBorderLeave}
       >
         {/* Unleash Your Personality Content */}
-        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC'}} className={`${leftBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'black'}} className={`${leftBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Unleash Your Personality
         </h2>
 
@@ -166,7 +166,7 @@ const FeaturesSection = () => {
           transform: rightBorderHovered ? 'translate(-50%, -55%)' : 'translate(-50%, -50%)',
           width: '30%',
           height: '70%',
-          border: '2px solid rgba(255, 255, 255, 0.6)',
+          border: '1px solid grey',
           borderRadius: '20px',
           zIndex: '1',
           display: 'flex',
@@ -175,14 +175,14 @@ const FeaturesSection = () => {
           alignItems: 'center',
           textAlign: 'center',
           transition: 'transform 0.3s ease, background-color 0.3s ease',
-          backgroundColor: rightBorderHovered ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.5)',
+          backgroundColor:  'transparent',
           fontSize: windowWidth <= 768 ? '0.4em' : '1em',
         }}
         onMouseEnter={handleRightBorderHover}
         onMouseLeave={handleRightBorderLeave}
       >
         {/* Real-Time Engagement and Notifications Content */}
-        <h2 style={{fontSize:25, paddingBottom:10, color:'#ECECEC'}} className={`${rightBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
+        <h2 style={{fontSize:25, paddingBottom:10, color:'black'}} className={`${rightBorderHovered ? 'text-base' : 'text-lg'} ${typeof window !== 'undefined' && window.innerWidth <= 768 ? 'text-xl' : ''}`}>
           Real-Time Engagement and Notifications
         </h2>
 
@@ -191,7 +191,7 @@ const FeaturesSection = () => {
           alt="Description of the image"
           width={800} 
           height={600} 
-          style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          style={{ maxWidth: '90%', height: 'auto', margin: '10px 0' }}
         />
 
         <p

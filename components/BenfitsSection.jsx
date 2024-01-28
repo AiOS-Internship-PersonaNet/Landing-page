@@ -125,7 +125,7 @@ const BenefitsSection = () => {
         {/* FEATURES */}
         <div className="z-20 flex w-full flex-col lg:w-[60%] mb-8 lg:mb-0 lg:ml-4 lg:mb-20 sm:ml-10">
           <div className="relative">
-            <h2 className="font-bold text-5xl lg:text-10xl mt-8 lg:mt-8 mb-6 lg:mb-10 text-center" style={{paddingLeft:20}}>Our Benefits</h2>
+            <h2 className="font-light text-5xl lg:text-10xl mt-8 lg:mt-8 mb-6 lg:mb-10 text-center" style={{paddingLeft:20}}>Our Benefits</h2>
           </div>
           <ul className="grid gap-4 lg:gap-8 lg:grid-cols-2 ml-0 lg:ml-[30px]">
             {FEATURES.map((feature, index) => {
