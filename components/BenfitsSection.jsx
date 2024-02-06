@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import './BenefitsSection.css'
+import './BenefitsSection.css';
 
 const BenefitsSection = () => {
   const FEATURES = [
@@ -95,18 +95,6 @@ const BenefitsSection = () => {
   /* eslint-disable react-hooks/rules-of-hooks */
   const controlsArray = FEATURES.map(() => useAnimation());
   const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
-
-  useEffect(() => {
-    if (inView) {
-      controlsArray.forEach((controls, index) => {
-        controls.start({
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.5, delay: index * 0.6 },
-        });
-      });
-    }
-  }, [controlsArray, inView]);
 
   return (
     <section ref={ref} className="benefits-section">
