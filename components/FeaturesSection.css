@@ -3,23 +3,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Adjusted to flex-start to align content from the top */
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 48px 24px;
   position: relative;
   min-height: 100vh; /* Changed from height to min-height */
 }
 
-.features-title {
+.features-section .features-title {
   margin-bottom: 32px; /* Ensure there's enough space around the title */
   font-size: 2.5rem;
   position: relative; /* Changed from absolute to relative */
   width: 100%;
   text-align: center; /* Center the title without absolute positioning */
   font-weight: bold;
-  z-index: 2; /* Keep on top of other content */
 }
 
-.features-container {
+.features-section .features-container {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout for mobile */
   gap: 24px;
@@ -29,13 +28,13 @@
 }
 
 @media (min-width: 768px) {
-  .features-container {
+    .features-section .features-container {
     grid-template-columns: repeat(3, 1fr); /* Three columns for wider screens */
     margin-top: 60px; /* More space on top for desktop */
   }
 }
 
-.feature {
+.features-section .feature {
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   display: flex;
@@ -48,28 +47,28 @@
   transition: background-color 0.3s ease;
 }
 
-.feature:hover .feature-description {
+.features-section .feature:hover .feature-description {
   display: block; /* Show description on hover */
 }
 
-.feature-image {
+.features-section .feature-image {
   width: 80%; /* Make image responsive */
   height: auto; /* Maintain aspect ratio */
   margin: 10px 0;
 }
 
-.feature-description {
+.features-section .feature-description {
   display: none; /* Hide description initially */
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.feature:hover .feature-description {
+.features-section .feature:hover .feature-description {
   display: block;
   opacity: 1; /* Fade in description */
 }
 
-.animated-background {
+.features-section .animated-background {
   position: absolute;
   top: 0;
   left: 0;
