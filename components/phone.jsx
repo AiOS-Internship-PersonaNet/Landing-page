@@ -57,26 +57,11 @@ const Phone = (index) => {
     fontSize:'67px',
     zIndex: '3',
     position: 'relative',
-   
   };
 
-  const Title = styled.h1`
-  font-size: 67px;
-  z-index: 3;
-  position: relative;
-
-  @media (max-width: 500px) {
-    font-size: 40px; /* Adjust the font size as needed for smaller screens */
-  }
-
-  span {
-    color: #ff52f8;
-  }
-`;
-
   const Button = {
-    "--glow-color": "rgb(255, 82, 248, 0.481)", // Neon pink color
-    "--glow-spread-color": "rgba(191, 123, 255, 0.381)",
+    "--glow-color": "#ff52f8", // Neon pink color
+    "--glow-spread-color": "rgba(191, 123, 255, 0.781)",
     "--enhanced-glow-color": "rgb(231, 206, 255)",
     "--btn-color": "rgb(100, 61, 136)",
     border: ".25em solid var(--glow-color)",
@@ -166,10 +151,9 @@ return (
     </ImageContainer>
 
     <ButtonContainer>
-    <Title>
-
+      <h1 style={title}>
         Persona<span style={{ color: '#ff52f8' }}>NET</span>
-    </Title>
+      </h1>
 
       <h2 style={Text}>
         Express, Connect, Thrive | Unleashes Your <br /> Digital Persona for Limitless Connections!
