@@ -3,18 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Adjusted to flex-start to align content from the top */
-  /* overflow: hidden; */
   padding: 48px 24px;
   position: relative;
   min-height: 100vh; /* Changed from height to min-height */
 }
 
 .features-section .features-title {
-  margin-bottom: 32px; /* Ensure there's enough space around the title */
-  font-size: 2.5rem;
-  position: relative; /* Changed from absolute to relative */
+  margin-bottom: 15px;
+  font-size: 3.25rem;
+  position: relative; 
   width: 100%;
-  text-align: center; /* Center the title without absolute positioning */
+  text-align: center;
   font-weight: bold;
 }
 
@@ -35,46 +34,58 @@
 }
 
 .features-section .feature {
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem; /* Ensure spacing for consistent height */
+    position: relative; /* Needed for absolute positioning of children */
+    overflow: hidden; /* Hide overflow to manage hover effect smoothly */
+    min-height: 320px; /* Adjust based on your content size to include description */
 }
 
-.features-section .feature:hover .feature-description {
-  display: block; /* Show description on hover */
-}
-
-.features-section .feature-image {
-  width: 80%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px 0;
+.features-section .feature:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter background on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for a "lifted" effect */
+    transform: translateY(-20px); /* Slight raise */
 }
 
 .features-section .feature-description {
-  display: none; /* Hide description initially */
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    opacity: 0;
+    /* min-height: 100px;  */
+    bottom: 10px; /* Adjust as needed */
+    max-height: 100%; /* Adjust based on your content */
+    position: relative; /* Reset to flow in document */
 }
 
 .features-section .feature:hover .feature-description {
-  display: block;
-  opacity: 1; /* Fade in description */
+    opacity: 1;
+    max-height: 100px; /* Adjust based on your content */
+    position: relative; /* Reset to flow in document */
 }
 
-.features-section .animated-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #ff00cc, #333399);
-  opacity: 0.4;
-  z-index: -1;
+
+.features-section .feature-title {
+    font-size: 1.7rem; /* Adjust the size as needed */
+    font-weight: bold; /* Ensure titles are bold */
+    margin-bottom: 10px; /* Space between title and image */
+    text-align: center; /* Align titles */
 }
+
+.features-section .feature-image {
+    width: 70%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.features-section .feature-image-full {
+    width: 100%;
+}
+
+
