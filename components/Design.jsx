@@ -53,7 +53,7 @@ const Design = (props) => {
       },
     };
 
-    if (window.innerWidth < 600) {
+    if (typeof window !== 'undefined' && window.innerWidth < 600) {
       // Adjust particle options for smaller screens
       baseOptions.particles.number.value = 10;
       // Add other adjustments as needed
