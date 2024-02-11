@@ -88,20 +88,7 @@ const NavLink = ({ text, path }) => {
       </motion.div>
     </a>
   );
-  // return (
-  //   <a
-  //     href={path}
-  //     rel="nofollow"
-  //     className="hidden lg:block h-[30px] overflow-hidden font-medium"
-  //   >
-  //     <motion.div whileHover={{ y: -30 }}>
-  //       <span className="flex items-center h-[30px] text-white-500">{text}</span>
-  //       <span className="flex items-center h-[30px] text-indigo-600">
-  //         {text}
-  //       </span>
-  //     </motion.div>
-  //   </a>
-  // );
+
 };
 
 

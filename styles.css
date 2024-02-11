@@ -2,8 +2,15 @@
 .border-text-blue {
   color: white;
   -webkit-text-stroke: 1px #3b82f6; /* For Webkit browsers like Chrome and Safari */
-  text-stroke: 1px #3b82f6; /* For other browsers */
 }
+
+/* styles.css */
+.hero-section {
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  width: 100%; /* Full width */
+  overflow-y: auto; /* Show scroll bar only when needed */
+}
+
 
 
 
