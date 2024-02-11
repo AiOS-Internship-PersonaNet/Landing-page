@@ -7,7 +7,8 @@ const FeaturesSection = () => {
   const [hovered, setHovered] = useState('');
 
   return (
-    <section className="features-section">
+    <section className="features-section" id = "features">
+      
       <h2 className="features-title">Our Features</h2>
 
       <div className="features-container">

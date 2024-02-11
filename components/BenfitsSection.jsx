@@ -97,7 +97,7 @@ const BenefitsSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
 
   return (
-    <section ref={ref} className="benefits-section">
+    <section ref={ref} className="benefits-section" id = "benefits">
       <div className="benefits-container">
         <div className="benefits-title-container">
           <h2 className="benefits-title">Our Benefits</h2>

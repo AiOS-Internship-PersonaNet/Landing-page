@@ -69,20 +69,39 @@ const NavLeft = ({ setIsOpen }) => {
 
 
 const NavLink = ({ text, path }) => {
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    const section = document.querySelector(path); // Select the section to scroll to
+    if (section) {
+      // Perform smooth scroll to the section
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <a
-      href={path}
-      rel="nofollow"
-      className="hidden lg:block h-[30px] overflow-hidden font-medium"
-    >
+    <a href={path} onClick={handleClick} className="hidden lg:block h-[30px] overflow-hidden font-medium">
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-white-500">{text}</span>
         <span className="flex items-center h-[30px] text-indigo-600">
-          {text}
+        {text}
         </span>
       </motion.div>
     </a>
   );
+  // return (
+  //   <a
+  //     href={path}
+  //     rel="nofollow"
+  //     className="hidden lg:block h-[30px] overflow-hidden font-medium"
+  //   >
+  //     <motion.div whileHover={{ y: -30 }}>
+  //       <span className="flex items-center h-[30px] text-white-500">{text}</span>
+  //       <span className="flex items-center h-[30px] text-indigo-600">
+  //         {text}
+  //       </span>
+  //     </motion.div>
+  //   </a>
+  // );
 };
 
 
