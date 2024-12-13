@@ -1,0 +1,98 @@
+.Main{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138);
+    
+}
+
+.youCtrl{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; 
+    width: 100%;
+    padding-top: 20px;
+}
+
+.Main-boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;  
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #5F69D8;
+    text-align: center; 
+}
+
+.box-Header{
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.box-par{
+    margin-top: 20px;
+    width: 230px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138); 
+}
+
+.Container{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.FooterParags{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.parMatchMaking, .parPwEventNetworking, .parEffortlessConns, .parExpress{
+    max-width: 300px;
+    width: 48%; 
+    box-sizing: border-box;
+    flex-basis: 48%;
+    margin-bottom: 20px;
+}
+
+.Matchmaking, .PwEventNetworking, .EffortlessConns, .Express {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.MatchmakingPar, .PwEventNetworkingPr, .EffortlessConnsPr, .ExpressPr {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}

@@ -16,6 +16,11 @@ const Container = styled.div`
 const Content = styled.div`
 	position: relative;
 	width: 100%;
+
+	.bottomTxT{
+	margin-top: 30px;
+	font-size: 15px;
+	}
 `;
 
 const StyledRow = styled.div`
@@ -64,7 +69,6 @@ const Header = styled.div`
 
 const SubHeader = styled.div`
 	font-size: 1rem;
-	margin-bottom: 10px;
 	font-weight: bold;
 `;
 
@@ -87,7 +91,7 @@ const ButtonSection = styled.div`
 	justify-content: center;
 	margin-top: 50px;
 	display: flex;
-	gap: 40px;
+	gap: 100px;
 
 	button {
 		padding: 10px 20px;
@@ -151,7 +155,9 @@ const SignCall = () => {
 					<button className="signup">Sign Up</button>
 					<button className="call">Call me</button>
 				</ButtonSection>
+				<h1 className='bottomTxT'>Every match is an experience</h1>
 			</Content>
+			
 		</Container>
 	);
 };

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Phone from "@/components/SignCall";
-
+import Footer from '@/components/footer';
 
 
 const HeroSection = () => {
@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <section style={{ overflow: 'hidden',}} className="flex flex-col items-center justify-center h-screen w-full  hover:from-blue-600 hover:to-teal-600 text-white font-medium py-2.5 px-5 rounded-lg  transition relative">
 
-      
+    
     <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center flex items-end justify-center"
         style={{
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
 
     {/* <Design id="tsparticles" style={{ zIndex: '0' }}/> */}
- 
+
     <Phone/>
 
       
@@ -71,6 +71,7 @@ const HeroSection = () => {
 
 
     </section>
+    
   );
 };
 
