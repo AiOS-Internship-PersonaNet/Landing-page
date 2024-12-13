@@ -1,4 +1,4 @@
-import './styleFooter.css';
+import './styleProject.css';
 
 function Main() {
 	return (
