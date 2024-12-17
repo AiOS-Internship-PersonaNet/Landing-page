@@ -17,9 +17,9 @@ const Content = styled.div`
 	position: relative;
 	width: 100%;
 
-	.bottomTxT{
-	margin-top: 30px;
-	font-size: 15px;
+	.bottomTxT {
+		margin-top: 30px;
+		font-size: 20px;
 	}
 `;
 
@@ -43,33 +43,137 @@ const MiddleContainer = styled.div`
 	flex: 0 0 auto;
 `;
 
+const VectorImage = styled.img`
+	position: absolute;
+	margin-bottom: 20px;
+	height: 140px;
+	margin-right: 130px;
+	margin-top: 10px;
+
+	@media only screen and (max-width: 768px) {
+		height: 110px;
+		margin-right: 100px;
+		margin-top: 20px;
+	}
+
+	@media only screen and (max-width: 512px) {
+		height: 70px;
+		margin-right: 70px;
+		margin-top: 33px;
+	}
+`;
+
 const SideImage = styled.img`
-    margin-top: 40px;
-    width: auto;
-    height: 150px;
+    margin-top: 50px;
+    width: 200px;
+    height: 210px;
     border-radius: 50%
     flex: 2;
     object-fit: cover;
+
+	@media only screen and (max-width: 768px){
+	width: 150px;
+    height: 150px;
+	}
+
+	@media only screen and (max-width: 512px){
+	width: 120px;
+    height: 120px;
+	}
+
+	@media only screen and (max-width: 390px) {
+	width: 100px;
+    height: 100px;
+	}
+
+	@media only screen and (max-width: 360px) {
+	width: 100px;
+    height: 100px;
+	}
 `;
 
 const MiddleImage = styled.img`
-	height: 300px;
-	width: 300px;
+	height: 400px;
+	width: 400px;
 	border-radius: 50%;
+	margin-top: 50px;
+
+	@media only screen and (max-width: 768px) {
+		width: 300px;
+		height: 300px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		width: 270px;
+		height: 270px;
+	}
+
+	@media only screen and (max-width: 512px) {
+		width: 200px;
+		height: 200px;
+	}
+
+	@media only screen and (max-width: 390px) {
+		width: 180px;
+		height: 180px;
+	}
 `;
 
 const Header = styled.div`
-	font-size: 2rem;
-	margin-bottom: 10px;
+	font-size: 35px;
+	margin-top: 20px;
 	font-weight: bold;
-    .FreeLife{
-    color: #919aff;
-    }
+	.FreeLife {
+		color: #919aff;
+	}
+
+	@media only screen and (max-width: 768px) {
+		font-size: 30px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		font-size: 25px;
+	}
 `;
 
 const SubHeader = styled.div`
-	font-size: 1rem;
+	font-size: 25px;
 	font-weight: bold;
+
+	@media only screen and (max-width: 1440px) {
+		margin-top: 300px;
+	}
+
+	@media only screen and (max-width: 1140px) {
+		margin-top: 300px;
+	}
+
+	@media only screen and (max-width: 991px) {
+		margin-top: 350px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		max-width: 600px;
+		margin: auto;
+		margin-top: 250px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		font-size: 20px;
+		margin-top: 200px;
+	}
+
+	@media only screen and (max-width: 512px) {
+		margin-top: 200px;
+	}
+	
+	@media only screen and (max-width: 390px) {
+		margin-top: 200px;
+	}
+
+	@media only screen and (max-width: 360px) {
+		margin-top: 300px;
+	}
 `;
 
 const TopRightImage = styled.img`
@@ -79,12 +183,39 @@ const TopRightImage = styled.img`
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
+
+	@media only screen and (max-width: 1440px) {
+		margin-top: 40px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		width: 80px;
+		height: 80px;
+		margin-top: 50px;
+	}
 `;
 
 const TopLeftImage = styled.img`
 	position: absolute;
 	top: 0%;
 	left: 0%;
+
+	@media only screen and (max-width: 1440px) {
+	margin-top: 50px;
+	}
+
+	@media only screen and (max-width: 991px) {
+		width: 200px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		width: 150px;
+		margin-top: 50px;
+	}
+
+	@media only screen and (max-width: 390px) {
+		margin-top: 50px;
+	}
 `;
 
 const ButtonSection = styled.div`
@@ -93,14 +224,23 @@ const ButtonSection = styled.div`
 	display: flex;
 	gap: 100px;
 
+	@media only screen and (max-width: 576px) {
+		gap: 50px;
+	}
+
 	button {
-		padding: 10px 20px;
+		padding: 20px 20px;
 		font-size: 1rem;
 		border-radius: 25px;
 		border: none;
 		cursor: pointer;
 		font-weight: bold;
-		width: 150px;
+		width: 170px;
+
+		@media only screen and (max-width: 576px) {
+			width: 150px;
+			padding: 15px 15px;
+		}
 	}
 
 	.signup {
@@ -112,15 +252,13 @@ const ButtonSection = styled.div`
 	}
 
 	.call {
-		background-color: transparent;
-		border: 2px solid white;
+		background-color: #900d09;
 		color: white;
 		&:hover {
 			background-color: #069c39;
 		}
 	}
 `;
-
 
 const SignCall = () => {
 	return (
@@ -144,6 +282,7 @@ const SignCall = () => {
 					</MiddleContainer>
 
 					<SideContainer>
+						<VectorImage src={'/images/Vector.png'} alt="text pic" />
 						<SideImage src={'/images/EyePic.png'} alt="text pic" />
 						<SideImage src={'/images/TextPic.png'} alt="text pic" />
 					</SideContainer>
@@ -153,11 +292,13 @@ const SignCall = () => {
 
 				<ButtonSection>
 					<button className="signup">Sign Up</button>
-					<button className="call">Call me</button>
+					<button className="call">
+						Call me
+						{/* <img src="C:\Users\parpi\Desktop\Landing-page\public\images\call.png" alt="png" /> */}
+					</button>
 				</ButtonSection>
-				<h1 className='bottomTxT'>Every match is an experience</h1>
+				<h1 className="bottomTxT">Every match is an experience</h1>
 			</Content>
-			
 		</Container>
 	);
 };

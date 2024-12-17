@@ -1,98 +1,256 @@
-.Main{
+/* -------------- MAIN SECTION -------------- */
+.Main {
     display: flex;
     justify-content: center;
     padding: 20px 0;
     background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138);
-    
+
 }
 
-.youCtrl{
+.youCtrl,
+.main-middle-txt {
     font-size: 30px;
     font-weight: 500;
-    text-align: center; 
+    text-align: center;
     width: 100%;
     padding-top: 20px;
+    color: white;
 }
 
-.Main-boxes{
+.Main-boxes {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 50px;  
+    margin-top: 50px;
 }
 
-.box{
+.box {
     width: 300px;
     height: 300px;
     border-radius: 20px;
     background-color: #5F69D8;
-    text-align: center; 
+    text-align: center;
 }
 
-.box-Header{
+.box-Header {
     font-size: 30px;
     margin-top: 35px;
+    color: white;
 }
 
-.box-par{
+.box-par {
     margin-top: 20px;
     width: 230px;
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
+    color: white;
 }
 
+.main-middle-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
 
+.main-middle {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
 
+.main-middle-text {
+    width: 48%;
+}
 
+.main-middle-text h2 {
+    font-size: 25px;
+    color: white;
+}
 
+.main-middle-text p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+}
 
-
-
-
-
+/* -------------- FOOTER SECTION -------------- */
 .Footer {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138); 
+    background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138);
 }
 
-.Container{
+.Container {
     max-width: 1440px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 50px;
 }
 
-.FooterParags{
+.FooterParags {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    flex-wrap: wrap;
 }
 
-.parMatchMaking, .parPwEventNetworking, .parEffortlessConns, .parExpress{
+.footer-part {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-parag {
     max-width: 300px;
-    width: 48%; 
+    width: 48%;
     box-sizing: border-box;
     flex-basis: 48%;
     margin-bottom: 20px;
 }
 
-.Matchmaking, .PwEventNetworking, .EffortlessConns, .Express {
+.footer-headline {
     font-size: 25px;
     font-weight: 700;
     color: white;
 }
 
-.MatchmakingPar, .PwEventNetworkingPr, .EffortlessConnsPr, .ExpressPr {
+.footer-txt {
     font-size: 15px;
     font-weight: 500;
     color: white;
     margin-top: 10px;
+}
+
+/* -------------- MEDIA RESPONSIVE SECTION -------------- */
+
+@media (max-width: 1199px) {
+    .Container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .Container {
+        max-width: 720px;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box-Header {
+        font-size: 20px;
+    }
+
+    .box-par {
+        width: 147px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Container {
+        max-width: 540px;
+    }
+
+    .box {
+        width: 170px;
+        height: 170px;
+    }
+
+    .box-Header {
+        font-size: 17px;
+    }
+
+    .box-par {
+        margin-top: 15px;
+        width: 137px;
+        font-size: 12px;
+    }
+
+    .main-middle-text h2 {
+        font-size: 20px;
+    }
+
+    .main-middle-text p {
+        font-size: 13px;
+    }
+
+    .footer-headline {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .footer-txt {
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .footer-part {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .Container {
+        max-width: 320px;
+    }
+
+    .youCtrl,
+    .main-middle-txt {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .Main-boxes {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main-middle {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main-middle-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-middle-text h2 {
+        text-align: center;
+    }
+    
+    .main-middle-text p {
+     text-align: center;
+    }
+
+    .footer-headline {
+        text-align: center;
+    }
+
+    .footer-txt {
+        text-align: center;
+    }
+
 }
