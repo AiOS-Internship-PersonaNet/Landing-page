@@ -34,12 +34,12 @@ function Main() {
 							</p>
 						</div>
 						<div className="main-middle-pic">
-							<img src="C:\Users\parpi\Desktop\Landing-page\public\images\mainpic1.png" alt="Picture" />
+							<img src="\images\mainpic1.png" alt="Picture" />
 						</div>
 					</div>
 					<div className="main-middle">
 						<div className="main-middle-pic">
-							<img src="C:\Users\parpi\Desktop\Landing-page\public\images\mainpic2.png" alt="Picture" />
+							<img src="\images\mainpic2.png" alt="Picture" />
 						</div>
 						<div className="main-middle-text">
 							<h2>RSVP for Local Experiences</h2>
@@ -59,7 +59,7 @@ function Main() {
 							</p>
 						</div>
 						<div className="main-middle-pic">
-							<img src="C:\Users\parpi\Desktop\Landing-page\public\images\mainpic3.png" alt="Picture" />
+							<img src="\images\mainpic3.png" alt="Picture" />
 						</div>
 					</div>
 				</div>

@@ -123,6 +123,7 @@ const Header = styled.div`
 	font-size: 35px;
 	margin-top: 20px;
 	font-weight: bold;
+
 	.FreeLife {
 		color: #919aff;
 	}
@@ -166,7 +167,7 @@ const SubHeader = styled.div`
 	@media only screen and (max-width: 512px) {
 		margin-top: 200px;
 	}
-	
+
 	@media only screen and (max-width: 390px) {
 		margin-top: 200px;
 	}
@@ -201,7 +202,7 @@ const TopLeftImage = styled.img`
 	left: 0%;
 
 	@media only screen and (max-width: 1440px) {
-	margin-top: 50px;
+		margin-top: 50px;
 	}
 
 	@media only screen and (max-width: 991px) {
@@ -230,7 +231,7 @@ const ButtonSection = styled.div`
 
 	button {
 		padding: 20px 20px;
-		font-size: 1rem;
+		font-size: 20px;
 		border-radius: 25px;
 		border: none;
 		cursor: pointer;
@@ -254,9 +255,22 @@ const ButtonSection = styled.div`
 	.call {
 		background-color: #900d09;
 		color: white;
+		display: flex; 
+		align-items: center;
+		justify-content: center; 
+		gap: 10px;
 		&:hover {
-			background-color: #069c39;
-		}
+		background-color:rgb(124, 11, 7);
+			.callImg{
+				transform: scale(1.2);
+				transition: 0.5s;
+				z-index:102;
+			}
+	}
+
+	.callImg {
+		height: 40px;
+		width: 40px;
 	}
 `;
 
@@ -293,8 +307,7 @@ const SignCall = () => {
 				<ButtonSection>
 					<button className="signup">Sign Up</button>
 					<button className="call">
-						Call me
-						{/* <img src="C:\Users\parpi\Desktop\Landing-page\public\images\call.png" alt="png" /> */}
+						Call me<img className="callImg" src="/images/call.png" alt="png" />
 					</button>
 				</ButtonSection>
 				<h1 className="bottomTxT">Every match is an experience</h1>
