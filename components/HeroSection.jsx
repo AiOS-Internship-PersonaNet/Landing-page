@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import '/styles.css';
-import Phone from './phone';
-import Design from "./Design";
+import Phone from './SignCall.jsx';
+
+
 
 
 const HeroSection = () => {
@@ -43,7 +44,7 @@ const HeroSection = () => {
      
 
 
-    <Design id="tsparticles" style={{ zIndex: '0' }}/>
+    {/* <Design id="tsparticles" style={{ zIndex: '0' }}/> */}
 
     <Phone/>
 
