@@ -121,7 +121,7 @@ const MiddleImage = styled.img`
 
 const Header = styled.div`
 	font-size: 35px;
-	margin-top: 20px;
+	margin-top: 50px;
 	font-weight: bold;
 
 	.FreeLife {
@@ -226,11 +226,15 @@ const ButtonSection = styled.div`
 	gap: 100px;
 
 	@media only screen and (max-width: 576px) {
-		gap: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 0px;
+		row-gap: 30px;
 	}
+		
 
 	button {
-		padding: 20px 20px;
+		padding: 10px 10px;
 		font-size: 20px;
 		border-radius: 25px;
 		border: none;
@@ -240,7 +244,12 @@ const ButtonSection = styled.div`
 
 		@media only screen and (max-width: 576px) {
 			width: 150px;
-			padding: 15px 15px;
+			padding: 10px 10px;
+			font-size: 16px;
+		}
+		@media only screen and (max-width: 360px) {
+			padding: 7px 7px;
+			
 		}
 	}
 
@@ -271,6 +280,11 @@ const ButtonSection = styled.div`
 	.callImg {
 		height: 40px;
 		width: 40px;
+
+		@media only screen and (max-width: 576px){
+		height: 30px;
+		width: 30px;
+		}
 	}
 `;
 

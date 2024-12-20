@@ -33,19 +33,35 @@
     text-align: center;
 }
 
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 102;
+}
+
+.box-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 .box-Header {
     font-size: 30px;
-    margin-top: 35px;
+    margin-top: 20px;
     color: white;
+    cursor: default;
 }
 
 .box-par {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 230px;
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
     color: white;
+    cursor: default;
 }
 
 .main-middle-info {
@@ -67,6 +83,7 @@
 
 .main-middle-text {
     width: 48%;
+    margin-bottom: 50px;
 }
 
 .main-middle-text h2 {
@@ -78,6 +95,75 @@
     font-size: 15px;
     margin-top: 10px;
     color: white;
+}
+
+.main-middle-pic {
+    display: flex;
+}
+
+.mid-image-first {
+    width: 337px;
+    height: 337px;
+    margin-top: 50px;
+}
+
+
+
+.vector-first {
+    position: absolute;
+    max-width: 110px;
+    max-height: 150px;
+    margin-top: 280px;
+    margin-left: 230px;
+}
+
+.picture-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 25px;
+    transform: rotate(-25deg);
+}
+
+.mid-image-second {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.vector-second {
+    position: absolute;
+    max-width: 110px;
+    max-height: 150px;
+    margin-top: 250px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.coffe-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -15px;
+    transform: rotate(-25deg);
+    margin-left: 290px;
+}
+
+.vector-third {
+    position: absolute;
+    max-width: 110px;
+    max-height: 150px;
+    margin-top: 150px;
+    margin-left: 350px;
+}
+
+.users-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -20px;
+    transform: rotate(-25deg);
 }
 
 /* -------------- FOOTER SECTION -------------- */
@@ -152,6 +238,14 @@
         height: 200px;
     }
 
+    .box-icon {
+        width: 45px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
     .box-Header {
         font-size: 20px;
     }
@@ -159,6 +253,66 @@
     .box-par {
         width: 147px;
         font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .main-middle-text-first {
+        margin-top: 80px;
+    }
+
+    .mid-image-first {
+        max-width: 237px;
+        max-height: 237px;
+    }
+
+    .vector-first {
+        max-width: 80px;
+        max-height: 150px;
+        margin-top: 210px;
+        margin-left: 170px;
+    }
+
+    .picture-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mid-image-second {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .vector-second {
+        max-width: 90px;
+        max-height: 150px;
+        margin-top: 160px;
+        margin-left: -10px;
+    }
+
+    .coffe-icon {
+        width: 50px;
+        height: 50px;
+        margin-top: -15px;
+        transform: rotate(-25deg);
+        margin-left: 200px;
+    }
+
+    .mid-pic-third{
+        width: 300px;
+    }
+
+    .vector-third {
+        position: absolute;
+        max-width: 80px;
+        max-height: 150px;
+        margin-top: 90px;
+        margin-left: 230px;
+    }
+
+    .users-icon {
+        width: 45px;
+        height: 45px;
+        margin-top: -20px;
     }
 }
 
@@ -172,12 +326,20 @@
         height: 170px;
     }
 
+    .box-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
     .box-Header {
         font-size: 17px;
     }
 
     .box-par {
-        margin-top: 15px;
+        margin-top: 10px;
         width: 137px;
         font-size: 12px;
     }
@@ -194,6 +356,41 @@
         font-size: 20px;
         font-weight: 700;
         color: white;
+    }
+
+    .main-middle{
+        gap: 40px;
+    }
+
+    .mid-image-second {
+        max-width: 240px;
+        max-height: 240px;
+    }
+
+    .vector-second {
+        margin-top: 150px;
+    }
+
+    .coffe-icon {
+        width: 45px;
+        height: 45px;
+        margin-top: -15px;
+        margin-left: 190px;
+    }
+
+    .mid-pic-third{
+        width: 240px;
+    }
+
+    .vector-third {
+        max-width: 80px;
+        margin-top: 70px;
+        margin-left: 180px;
+    }
+
+    .users-icon {
+        width: 40px;
+        height: 40px;;
     }
 
     .footer-txt {
@@ -232,17 +429,51 @@
         gap: 50px;
     }
 
-    .main-middle-pic {
-        width: 150px;
-        height: 150px;
-    }
-
     .main-middle-text h2 {
         text-align: center;
     }
-    
+
     .main-middle-text p {
-     text-align: center;
+        text-align: center;
+    }
+
+    .mid-image-second {
+        width: 240px;
+        height: 240px;
+        margin-top: 60px;
+    }
+
+    .midd{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .vector-second {
+        margin-top: 210px;
+    }
+
+    .coffe-icon {
+        width: 45px;
+        height: 45px;
+        margin-top: 50px;
+        margin-left: 190px;
+    }
+
+    .mid-pic-third{
+        width: 300px;
+    }
+
+    .vector-third {
+        max-width: 80px;
+        margin-top: 90px;
+        margin-left: 237px;
+    }
+
+    .users-icon {
+        width: 40px;
+        height: 40px;;
     }
 
     .footer-headline {
