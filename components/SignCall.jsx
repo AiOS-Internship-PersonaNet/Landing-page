@@ -4,21 +4,23 @@ import styled, { keyframes } from 'styled-components';
 // Styled components
 const Container = styled.div`
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 	color: white;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	text-align: center;
 	width: 100%;
+	padding: 2rem 0;
 `;
 
 const Content = styled.div`
 	position: relative;
 	width: 100%;
+	margin-top: 2rem;
 
 	.bottomTxT {
-		margin-top: 30px;
+		margin: 30px 0;
 		font-size: 20px;
 	}
 `;
@@ -140,40 +142,16 @@ const Header = styled.div`
 const SubHeader = styled.div`
 	font-size: 25px;
 	font-weight: bold;
-
-	@media only screen and (max-width: 1440px) {
-		margin-top: 300px;
-	}
-
-	@media only screen and (max-width: 1140px) {
-		margin-top: 300px;
-	}
-
-	@media only screen and (max-width: 991px) {
-		margin-top: 350px;
-	}
+	margin: 2rem 0;
 
 	@media only screen and (max-width: 768px) {
-		max-width: 600px;
-		margin: auto;
-		margin-top: 250px;
+		font-size: 20px;
+		margin: 1.5rem 0;
 	}
 
 	@media only screen and (max-width: 576px) {
-		font-size: 20px;
-		margin-top: 200px;
-	}
-
-	@media only screen and (max-width: 512px) {
-		margin-top: 200px;
-	}
-
-	@media only screen and (max-width: 390px) {
-		margin-top: 200px;
-	}
-
-	@media only screen and (max-width: 360px) {
-		margin-top: 300px;
+		font-size: 18px;
+		margin: 1rem 0;
 	}
 `;
 
