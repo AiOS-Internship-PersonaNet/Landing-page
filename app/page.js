@@ -22,7 +22,9 @@ export default function Home() {
       <NavBar />
     
           
-         
+      <h1>
+        TEST
+         </h1>
       
       <HeroSection />
       <OppoScroll/>
