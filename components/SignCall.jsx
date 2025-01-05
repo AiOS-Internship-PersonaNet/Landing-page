@@ -143,15 +143,24 @@ const SubHeader = styled.div`
 	font-size: 25px;
 	font-weight: bold;
 	margin: 2rem 0;
+	margin-top: 70px;
+
+	@media only screen and (max-width: 992px) {
+		font-size: 20px;
+		margin: 1.5rem 0;
+		margin-top: 70px;
+	}
 
 	@media only screen and (max-width: 768px) {
 		font-size: 20px;
 		margin: 1.5rem 0;
+		margin-top: 70px;
 	}
 
 	@media only screen and (max-width: 576px) {
 		font-size: 18px;
 		margin: 1rem 0;
+		margin-top: 70px;
 	}
 `;
 

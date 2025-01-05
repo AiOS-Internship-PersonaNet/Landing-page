@@ -45,6 +45,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    color: white;
 }
 
 .box-Header {
@@ -123,6 +124,7 @@
     position: absolute;
     margin-top: 25px;
     transform: rotate(-25deg);
+    color: white;
 }
 
 .mid-image-second {
@@ -148,6 +150,7 @@
     margin-top: -15px;
     transform: rotate(-25deg);
     margin-left: 290px;
+    color: white;
 }
 
 .vector-third {
@@ -164,6 +167,7 @@
     position: absolute;
     margin-top: -20px;
     transform: rotate(-25deg);
+    color: white;
 }
 
 /* -------------- FOOTER SECTION -------------- */
@@ -188,6 +192,10 @@
 .termsAndconditions:hover, .privacyPolicy:hover{
     text-decoration: underline;
     text-decoration-color: white;
+}
+
+.Footer h2, .termsAndconditions, .privacyPolicy{
+    color: white;
 }
 
 /* -------------- MEDIA RESPONSIVE SECTION -------------- */
