@@ -25,7 +25,7 @@ const HeroSection = () => {
           backgroundRepeat: "no-repeat",
           zIndex: "-1",
         }}
-      />
+      /> 
 
       {/* Content Container */}
       <div className="relative z-10">
@@ -33,6 +33,7 @@ const HeroSection = () => {
       </div>
     </section>
   );
+  
 };
 
 export default HeroSection;

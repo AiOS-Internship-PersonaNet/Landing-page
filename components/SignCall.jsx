@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Link from "next/link";
+import "./styleProject.css";
 
 // Styled components
 const Container = styled.div`
@@ -21,6 +23,7 @@ const Content = styled.div`
 
 	.bottomTxT {
 		margin: 30px 0;
+		// margin-bottom: -15px;
 		font-size: 20px;
 	}
 `;
@@ -144,62 +147,81 @@ const SubHeader = styled.div`
 	font-weight: bold;
 	margin: 2rem 0;
 
+	@media only screen and (max-width: 1400px) {
+		margin: 1.5rem 0;
+		margin-top: 80px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		margin: 1.5rem 0;
+		margin-top: 80px;
+	}
+
+	@media only screen and (max-width: 992px) {
+		margin: 1.5rem 0;
+		margin-top: 80px;
+	}
+
 	@media only screen and (max-width: 768px) {
 		font-size: 20px;
 		margin: 1.5rem 0;
+		margin-top: 80px;
 	}
 
 	@media only screen and (max-width: 576px) {
 		font-size: 18px;
 		margin: 1rem 0;
-	}
-`;
-
-const TopRightImage = styled.img`
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-
-	@media only screen and (max-width: 1440px) {
-		margin-top: 40px;
-	}
-
-	@media only screen and (max-width: 576px) {
-		width: 80px;
-		height: 80px;
 		margin-top: 50px;
 	}
 `;
+
+// const TopRightImage = styled.img`
+// 	position: absolute;
+// 	top: 0%;
+// 	right: 0%;
+// 	width: 100px;
+// 	height: 100px;
+// 	border-radius: 50%;
+
+// 	@media only screen and (max-width: 1440px) {
+// 		margin-top: 40px;
+// 	}
+
+// 	@media only screen and (max-width: 576px) {
+// 		width: 80px;
+// 		height: 80px;
+// 		margin-top: 50px;
+// 	}
+// `;
 
 const TopLeftImage = styled.img`
 	position: absolute;
 	top: 0%;
 	left: 0%;
-
+	margin-top: 30px;
+	
 	@media only screen and (max-width: 1440px) {
 		margin-top: 50px;
 	}
 
 	@media only screen and (max-width: 991px) {
 		width: 200px;
+		margin-top: 30px
 	}
 
 	@media only screen and (max-width: 576px) {
 		width: 150px;
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	@media only screen and (max-width: 390px) {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 `;
 
 const ButtonSection = styled.div`
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 25px;
 	display: flex;
 	gap: 100px;
 
@@ -239,38 +261,38 @@ const ButtonSection = styled.div`
 		}
 	}
 
-	.call {
-		background-color: #900d09;
-		color: white;
-		display: flex; 
-		align-items: center;
-		justify-content: center; 
-		gap: 10px;
-		&:hover {
-		background-color:rgb(124, 11, 7);
-			.callImg{
-				transform: scale(1.2);
-				transition: 0.5s;
-				z-index:102;
-			}
-	}
+	// .call {
+	// 	background-color: #900d09;
+	// 	color: white;
+	// 	display: flex; 
+	// 	align-items: center;
+	// 	justify-content: center; 
+	// 	gap: 10px;
+	// 	&:hover {
+	// 	background-color:rgb(124, 11, 7);
+	// 		.callImg{
+	// 			transform: scale(1.2);
+	// 			transition: 0.5s;
+	// 			z-index:102;
+	// 		}
+	// }
 
-	.callImg {
-		height: 40px;
-		width: 40px;
+	// .callImg {
+	// 	height: 40px;
+	// 	width: 40px;
 
-		@media only screen and (max-width: 576px){
-		height: 30px;
-		width: 30px;
-		}
-	}
+	// 	@media only screen and (max-width: 576px){
+	// 	height: 30px;
+	// 	width: 30px;
+	// 	}
+	// }
 `;
 
 const SignCall = () => {
 	return (
 		<Container>
 			<TopLeftImage src={'/images/Logo.png'} alt="hero pic" />
-			<TopRightImage src={'/images/heroPic.png'} alt="hero pic" />
+			{/* <TopRightImage src={'/images/heroPic.png'} alt="hero pic" /> */}
 			<Content>
 				<SubHeader>Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever</SubHeader>
 				<Header>
@@ -297,13 +319,21 @@ const SignCall = () => {
 				{/* <CenterImage src={'/images/headPic.png'} alt="Head Avatar" /> */}
 
 				<ButtonSection>
-					<button className="signup">Sign Up</button>
-					<button className="call">
+					<button className="signup">Join now</button>
+					{/* <button className="call">
 						Call me<img className="callImg" src="/images/call.png" alt="png" />
-					</button>
+					</button> */}
 				</ButtonSection>
-				<h1 className="bottomTxT">Every match is an experience</h1>
+				<p className="bottomTxT">Every match is an experience</p>
+				<footer className="Footer">
+					<div className="Container">
+						<h2>@2024. SuperIntro. All rights reserved</h2>
+						<Link className="termsAndconditions" href="/terms-and-conditions">Terms & Conditions</Link>
+						<Link className="privacyPolicy" href="/privacy-policy">Privacy Policy</Link>
+					</div>
+				</footer>
 			</Content>
+
 		</Container>
 	);
 };
