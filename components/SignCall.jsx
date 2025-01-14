@@ -296,7 +296,7 @@ const SignCall = () => {
 			<Content>
 				<SubHeader>Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever</SubHeader>
 				<Header>
-					Early Access Bonus: Join Now and Enjoy <span className="FreeLife">Free Lifetime Membership</span>
+				Match and Connect in Simulations: <span className="FreeLife">No Endless Texting Required</span>
 				</Header>
 
 				<StyledRow>
