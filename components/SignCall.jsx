@@ -233,7 +233,7 @@ const ButtonSection = styled.div`
 	}
 		
 
-	button {
+	a {
 		padding: 10px 10px;
 		font-size: 20px;
 		border-radius: 25px;
@@ -290,52 +290,60 @@ const ButtonSection = styled.div`
 
 const SignCall = () => {
 	return (
-		<Container>
-			<TopLeftImage src={'/images/Logo.png'} alt="hero pic" />
-			{/* <TopRightImage src={'/images/heroPic.png'} alt="hero pic" /> */}
-			<Content>
-				<SubHeader>Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever</SubHeader>
-				<Header>
-					Early Access Bonus: Join Now and Enjoy <span className="FreeLife">Free Lifetime Membership</span>
-				</Header>
+    <Container>
+      <TopLeftImage src={"/images/Logo.png"} alt="hero pic" />
+      {/* <TopRightImage src={'/images/heroPic.png'} alt="hero pic" /> */}
+      <Content>
+        <SubHeader>
+          Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever
+        </SubHeader>
+        <Header>
+          Early Access Bonus: Join Now and Enjoy{" "}
+          <span className="FreeLife">Free Lifetime Membership</span>
+        </Header>
 
-				<StyledRow>
-					<SideContainer>
-						<SideImage src={'/images/Pictureimg.png'} alt="picture" />
-						<SideImage src={'/images/hipic.png'} alt="picture" />
-					</SideContainer>
+        <StyledRow>
+          <SideContainer>
+            <SideImage src={"/images/Pictureimg.png"} alt="picture" />
+            <SideImage src={"/images/hipic.png"} alt="picture" />
+          </SideContainer>
 
-					<MiddleContainer>
-						<MiddleImage src={'/images/headPic.png'} alt="Head Avatar" />
-					</MiddleContainer>
+          <MiddleContainer>
+            <MiddleImage src={"/images/headPic.png"} alt="Head Avatar" />
+          </MiddleContainer>
 
-					<SideContainer>
-						<VectorImage src={'/images/Vector.png'} alt="text pic" />
-						<SideImage src={'/images/EyePic.png'} alt="text pic" />
-						<SideImage src={'/images/TextPic.png'} alt="text pic" />
-					</SideContainer>
-				</StyledRow>
+          <SideContainer>
+            <VectorImage src={"/images/Vector.png"} alt="text pic" />
+            <SideImage src={"/images/EyePic.png"} alt="text pic" />
+            <SideImage src={"/images/TextPic.png"} alt="text pic" />
+          </SideContainer>
+        </StyledRow>
 
-				{/* <CenterImage src={'/images/headPic.png'} alt="Head Avatar" /> */}
+        {/* <CenterImage src={'/images/headPic.png'} alt="Head Avatar" /> */}
 
-				<ButtonSection>
-					<button className="signup">Join now</button>
-					{/* <button className="call">
+        <ButtonSection>
+          <a className="signup" href="https://personanet.app/login" target="_blank" rel="noopener noreferrer">
+            Join now
+          </a>
+          {/* <button className="call">
 						Call me<img className="callImg" src="/images/call.png" alt="png" />
 					</button> */}
-				</ButtonSection>
-				<p className="bottomTxT">Every match is an experience</p>
-				<footer className="Footer">
-					<div className="Container">
-						<h2>@2024. SuperIntro. All rights reserved</h2>
-						<Link className="termsAndconditions" href="/terms-and-conditions">Terms & Conditions</Link>
-						<Link className="privacyPolicy" href="/privacy-policy">Privacy Policy</Link>
-					</div>
-				</footer>
-			</Content>
-
-		</Container>
-	);
+        </ButtonSection>
+        <p className="bottomTxT">Every match is an experience</p>
+        <footer className="Footer">
+          <div className="Container">
+            <h2>@2024. SuperIntro. All rights reserved</h2>
+            <Link className="termsAndconditions" href="/terms-and-conditions">
+              Terms & Conditions
+            </Link>
+            <Link className="privacyPolicy" href="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </div>
+        </footer>
+      </Content>
+    </Container>
+  );
 };
 
 export default SignCall;
