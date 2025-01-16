@@ -322,7 +322,7 @@ const SignCall = () => {
         {/* <CenterImage src={'/images/headPic.png'} alt="Head Avatar" /> */}
 
         <ButtonSection>
-          <a className="signup" href="https://personanet.app/login" target="_blank" rel="noopener noreferrer">
+          <a className="signup" href="https://app.superintro.me/login" target="_blank" rel="noopener noreferrer">
             Join now
           </a>
           {/* <button className="call">
