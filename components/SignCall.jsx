@@ -298,8 +298,8 @@ const SignCall = () => {
           Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever
         </SubHeader>
         <Header>
-          Bringing simulations to life, locally: {" "}
-          <span className="FreeLife">Making virtual feel personal</span>
+          Bringing simulations to life, locally. {" "}
+          <span className="FreeLife">We make virtual feel personal</span>
         </Header>
 
         <StyledRow>
