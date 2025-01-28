@@ -295,11 +295,11 @@ const SignCall = () => {
       {/* <TopRightImage src={'/images/heroPic.png'} alt="hero pic" /> */}
       <Content>
         <SubHeader>
-          Be Among the First 10,000 to Join—Get Lifetime Access, Free Forever
+          Your SuperIntro Goes on Dates for You—See Your Matches Before You Meet
         </SubHeader>
         <Header>
-          Bringing simulations to life, locally: {" "}
-          <span className="FreeLife">We make virtual feel personal</span>
+          Let Your SuperIntro Handle All the Small Talk: {" "}
+          <span className="FreeLife">Join weekly dinners with 5 amazing connections</span>
         </Header>
 
         <StyledRow>
