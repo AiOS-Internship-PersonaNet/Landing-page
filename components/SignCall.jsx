@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Link from "next/link";
-import "./styleProject.css";
+//import "./styleProject.css";
+
 
 // Styled components
 const Container = styled.div`
@@ -327,7 +328,7 @@ const SignCall = () => {
 					</button> */}
         </ButtonSection>
         <p className="bottomTxT">Every match is an experience</p>
-        <footer className="Footer">
+        {/* <footer className="Footer">
           <div className="Container">
             <h2>@2024. SuperIntro. All rights reserved</h2>
             <Link className="termsAndconditions" href="/terms-and-conditions">
@@ -337,7 +338,7 @@ const SignCall = () => {
               Privacy Policy
             </Link>
           </div>
-        </footer>
+        </footer> */}
       </Content>
     </Container>
   );
