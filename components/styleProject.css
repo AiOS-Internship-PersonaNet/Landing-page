@@ -20,9 +20,11 @@
 .Main-boxes {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 50px;
+    gap: 50px;
 }
 
 .box {
@@ -44,20 +46,21 @@
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .box-Header {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
     color: white;
+    font-weight: bold;
     cursor: default;
 }
 
 .box-par {
     margin-top: 50px;
     width: 230px;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -87,14 +90,15 @@
 }
 
 .main-middle-text h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
 
 .main-middle-text p {
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 10px;
     color: white;
+    font-weight: 300;
 }
 
 .main-middle-pic {
@@ -125,7 +129,7 @@
     transform: rotate(-25deg);
 }
 
-.mid-image-second {
+.mid-pic-third {
     max-width: 350px;
     max-height: 350px;
 }
@@ -134,7 +138,8 @@
     position: absolute;
     max-width: 110px;
     max-height: 150px;
-    margin-top: 250px;
+    margin-top: 120px;
+    margin-left: -30px;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -145,33 +150,48 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    margin-top: -15px;
     transform: rotate(-25deg);
-    margin-left: 290px;
+    margin-left: 400px;
 }
 
 .vector-third {
     position: absolute;
     max-width: 110px;
     max-height: 150px;
-    margin-top: 150px;
-    margin-left: 350px;
+    margin-top: 200px;
+    margin-left: 260px;
 }
 
 .users-icon {
     width: 50px;
     height: 50px;
     position: absolute;
-    margin-top: -20px;
+    margin-left: -20px;
     transform: rotate(-25deg);
 }
+
+.mid-image-four{
+    max-width: 430px;
+    border-radius: 15px;
+    transform: rotate(2deg);
+}
+
+.box-icon-main{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -15px;
+    transform: rotate(25deg);
+}
+
+
 
 /* -------------- FOOTER SECTION -------------- */
 .Footer {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    /* background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138); */
 }
 
 .Container {
@@ -181,7 +201,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 50px;
     gap: 50px;
 }
 
@@ -192,11 +212,21 @@
 .Container h2, .termsAndconditions, .privacyPolicy{
     color: white;
 }
+
+/* .box p{
+    width: 230px;
+} */
 /* -------------- MEDIA RESPONSIVE SECTION -------------- */
 
 @media (max-width: 1199px) {
     .Container {
         max-width: 960px;
+    }
+    .main-middle-text h2{
+        font-size: 28px;
+    }
+    .main-middle{
+        margin-top: 50px;
     }
 }
 
@@ -205,9 +235,14 @@
         max-width: 720px;
     }
 
+    .Main-boxes{
+        gap: 70px;
+        /* height: 100px; */
+    }
+
     .box {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 270px;
     }
 
     .box-icon {
@@ -223,9 +258,9 @@
     }
 
     .box-par {
-        width: 147px;
+        width: 200px;
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     .main-middle-text-first {
@@ -250,41 +285,50 @@
     }
 
     .mid-image-second {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 330px;
+        margin-right: 30px;
     }
 
     .vector-second {
         max-width: 90px;
         max-height: 150px;
-        margin-top: 160px;
+        margin-top: 80px;
         margin-left: -10px;
     }
 
     .coffe-icon {
         width: 50px;
         height: 50px;
-        margin-top: -15px;
+        margin-top: -5px;
         transform: rotate(-25deg);
-        margin-left: 200px;
+        margin-left: 300px;
     }
 
     .mid-pic-third{
-        width: 300px;
+        max-width: 250px;
+        max-height: 250px;
     }
 
     .vector-third {
         position: absolute;
         max-width: 80px;
         max-height: 150px;
-        margin-top: 90px;
-        margin-left: 230px;
+        margin-top: 150px;
+        margin-left: 180px;
     }
 
     .users-icon {
         width: 45px;
         height: 45px;
-        margin-top: -20px;
+    }
+
+    .mid-image-four{
+        max-width: 330px;
+        margin-right: 30px;
+    }
+
+    .box-icon-main{
+        margin-left: 300px;
     }
 }
 
@@ -294,9 +338,13 @@
         gap: 30px;
     }
 
+    .main-middle-text h2{
+        font-size: 28px;
+    }
+
     .box {
-        width: 170px;
-        height: 170px;
+        width: 200px;
+        height: 200px;
     }
 
     .box-icon {
@@ -308,7 +356,7 @@
     }
 
     .box-Header {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .box-par {
@@ -318,11 +366,11 @@
     }
 
     .main-middle-text h2 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .main-middle-text p {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .main-middle{
@@ -330,19 +378,17 @@
     }
 
     .mid-image-second {
-        max-width: 240px;
-        max-height: 240px;
+        max-width: 300px;
     }
 
     .vector-second {
-        margin-top: 150px;
+        margin-top: 70px;
     }
 
     .coffe-icon {
         width: 45px;
         height: 45px;
-        margin-top: -15px;
-        margin-left: 190px;
+        margin-left: 270px;
     }
 
     .mid-pic-third{
@@ -351,8 +397,8 @@
 
     .vector-third {
         max-width: 80px;
-        margin-top: 70px;
-        margin-left: 180px;
+        margin-top: 130px;
+        margin-left: 170px;
     }
 
     .users-icon {
@@ -360,6 +406,22 @@
         height: 40px;;
     }
 
+    .mid-image-four{
+        max-width: 300px;
+    }
+
+    .box-icon-main{
+        margin-left: 270px;
+    }
+
+}
+
+@media (max-width: 711px){
+    .main-middle {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -370,6 +432,15 @@
 
     .Container h2, .termsAndconditions, .privacyPolicy{
         font-size: 13px;
+    }
+
+    .box {
+        /* width: 100px; */
+        height: 200px;
+    }
+
+    .box-par{
+        margin-top: 25px;
     }
 
     .youCtrl,
