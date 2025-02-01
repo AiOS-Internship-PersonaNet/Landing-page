@@ -330,17 +330,7 @@ const SignCall = () => {
 					</button> */}
         </ButtonSection>
         <p className="bottomTxT">Every match is an experience</p>
-        <footer className="Footer">
-          <div className="Container">
-            <h2>@2025. SuperIntro. All rights reserved</h2>
-            <Link className="termsAndconditions" href="/terms-and-conditions">
-              Terms & Conditions
-            </Link>
-            <Link className="privacyPolicy" href="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </div>
-        </footer>
+  
       </Content>
     </Container>
   );
