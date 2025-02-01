@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer className="Footer">
             <div className="Container">
-                <h2>@2024. SuperIntro. All rights reserved</h2>
+                <h2>@2025. SuperIntro. All rights reserved</h2>
                 <Link className="termsAndconditions" href="/terms-and-conditions">Terms & Conditions</Link>
 				<Link className="privacyPolicy" href="/privacy-policy">Privacy Policy</Link>
             </div>
