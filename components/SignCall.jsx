@@ -295,10 +295,10 @@ const SignCall = () => {
       {/* <TopRightImage src={'/images/heroPic.png'} alt="hero pic" /> */}
       <Content>
         <SubHeader>
-          Your SuperIntro Goes on Dates for You — View Matches' Dates Before You Meet
+          Your SuperIntro Goes on Dates for You — Let Your SuperIntro Handle All the Small Talk
         </SubHeader>
         <Header>
-          Let Your SuperIntro Handle All the Small Talk: {" "}
+          Experience Dates With Matches Before You Meet: {" "}
           <span className="FreeLife">Join weekly dinners with 5 amazing connections</span>
         </Header>
 
