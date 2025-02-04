@@ -192,7 +192,7 @@ export default function LandingPage() {
                 Success Stories
               </h2>
               <p className="text-muted-foreground">
-                Hear from our happy couples who found their perfect match
+                Hear What Others Are Saying About SuperIntro!
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
