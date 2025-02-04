@@ -1,9 +1,7 @@
-body{
-    background: radial-gradient(circle at 0% 0%, #220138, #2b0399, #220138);
-}
+
 
 h1{
-    color: white;
+    color: #374151;
     font-size: 50px;
     font-weight: 700;
     display: flex;
@@ -14,7 +12,7 @@ h1{
 }
 
 p{
-    color: white;
+    color: #6b7280;
     font-size: 20px;
     text-align: center;
     margin-top: 30px;
@@ -22,9 +20,4 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container{
-    max-width: 1440px;
-    margin: auto;
 }
