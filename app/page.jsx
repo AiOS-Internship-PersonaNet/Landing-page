@@ -66,14 +66,14 @@ export default function LandingPage() {
             <div className="flex flex-col lg:flex-row items-center gap-8 py-9 lg:py-16">
               <div className="flex flex-col items-start gap-6 lg:w-1/2">
                 <h1 className="text-4xl font-bold tracking-tight lg:text-6xl max-w-[600px]">
-                  Experience Dates With Matches{" "}
+                  Your SuperIntro Goes On Dates for You{" "}
                   <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                     Before You Meet
                   </span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-[500px]">
                   Let your SuperIntro handle all the small talk. Join weekly
-                  dinners with 5 amazing connections who share your interests.
+                  dinners with 5 new connections who share your interests.
                 </p>
                 <div className="flex gap-4 mt-4">
                   <Button asChild size="lg">
