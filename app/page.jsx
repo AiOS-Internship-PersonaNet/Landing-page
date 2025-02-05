@@ -147,19 +147,19 @@ export default function LandingPage() {
                   icon: <MessageSquare className="h-8 w-8" />,
                   title: "Define",
                   description:
-                    "Answer quick questions to set goals and shape your SuperIntro experience",
+                    "Answer quick questions to set goals and create a SuperIntro based on you",
                 },
                 {
                   icon: <Users className="h-8 w-8" />,
                   title: "Connect",
                   description:
-                    "Your SuperIntro goes on dates for you—view and create dates before you meet",
+                    "Your SuperIntro goes on dates for you with the matches your SuperIntro has created—view and set up dates before you meet in person",
                 },
                 {
                   icon: <Coffee className="h-8 w-8" />,
                   title: "Dine",
                   description:
-                    "Reserve your spot at weekly dinners with 5 compatible people",
+                    "Reserve your spot at weekly dinners with 5 new compatible people",
                 },
                 {
                   icon: <Calendar className="h-8 w-8" />,
