@@ -66,14 +66,14 @@ export default function LandingPage() {
             <div className="flex flex-col lg:flex-row items-center gap-8 py-9 lg:py-16">
               <div className="flex flex-col items-start gap-6 lg:w-1/2">
                 <h1 className="text-4xl font-bold tracking-tight lg:text-6xl max-w-[600px]">
-                  Experience Dates With Matches{" "}
+                  Your SuperIntro Goes On Dates for You{" "}
                   <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                     Before You Meet
                   </span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-[500px]">
                   Let your SuperIntro handle all the small talk. Join weekly
-                  dinners with 5 amazing connections who share your interests.
+                  dinners with 5 new connections who share your interests.
                 </p>
                 <div className="flex gap-4 mt-4">
                   <Button asChild size="lg">
@@ -147,19 +147,19 @@ export default function LandingPage() {
                   icon: <MessageSquare className="h-8 w-8" />,
                   title: "Define",
                   description:
-                    "Answer quick questions to set goals and shape your SuperIntro experience",
+                    "Answer quick questions to set goals and create a SuperIntro based on you",
                 },
                 {
                   icon: <Users className="h-8 w-8" />,
                   title: "Connect",
                   description:
-                    "Your SuperIntro goes on dates for you—view and create dates before you meet",
+                    "Your SuperIntro goes on dates for you with the matches your SuperIntro has created—view and set up dates before you meet in person",
                 },
                 {
                   icon: <Coffee className="h-8 w-8" />,
                   title: "Dine",
                   description:
-                    "Reserve your spot at weekly dinners with 5 compatible people",
+                    "Reserve your spot at weekly dinners with 5 new compatible people",
                 },
                 {
                   icon: <Calendar className="h-8 w-8" />,
@@ -192,7 +192,7 @@ export default function LandingPage() {
                 Success Stories
               </h2>
               <p className="text-muted-foreground">
-                Hear from our happy couples who found their perfect match
+                Hear What Others Are Saying About SuperIntro!
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
