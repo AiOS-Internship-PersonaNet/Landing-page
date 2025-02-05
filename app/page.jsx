@@ -153,7 +153,7 @@ export default function LandingPage() {
                   icon: <Users className="h-8 w-8" />,
                   title: "Connect",
                   description:
-                    "Your SuperIntro goes on dates for you with the matches your SuperIntro has created—view and set up dates before you meet in person",
+                    "Your SuperIntro goes on dates for you with the SuperIntro your matches have created—view and set up dates before you meet in person",
                 },
                 {
                   icon: <Coffee className="h-8 w-8" />,
