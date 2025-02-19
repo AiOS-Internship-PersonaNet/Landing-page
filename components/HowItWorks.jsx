@@ -6,14 +6,14 @@ const steps = [
     number: "1",
     title: "Define",
     description:
-      "Complete an in-depth compatibility assessment to train your SuperIntro with your personality, preferences, and ideal connections.",
+      "Answer a few quick questions about your personality and social style—your SuperIntro is built around you.",
   },
   {
     icon: MessageSquare,
     number: "2",
     title: "Connect",
     description:
-      "Your SuperIntro chats with potential matches—view, refine, and personalize these interactions to find the best fit.",
+      "Your SuperIntro chats with potential matches—view, refine, and personalize these experiences to find the best fit.",
   },
   {
     icon: Utensils,
