@@ -10,6 +10,10 @@ const nextConfig = {
         hostname: "firebasestorage.googleapis.com",
         protocol: "https",
       },
+      {
+        hostname: "i.pravatar.cc",
+        protocol: "https",
+      },
     ],
   },
 };
