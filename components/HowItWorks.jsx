@@ -6,28 +6,28 @@ const steps = [
     number: "1",
     title: "Define",
     description:
-      "Answer a few quick questions about your personality, goals, and social style.",
+      "Complete an in-depth compatibility assessment to train your SuperIntro with your personality, preferences, and ideal connections.",
   },
   {
     icon: MessageSquare,
     number: "2",
     title: "Connect",
     description:
-      "Your SuperIntro simulates conversations with others—learning who you actually enjoy talking to.",
+      "Your SuperIntro chats with potential matches—view, refine, and personalize these interactions to find the best fit.",
   },
   {
     icon: Utensils,
     number: "3",
     title: "Dine",
     description:
-      "Book a small-group dinner with five compatible people you've already vibed with in AI simulations.",
+      "Reserve your spot at a small-group dinner with five people your SuperIntro already connected with.",
   },
   {
     icon: Users,
     number: "4",
     title: "Meet",
     description:
-      "Skip the awkward intros—walk into an event where you already know it's going to be a great time.",
+      "No awkward blind dates—you decide when, where, and how you meet the people you’ve already connected with.",
   },
 ];
 
