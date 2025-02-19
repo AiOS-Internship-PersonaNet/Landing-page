@@ -5,19 +5,19 @@ const testimonials = [
     quote:
       "I was skeptical—another app promising 'real connections'? But the AI actually nailed it. I walked into my first dinner and felt like I already knew everyone. Zero small talk, just good vibes.",
     author: "Sarah",
-    role: "UX Designer",
+    role: "Marketing Consultant",
   },
   {
     quote:
       "I don't have time for bad dates and wasted networking events. SuperIntro made sure every interaction felt natural and actually worth my time.",
     author: "Jason",
-    role: "Product Manager",
+    role: "Software Engineer",
   },
   {
     quote:
       "I hate forced conversations. My SuperIntro basically pre-met my matches for me, so by the time we met IRL, it felt effortless.",
     author: "Maya",
-    role: "Startup Founder",
+    role: "Freelancer",
   },
 ];
 
