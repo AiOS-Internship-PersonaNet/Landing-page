@@ -11,7 +11,7 @@ export default function EmotionalBanking() {
           <div className="bg-gray-900 p-8 rounded-lg">
             <div className="flex items-center gap-4 mb-6">
               <Battery className="w-8 h-8 text-red-500" />
-              <h3 className="text-xl font-semibold">Traditional Dating Apps</h3>
+              <h3 className="text-xl font-semibold text-gray-300">Traditional Dating Apps</h3>
             </div>
             <p className="text-gray-400">
               Constant swiping, ignored messages, and surface-level small talk
@@ -21,7 +21,7 @@ export default function EmotionalBanking() {
           <div className="bg-gray-900 p-8 rounded-lg">
             <div className="flex items-center gap-4 mb-6">
               <BatteryCharging className="w-8 h-8 text-green-500" />
-              <h3 className="text-xl font-semibold">SuperIntro</h3>
+              <h3 className="text-xl font-semibold text-gray-300">SuperIntro</h3>
             </div>
             <p className="text-gray-400">
               Automates the exhausting early-stage conversations, ensuring that
