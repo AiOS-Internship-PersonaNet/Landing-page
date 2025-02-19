@@ -41,7 +41,7 @@ export default function Testimonials() {
                   className="rounded-full"
                 />
                 <div>
-                  <p className="font-semibold">{testimonial.author}</p>
+                  <p className="font-semibold text-gray-300">{testimonial.author}</p>
                   <p className="text-sm text-gray-400">{testimonial.role}</p>
                 </div>
               </div>

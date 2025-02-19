@@ -64,7 +64,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-2xl font-semibold mb-3">{step.title}</h3>
+                <h3 className="text-2xl font-semibold mb-3 text-gray-300">{step.title}</h3>
                 <p className="text-gray-400 text-center">{step.description}</p>
               </div>
             ))}
