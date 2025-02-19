@@ -2,10 +2,8 @@ import { Check } from "lucide-react";
 
 const features = [
   'Your SuperIntro "goes on dates" for you in AI-powered simulations—so you only meet people you\'re already vibing with.',
-  "Curated, high-quality community—every match is hand-picked based on real compatibility, not just random profiles.",
   "No ghosting, no flaking—just natural, effortless conversations that lead to real-life connections.",
   "Meet in the real world—when it makes sense—SuperIntro facilitates small-group dinners, exclusive events, or 1:1 meetups where matches can naturally connect.",
-  "It's risk-free to try—if your first connection isn't a great fit, we'll personally match you with a better one.",
 ];
 
 export default function Features() {
