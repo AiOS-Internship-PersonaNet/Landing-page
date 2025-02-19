@@ -36,8 +36,8 @@ export default function Hero() {
                   SuperIntro's Solution
                 </span>
                 <span className="text-gray-400">
-                  We condense hours of emotional labor into engaging, meaningful
-                  interactions within minutes of matching.
+                  We replace hours of emotional labor with engaging, meaningful
+                  experiences within minutes of matching.
                 </span>
               </div>
             </li>
