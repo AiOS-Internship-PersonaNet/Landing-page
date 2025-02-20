@@ -39,8 +39,7 @@ export default function HowItWorks() {
           How It Works
         </h2>
         <p className="text-xl text-center text-gray-400 mb-16 max-w-2xl mx-auto">
-          Meet People You Already Click With—Not Just People Who Look Good on
-          Paper
+          Meet People You Already Click With—Not Just Who Looks Good Online
         </p>
         <div className="relative max-w-5xl mx-auto">
           {/* Progress Line */}
