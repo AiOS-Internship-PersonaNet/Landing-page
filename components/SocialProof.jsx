@@ -18,7 +18,7 @@ export default function SocialProof() {
                 />
               ))}
             </div>
-            <p className="text-gray-400">Join 2,000+ members</p>
+            <p className="text-gray-400">Over 2,000+ matches</p>
           </div>
           <div className="h-8 w-px bg-gray-800 hidden md:block" />
           <div className="flex items-center gap-4">
