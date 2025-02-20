@@ -16,7 +16,7 @@ const testimonials = [
   {
     quote:
       "I hate forced conversations. My SuperIntro basically pre-met my matches for me, so by the time we met IRL, it felt effortless.",
-    author: "Maya",
+    author: "Greg",
     role: "Freelancer",
   },
 ];
