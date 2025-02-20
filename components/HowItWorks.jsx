@@ -20,14 +20,14 @@ const steps = [
     number: "3",
     title: "Dine",
     description:
-      "Reserve your spot at a small-group dinner with five people your SuperIntro already connected with.",
+      "Reserve your spot at optional small-group dinners with five people your SuperIntro already connected with.",
   },
   {
     icon: Users,
     number: "4",
     title: "Meet",
     description:
-      "No awkward blind dates—you decide when, where, and how you meet the people you’ve already connected with.",
+      "No awkward blind dates—you decide when, where, and how you meet the people you’ve already gotten to know.",
   },
 ];
 
