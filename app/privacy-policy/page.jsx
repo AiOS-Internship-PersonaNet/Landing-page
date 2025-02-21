@@ -5,6 +5,12 @@
 import Link from 'next/link';
 import styles from '../terms-and-conditions/termsconds.css';
 import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 
 export default function PrivacyPolicy() {
