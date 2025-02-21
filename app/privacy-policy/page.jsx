@@ -172,7 +172,7 @@ export default function PrivacyPolicy() {
             <AccordionItem value="collecting-data">
               <AccordionTrigger>Collecting and Using Your Personal Data</AccordionTrigger>
               <AccordionContent>
-              <div className="space-y-4">
+                <div className="space-y-4">
                   <h3 className="font-medium">Types of Data Collected</h3>
 
                   <h4 className="font-medium text-sm">Personal Data</h4>
@@ -380,6 +380,86 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
+            
+
+            <AccordionItem value="website">
+              <AccordionTrigger>Website</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                If applicable, click "Privacy Preferences", "Update Privacy Preferences" or "Do Not Sell My Personal Information" buttons 
+                listed on the service to review Your privacy preferences and opt out of cookies and other technologies that we may use. 
+                Please note that you will need to opt out from each browser that You use to access the Service. Additionally, you can opt 
+                out of receiving ads that are personalized as served by our Service Providers by following our instructions presented on 
+                the service:
+                The NAI's opt-out platform: http://www.networkadvertising.org/choices/ 
+                The EDAA's opt-out platform http://www.youronlinechoices.com/ 
+                The DAA's opt-out platform: http://optout.aboutads.info/?c=2&lang=EN 
+                The opt out will place a cookie on Your computer that is unique to the browser you use to opt out. If you change browsers 
+                or delete the cookies saved by Your browser, you will need to opt out again.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="mobile-devices">
+              <AccordionTrigger>Mobile Devices</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                Your mobile device may give you the ability to opt out of the use of information about the apps you use in order to serve 
+                you ads that are targeted to Your interests: "Opt out of Interest-Based Ads" or "Opt out of Ads Personalization" on Android devices
+                "Limit Ad Tracking" on iOS devices you can also stop the collection of location information from your mobile device by changing
+                 the preferences on your mobile device.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="limit-use-disclosure-SPI">
+              <AccordionTrigger>Limit the Use or Disclosure of my Sensitive Personal Information</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                If you are a California resident, uou have the right to limit the use and disclosure of Your sensitive personal information 
+                to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer who 
+                requests such services or goods. We collect, use and disclose sensitive personal information in ways that are necessary 
+                to provide the Service. For more information on how we use your personal information, please see the "Use of Your Personal Data"
+                section or contact us.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+
+            <AccordionItem value="do-not-track-policy-per-CalOPPA">
+              <AccordionTrigger>"Do Not Track" Policy as required by California Online Privacy Protection Act (CalOPPA)</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                Our service does not respond to Do Not Track signals. However, some third party websites do keep track of Your browsing activities. 
+                If you are visiting such websites, You can set your preferences in your web browser to inform websites that you do not want to be 
+                tracked. You can enable or disable DNT by visiting the preferences or settings page of your web browser.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="your-ca-privacy-rights">
+              <AccordionTrigger>Your California Privacy Rights (California's Shine the Light Law)</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                Under California Civil Code Section 1798 (California's Shine the Light Law), California residents with an established business 
+                relationship with us can request information once a year about sharing their personal data with third parties for the third parties' 
+                direct marketing purposes. If you'd like to request more information under the California Shine the Light Law, and if you are a 
+                California resident, you can contact us using the contact information provided below.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="ca-privacy-rights-for-minor-users">
+              <AccordionTrigger>California Privacy Rights for Minor Users (California Business and Professions Code Section 22581)</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                  Our service does not address anyone under the age of 13. We do not knowingly collect personally
+                  identifiable information from anyone under the age of 13. If you are a parent or guardian and you are
+                  aware that your child has provided us with personal data, please contact us.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="children">
               <AccordionTrigger>Children's Privacy</AccordionTrigger>
               <AccordionContent>
@@ -387,6 +467,18 @@ export default function PrivacyPolicy() {
                   Our Service does not address anyone under the age of 13. We do not knowingly collect personally
                   identifiable information from anyone under the age of 13. If You are a parent or guardian and You are
                   aware that Your child has provided Us with Personal Data, please contact Us.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="links">
+              <AccordionTrigger>Links to Other Websites</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                Our service may contain links to other websites that are not operated by us. If you click on a third party link, you
+                will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.
+                We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites 
+                or services.
                 </p>
               </AccordionContent>
             </AccordionItem>
