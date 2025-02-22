@@ -381,24 +381,40 @@ export default function PrivacyPolicy() {
             </AccordionItem>
 
 
-
-            <AccordionItem value="use-of-data">
-              <AccordionTrigger>Use of Your Personal Data</AccordionTrigger>
+            <AccordionItem value="sale-of-personal-info ">
+              <AccordionTrigger> Sale of Personal Information </AccordionTrigger>
               <AccordionContent>
-                <div className="space-y-4">
-                  <p>The Company may use Personal Data for the following purposes:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>To provide and maintain our Service</li>
-                    <li>To manage Your Account</li>
-                    <li>For the performance of a contract</li>
-                    <li>To contact You</li>
-                    <li>To provide You with news and offers</li>
-                    <li>To manage Your requests</li>
-                    <li>To deliver targeted advertising</li>
-                  </ul>
-                </div>
+              <ul className="list-disc pl-6 space-y-2">
+                <h3 className="font-large font-bold"> Definition of "Sell" and "Sale" Under CCPA/CPRA  </h3>
+                  <p>
+                    As defined in the CCPA/CPRA, "sell" and "sale" refer to the sharing of a Consumer's personal information by a
+                    Business to a third party for valuable consideration. This means that we may have received some kind of benefit
+                    in return for sharing personal information, but not necessarily a monetary benefit.
+                  </p>
+                <h3 className="font-large font-bold"> Our Practices Regarding the Sale of Personal Information </h3>
+                  <p>
+                    We do not sell personal information as the term "sell" is commonly understood. However, we do allow Service Providers
+                    to use your personal information for business purposes, such as Advertising, Marketing and Analytics. These activities may be
+                    deemed a "sale" under CCPA/CPRA.
+                  </p>
+                <h3 className="font-large font-bold"> Categories of Personal Information That May Be Sold </h3>
+                   <p>  </p>
+                  <span> We may sell and may have sold in the last 12 months the following categories of personal information: </span>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>  <strong> Category A: </strong> Identifiers </li>
+                      <li>  <strong> Category B: </strong> Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e)) </li>
+                      <li>  <strong> Category D: </strong> Commercial information </li>
+                      <li>  <strong> Category E: </strong> Internet or other similar network activity </li>
+                    </ul>
+                  <p>
+                      Please note that this does not mean that all examples of that category of personal information were in fact 
+                      sold. Rather, it reflects our good faith belief to the best of our knowledge that some of that information 
+                      from the applicable category may be and may have been shared for value in return.
+                  </p>
+                </ul>
               </AccordionContent>
             </AccordionItem>
+
 
             <AccordionItem value="ccpa-cpra-rights">
               <AccordionTrigger>California Resident Rights Under CCPA/CPRA</AccordionTrigger>
@@ -516,59 +532,7 @@ export default function PrivacyPolicy() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-            
-
-            <AccordionItem value="rights-under-CCPA/CPRA">
-              <AccordionTrigger> Your Rights under the CCPA/CPRA </AccordionTrigger>
-              <AccordionContent>
-                <ul className="list-disc pl-6 space-y-2">
-                  <h3 className="font-large font-bold"> Opting Out and Limiting the Use of Sensitive Information</h3>
-                    <span>
-                      Please see the "Do Not Sell My Personal Information" section and the "Limit the Use or Disclosure of
-                      My Sensitive Personal Information" section for more information on how to opt out and limit the use 
-                      of sensitive information collected.
-                    </span>
-                  <h3 className="font-large font-bold"> Exercising Your Rights under the CCPA/CPRA </h3>
-                    <p>
-                      If you are a California resident, you can contact us to exercise any of your rights under the CCPA/CPRA.
-                      You can reach us by email at admin@flealyst.com.
-                    </p>
-                  <h3 className="font-large font-bold"> Making a Verifiable Request </h3>
-                    <p>
-                      Only you, or a person registered with the California Secretary of State that you authorize to act on your 
-                      behalf, may make a verifiable request related to your personal information. Your request to us must:
-                    </p>
-                      <ul className="list-disc pl-6 space-y-2">
-                        <li> Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.</li>
-                        <li> Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
-                      </ul>
-                  <h3 className="font-large font-bold"> Responding to Your Request  </h3>
-                    <span>
-                      We cannot respond to your request or provide you with the required information if we cannot:
-                    </span>
-                      <ul className="list-disc pl-6 space-y-2">
-                        <li> Verify your identity or authority to make the request. </li>
-                        <li> Confirm that the personal information relates to you.  </li>
-                      </ul>
-                 <h3 className="font-large font-bold">Disclosure and Delivery of Information </h3>
-                    <p>
-                      We will disclose and deliver the required information free of charge within 45 days of 
-                      your verifiable request. The time period to provide the required information may be extended 
-                      once by an additional 45 days when reasonably necessary and with prior notice. Any disclosures
-                      we provide will only cover the 12-month period preceding the verifiable request's receipt.
-                    </p>
-                  <h3 className="font-large font-bold"> Data Portability Requests </h3>
-                    <p>
-                      For data portability requests, we will select a format to provide your personal information that
-                      is readily usable and should allow you to transmit the information from one entity to another 
-                      entity without hindrance.
-                    </p>
-                
-               </ul>
-              </AccordionContent>
-            </AccordionItem>
-
-            
+                        
             <AccordionItem value="exercising-CCPA-CPRA-rights">
               <AccordionTrigger>Exercising Your CCPA/CPRA Data Protection Rights  </AccordionTrigger>
               <AccordionContent>
