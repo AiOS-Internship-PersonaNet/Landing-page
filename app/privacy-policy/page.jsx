@@ -379,7 +379,139 @@ export default function PrivacyPolicy() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+  
+            <AccordionItem value="sources-of-personal-information">
+              <AccordionTrigger>Sources of Personal Information</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <span>
+                    We obtain the categories of personal information listed above from the following categories of
+                    sources:
+                  </span>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>
+                      <strong>Directly from You.</strong> For example, from the forms You complete on our Service,
+                      preferences You express or provide through our Service, or from Your purchases on our Service.
+                    </li>
+                    <li>
+                      <strong>Indirectly from You.</strong> For example, from observing Your activity on our Service.
+                    </li>
+                    <li>
+                      <strong>Automatically from You.</strong> For example, through cookies We or our Service Providers
+                      set on Your Device as You navigate through our Service.
+                    </li>
+                    <li>
+                      <strong>From Service Providers.</strong> For example, third-party vendors to monitor and analyze
+                      the use of our Service, third-party vendors to deliver targeted advertising to You, third-party
+                      vendors for payment processing, or other third-party vendors that We use to provide the Service to
+                      You.
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
+            <AccordionItem value="use-of-personal-information">
+              <AccordionTrigger>Use of Personal Information</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    We may use or disclose personal information We collect for "business purposes" or "commercial
+                    purposes" (as defined under the CCPA/CPRA), which may include the following examples:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>To operate our Service and provide You with Our Service.</li>
+                    <li>
+                      To provide You with support and to respond to Your inquiries, including to investigate and address
+                      Your concerns and monitor and improve our Service.
+                    </li>
+                    <li>
+                      To fulfill or meet the reason You provided the information. For example, if You share Your contact
+                      information to ask a question about our Service, We will use that personal information to respond
+                      to Your inquiry. If You provide Your personal information to purchase a product or service, We
+                      will use that information to process Your payment and facilitate delivery.
+                    </li>
+                    <li>
+                      To respond to law enforcement requests and as required by applicable law, court order, or
+                      governmental regulations.
+                    </li>
+                    <li>
+                      As described to You when collecting Your personal information or as otherwise set forth in the
+                      CCPA/CPRA.
+                    </li>
+                    <li>For internal administrative and auditing purposes.</li>
+                    <li>
+                      To detect security incidents and protect against malicious, deceptive, fraudulent or illegal
+                      activity, including, when necessary, to prosecute those responsible for such activities.
+                    </li>
+                    <li>Other one-time uses.</li>
+                  </ul>
+                  <p>
+                    Please note that the examples provided above are illustrative and not intended to be exhaustive. For
+                    more details on how we use this information, please refer to the "Use of Your Personal Data"
+                    section.
+                  </p>
+                  <p>
+                    If We decide to collect additional categories of personal information or use the personal
+                    information We collected for materially different, unrelated, or incompatible purposes, We will
+                    update this Privacy Policy.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="disclosure-of-personal-information">
+              <AccordionTrigger>Disclosure of Personal Information</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    We may use or disclose and may have used or disclosed in the last twelve (12) months the following
+                    categories of personal information for business or commercial purposes:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li><strong> Category A:</strong> Identifiers</li>
+                    <li> <strong> Category B: </strong>Personal information categories listed in the California Customer Records statute
+                      (Cal. Civ. Code § 1798.80(e))
+                    </li>
+                    <li> <strong> Category D:</strong> Commercial information</li>
+                    <li> <strong>  Category F:</strong> Internet or other similar network activity</li>
+                  </ul>
+                  <p>
+                    Please note that the categories listed above are those defined in the CCPA/CPRA. This does not mean
+                    that all examples of that category of personal information were in fact disclosed, but reflects our
+                    good faith belief to the best of our knowledge that some of that information from the applicable
+                    category may be and may have been disclosed.
+                  </p>
+                  <p>
+                    When We disclose personal information for a business purpose or a commercial purpose, We enter a
+                    contract that describes the purpose and requires the recipient to both keep that personal
+                    information confidential and not use it for any purpose except performing the contract.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="share-of-personal-information">
+              <AccordionTrigger>Share of Personal Information</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    We may share, and have shared in the last twelve (12) months, Your personal information identified
+                    in the above categories with the following categories of third parties:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Service Providers</li>
+                    <li>Payment processors</li>
+                    <li>Our affiliates</li>
+                    <li>Our business partners</li>
+                    <li>
+                      Third party vendors to whom You or Your agents authorize Us to disclose Your personal information
+                      in connection with products or services We provide to You
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
             <AccordionItem value="sale-of-personal-info ">
               <AccordionTrigger> Sale of Personal Information </AccordionTrigger>
@@ -415,9 +547,41 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
+            <AccordionItem value="not-sale-of-minors-data">
+              <AccordionTrigger>Sale of Personal Information of Minors Under 16 Years of Age</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    We do not knowingly collect personal information from minors under the age of 16 through our
+                    Service, although certain third party websites that we link to may do so. These third-party websites
+                    have their own terms of use and privacy policies and We encourage parents and legal guardians to
+                    monitor their children's Internet usage and instruct their children to never provide information on
+                    other websites without their permission.
+                  </p>
+                  <p>
+                    We do not sell the personal information of Consumers We actually know are less than 16 years of age,
+                    unless We receive affirmative authorization (the "right to opt-in") from either:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>The Consumer who is between 13 and 16 years of age</li>
+                    <li>The parent or guardian of a Consumer less than 13 years of age.</li>
+                  </ul>
+                  <p>
+                    Consumers who opt-in to the sale of personal information may opt-out of future sales at any time. To
+                    exercise the right to opt-out, You (or Your authorized representative) may submit a request to Us by
+                    contacting Us.
+                  </p>
+                  <p>
+                    If You have reason to believe that a child under the age of 13 (or 16) has provided Us with personal
+                    information, please contact Us with sufficient detail to enable Us to delete that information.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
 
             <AccordionItem value="ccpa-cpra-rights">
-              <AccordionTrigger>California Resident Rights Under CCPA/CPRA</AccordionTrigger>
+              <AccordionTrigger> Your Rights Under CCPA/CPRA</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-4">
                   <p>As a California resident, you have the following rights regarding your personal information:</p>
