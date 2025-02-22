@@ -379,6 +379,61 @@ export default function PrivacyPolicy() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+            
+            <AccordionItem value="exercising-CCPA-CPRA-rights">
+              <AccordionTrigger>Exercising Your CCPA/CPRA Data Protection Rights  </AccordionTrigger>
+              <AccordionContent>
+                <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="font-large font-bold"> Opting Out and Limiting the Use of Sensitive Information</h3>
+                    <p>
+                      Please see the "Do Not Sell My Personal Information" section and the "Limit the Use or Disclosure of
+                      My Sensitive Personal Information" section for more information on how to opt out and limit the use 
+                      of sensitive information collected.
+                    </p>
+                  <h3 className="font-large font-bold"> Exercising Your Rights under the CCPA/CPRA </h3>
+                    <p>
+                      If you are a California resident, you can contact us to exercise any of your rights under the CCPA/CPRA.
+                      You can reach us by email at admin@flealyst.com.
+                    </p>
+                  <h3 className="font-large font-bold"> Making a Verifiable Request </h3>
+                    <p>
+                        Only you, or a person registered with the California Secretary of State that you authorize to act on your 
+                        behalf, may make a verifiable request related to your personal information. Your request to us must:
+                    </p>
+                    <p>
+                        <ul className="list-disc pl-6 space-y-2">
+                          <li> Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.</li>
+                          <li> Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
+                        </ul>
+                    </p>
+                  <h3 className="font-large font-bold"> Responding to Your Request</h3>
+                    <p>
+                      We cannot respond to your request or provide you with the required information if we cannot:
+                    </p>
+                    <p>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li> Verify your identity or authority to make the request. </li>
+                        <li> Confirm that the personal information relates to you.  </li>
+                      </ul>
+                    </p>
+                 <h3 className="font-large font-bold">Disclosure and Delivery of Information </h3>
+                    <p>
+                      We will disclose and deliver the required information free of charge within 45 days of 
+                      your verifiable request. The time period to provide the required information may be extended 
+                      once by an additional 45 days when reasonably necessary and with prior notice. Any disclosures
+                      we provide will only cover the 12-month period preceding the verifiable request's receipt.
+                    </p>
+                  <h3 className="font-large font-bold"> Data Portability Requests </h3>
+                    <p>
+                      For data portability requests, we will select a format to provide your personal information that
+                      is readily usable and should allow you to transmit the information from one entity to another 
+                      entity without hindrance.
+                    </p>
+                
+               </ul>
+              </AccordionContent>
+            </AccordionItem>
+            
 
             <AccordionItem value="Dont-sell-my-info">
               <AccordionTrigger>Do Not Sell my Personal Information </AccordionTrigger>
