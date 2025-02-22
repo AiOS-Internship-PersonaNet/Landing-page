@@ -379,17 +379,155 @@ export default function PrivacyPolicy() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+
+
+
+            <AccordionItem value="use-of-data">
+              <AccordionTrigger>Use of Your Personal Data</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>The Company may use Personal Data for the following purposes:</p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>To provide and maintain our Service</li>
+                    <li>To manage Your Account</li>
+                    <li>For the performance of a contract</li>
+                    <li>To contact You</li>
+                    <li>To provide You with news and offers</li>
+                    <li>To manage Your requests</li>
+                    <li>To deliver targeted advertising</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="ccpa-cpra-rights">
+              <AccordionTrigger>California Resident Rights Under CCPA/CPRA</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>As a California resident, you have the following rights regarding your personal information:</p>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right to Notice</h4>
+                    <p>
+                      You have the right to be notified which categories of Personal Data are being collected and the
+                      purposes for which the Personal Data is being used.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right to Know/Access</h4>
+                    <p>
+                      You have the right to request that we disclose information to you about our collection, use, sale,
+                      disclosure for business purposes, and sharing of personal information. Once we receive and confirm
+                      your request, we will disclose to you:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>The categories of personal information we collected about you</li>
+                      <li>The categories of sources for the personal information we collected about you</li>
+                      <li>Our business or commercial purposes for collecting or selling that personal information</li>
+                      <li>The categories of third parties with whom we share that personal information</li>
+                      <li>The specific pieces of personal information we collected about you</li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold">Right to Opt-Out of Sale or Sharing of Personal Data</h4>
+                    <p>
+                      You have the right to direct us to not sell your personal information. To submit an opt-out
+                      request, please see the "Do Not Sell My Personal Information" section or contact us.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right to Correct Personal Data</h4>
+                    <p>
+                      You have the right to correct or rectify any inaccurate personal information about you that we
+                      collected. Once we receive and confirm your request, we will use commercially reasonable efforts
+                      to correct (and direct our Service Providers to correct) your personal information, unless an
+                      exception applies.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right to Limit Use and Disclosure of Sensitive Personal Data</h4>
+                    <p>
+                      You have the right to request to limit the use or disclosure of certain sensitive personal
+                      information we collected about you, unless an exception applies. To submit, please see the "Limit
+                      the Use or Disclosure of My Sensitive Personal Information" section or contact us.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right to Delete Personal Data</h4>
+                    <p>
+                      You have the right to request the deletion of your Personal Data under certain circumstances,
+                      subject to certain exceptions. Once we receive and confirm your request, we will delete (and
+                      direct our Service Providers to delete) your personal information from our records, unless an
+                      exception applies.
+                    </p>
+
+                    <h5 className="font-medium text-sm mt-2">Exceptions to Deletion Request</h5>
+                    <p>
+                      We may deny your deletion request if retaining the information is necessary for us or our Service
+                      Providers to:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Complete the transaction for which we collected the personal information</li>
+                      <li>Provide a good or service that you requested</li>
+                      <li>
+                        Take actions reasonably anticipated within the context of our ongoing business relationship with
+                        you
+                      </li>
+                      <li>
+                        Detect security incidents, protect against malicious activity, or prosecute those responsible
+                      </li>
+                      <li>Debug products to identify and repair errors</li>
+                      <li>
+                        Exercise free speech or ensure the right of another consumer to exercise their free speech
+                        rights
+                      </li>
+                      <li>Comply with the California Electronic Communications Privacy Act</li>
+                      <li>Engage in public or peer-reviewed scientific research</li>
+                      <li>Enable solely internal uses that are reasonably aligned with consumer expectations</li>
+                      <li>Comply with a legal obligation</li>
+                      <li>
+                        Make other internal and lawful uses of that information that are compatible with the context in
+                        which you provided it
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="font-large font-bold"> Right Not to Be Discriminated Against</h4>
+                    <p>
+                      You have the right not to be discriminated against for exercising any of your consumer's rights,
+                      including by:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Denying goods or services to you</li>
+                      <li>Charging different prices or rates for goods or services</li>
+                      <li>Providing a different level or quality of goods or services to you</li>
+                      <li>
+                        Suggesting that you will receive a different price or rate for goods or services or a different
+                        level or quality of goods or services
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
             
-            <AccordionItem value="exercising-CCPA-CPRA-rights">
-              <AccordionTrigger>Exercising Your CCPA/CPRA Data Protection Rights  </AccordionTrigger>
+
+            <AccordionItem value="rights-under-CCPA/CPRA">
+              <AccordionTrigger> Your Rights under the CCPA/CPRA </AccordionTrigger>
               <AccordionContent>
                 <ul className="list-disc pl-6 space-y-2">
                   <h3 className="font-large font-bold"> Opting Out and Limiting the Use of Sensitive Information</h3>
-                    <p>
+                    <span>
                       Please see the "Do Not Sell My Personal Information" section and the "Limit the Use or Disclosure of
                       My Sensitive Personal Information" section for more information on how to opt out and limit the use 
                       of sensitive information collected.
-                    </p>
+                    </span>
                   <h3 className="font-large font-bold"> Exercising Your Rights under the CCPA/CPRA </h3>
                     <p>
                       If you are a California resident, you can contact us to exercise any of your rights under the CCPA/CPRA.
@@ -397,25 +535,72 @@ export default function PrivacyPolicy() {
                     </p>
                   <h3 className="font-large font-bold"> Making a Verifiable Request </h3>
                     <p>
-                        Only you, or a person registered with the California Secretary of State that you authorize to act on your 
-                        behalf, may make a verifiable request related to your personal information. Your request to us must:
+                      Only you, or a person registered with the California Secretary of State that you authorize to act on your 
+                      behalf, may make a verifiable request related to your personal information. Your request to us must:
                     </p>
-                    <p>
-                        <ul className="list-disc pl-6 space-y-2">
-                          <li> Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.</li>
-                          <li> Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
-                        </ul>
-                    </p>
-                  <h3 className="font-large font-bold"> Responding to Your Request</h3>
-                    <p>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li> Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.</li>
+                        <li> Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
+                      </ul>
+                  <h3 className="font-large font-bold"> Responding to Your Request  </h3>
+                    <span>
                       We cannot respond to your request or provide you with the required information if we cannot:
-                    </p>
-                    <p>
+                    </span>
                       <ul className="list-disc pl-6 space-y-2">
                         <li> Verify your identity or authority to make the request. </li>
                         <li> Confirm that the personal information relates to you.  </li>
                       </ul>
+                 <h3 className="font-large font-bold">Disclosure and Delivery of Information </h3>
+                    <p>
+                      We will disclose and deliver the required information free of charge within 45 days of 
+                      your verifiable request. The time period to provide the required information may be extended 
+                      once by an additional 45 days when reasonably necessary and with prior notice. Any disclosures
+                      we provide will only cover the 12-month period preceding the verifiable request's receipt.
                     </p>
+                  <h3 className="font-large font-bold"> Data Portability Requests </h3>
+                    <p>
+                      For data portability requests, we will select a format to provide your personal information that
+                      is readily usable and should allow you to transmit the information from one entity to another 
+                      entity without hindrance.
+                    </p>
+                
+               </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            
+            <AccordionItem value="exercising-CCPA-CPRA-rights">
+              <AccordionTrigger>Exercising Your CCPA/CPRA Data Protection Rights  </AccordionTrigger>
+              <AccordionContent>
+                <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="font-large font-bold"> Opting Out and Limiting the Use of Sensitive Information</h3>
+                    <span>
+                      Please see the "Do Not Sell My Personal Information" section and the "Limit the Use or Disclosure of
+                      My Sensitive Personal Information" section for more information on how to opt out and limit the use 
+                      of sensitive information collected.
+                    </span>
+                  <h3 className="font-large font-bold"> Exercising Your Rights under the CCPA/CPRA </h3>
+                    <p>
+                      If you are a California resident, you can contact us to exercise any of your rights under the CCPA/CPRA.
+                      You can reach us by email at admin@flealyst.com.
+                    </p>
+                  <h3 className="font-large font-bold"> Making a Verifiable Request </h3>
+                    <p>
+                      Only you, or a person registered with the California Secretary of State that you authorize to act on your 
+                      behalf, may make a verifiable request related to your personal information. Your request to us must:
+                    </p>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li> Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.</li>
+                        <li> Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
+                      </ul>
+                  <h3 className="font-large font-bold"> Responding to Your Request  </h3>
+                    <span>
+                      We cannot respond to your request or provide you with the required information if we cannot:
+                    </span>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li> Verify your identity or authority to make the request. </li>
+                        <li> Confirm that the personal information relates to you.  </li>
+                      </ul>
                  <h3 className="font-large font-bold">Disclosure and Delivery of Information </h3>
                     <p>
                       We will disclose and deliver the required information free of charge within 45 days of 
