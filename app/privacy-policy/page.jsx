@@ -380,6 +380,43 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
+            <AccordionItem value="Dont-sell-my-info">
+              <AccordionTrigger>Do Not Sell my Personal Information </AccordionTrigger>
+              <AccordionContent>
+                <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="font-large font-bold"> Definition of "Sell" and "Sale" </h3>
+                  <p>
+                    As defined in the CCPA/CPRA, "sell" and "sale" mean selling, renting, releasing, disclosing, disseminating,
+                    making available, transferring, or otherwise communicating orally, in writing, or by electronic or other 
+                    means, a Consumer's personal information by the Business to a third party for valuable consideration.
+                  </p>
+                  <h3 className="font-large font-bold"> Our Practices </h3>
+                  <p>
+                    We do not sell personal information as the term sell is commonly understood. However, we do allow Service
+                    Providers to use Your personal information for business purposes, such as advertising, marketing,
+                    and analytics, which may be deemed a sale under CCPA/CPRA.
+                  </p>
+                  <h3 className="font-large font-bold">Your Rights</h3>
+                  <p>
+                    You have the right to opt-out of the sale of Your personal information. Once We receive and confirm a
+                    verifiable consumer request from You, we will stop selling Your personal information.
+                  </p>
+                 <h3 className="font-large font-bold">Opting Out</h3>
+                  <p>
+                    To exercise Your right to opt-out, please contact Us. Please note that any opt-out is specific to
+                    the browser You use, and You may need to opt out on every browser that You use.
+                  </p>
+                 <h3 className="font-large font-bold">Service Providers</h3>
+                  <p>
+                    The Service Providers we partner with (for example, our analytics or advertising partners) may use
+                    technology on the Service that sells personal information as defined by the CCPA/CPRA law. If you
+                    wish to opt out of the use of Your personal information for interest-based advertising purposes
+                    and these potential sales as defined under CCPA/CPRA law, you may do so by following the instructions below.
+                  </p>
+               </ul>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="website">
               <AccordionTrigger>Website</AccordionTrigger>
               <AccordionContent>
