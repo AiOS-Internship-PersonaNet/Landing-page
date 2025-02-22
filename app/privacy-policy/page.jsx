@@ -379,6 +379,169 @@ export default function PrivacyPolicy() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+
+
+            <AccordionItem value="ccpa-cpra-privacy-notice">
+              <AccordionTrigger>CCPA/CPRA Privacy Notice (California Privacy Rights)</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    This privacy notice section for California residents supplements the information contained in Our
+                    Privacy Policy and it applies solely to all visitors, users, and others who reside in the State of
+                    California.
+                  </p>
+
+                  <h3 className="text-lg font-semibold">Categories of Personal Information Collected</h3>
+                  <p>
+                    We collect information that identifies, relates to, describes, references, is capable of being
+                    associated with, or could reasonably be linked, directly or indirectly, with a particular Consumer
+                    or Device. The following is a list of categories of personal information which we may collect or may
+                    have been collected from California residents within the last twelve (12) months.
+                  </p>
+                  <p>
+                    Please note that the categories and examples provided in the list below are those defined in the
+                    CCPA/CPRA. This does not mean that all examples of that category of personal information were in
+                    fact collected by Us, but reflects our good faith belief to the best of Our knowledge that some of
+                    that information from the applicable category may be and may have been collected. For example,
+                    certain categories of personal information would only be collected if You provided such personal
+                    information directly to Us.
+                  </p>
+
+                  <ul className="list-disc pl-6 space-y-4">
+                    <li>
+                      <strong>Category A: Identifiers.</strong>
+                      <br />
+                      Examples: A real name, alias, postal address, unique personal identifier, online identifier,
+                      Internet Protocol address, email address, account name, driver's license number, passport number,
+                      or other similar identifiers.
+                      <br />
+                      Collected: Yes.
+                    </li>
+                    <li>
+                      <strong>
+                        Category B: Personal information categories listed in the California Customer Records statute
+                        (Cal. Civ. Code § 1798.80(e)).
+                      </strong>
+                      <br />
+                      Examples: A name, signature, Social Security number, physical characteristics or description,
+                      address, telephone number, passport number, driver's license or state identification card number,
+                      insurance policy number, education, employment, employment history, bank account number, credit
+                      card number, debit card number, or any other financial information, medical information, or health
+                      insurance information. Some personal information included in this category may overlap with other
+                      categories.
+                      <br />
+                      Collected: Yes.
+                    </li>
+                    <li>
+                      <strong>
+                        Category C: Protected classification characteristics under California or federal law.
+                      </strong>
+                      <br />
+                      Examples: Age (40 years or older), race, color, ancestry, national origin, citizenship, religion
+                      or creed, marital status, medical condition, physical or mental disability, sex (including gender,
+                      gender identity, gender expression, pregnancy or childbirth and related medical conditions),
+                      sexual orientation, veteran or military status, genetic information (including familial genetic
+                      information).
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category D: Commercial information.</strong>
+                      <br />
+                      Examples: Records and history of products or services purchased or considered.
+                      <br />
+                      Collected: Yes.
+                    </li>
+                    <li>
+                      <strong>Category E: Biometric information.</strong>
+                      <br />
+                      Examples: Genetic, physiological, behavioral, and biological characteristics, or activity patterns
+                      used to extract a template or other identifier or identifying information, such as, fingerprints,
+                      faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns,
+                      and sleep, health, or exercise data.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category F: Internet or other similar network activity.</strong>
+                      <br />
+                      Examples: Interaction with our Service or advertisement.
+                      <br />
+                      Collected: Yes.
+                    </li>
+                    <li>
+                      <strong>Category G: Geolocation data.</strong>
+                      <br />
+                      Examples: Approximate physical location.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category H: Sensory data.</strong>
+                      <br />
+                      Examples: Audio, electronic, visual, thermal, olfactory, or similar information.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category I: Professional or employment-related information.</strong>
+                      <br />
+                      Examples: Current or past job history or performance evaluations.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>
+                        Category J: Non-public education information (per the Family Educational Rights and Privacy Act
+                        (20 U.S.C. Section 1232g, 34 C.F.R. Part 99)).
+                      </strong>
+                      <br />
+                      Examples: Education records directly related to a student maintained by an educational institution
+                      or party acting on its behalf, such as grades, transcripts, class lists, student schedules,
+                      student identification codes, student financial information, or student disciplinary records.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category K: Inferences drawn from other personal information.</strong>
+                      <br />
+                      Examples: Profile reflecting a person's preferences, characteristics, psychological trends,
+                      predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.
+                      <br />
+                      Collected: No.
+                    </li>
+                    <li>
+                      <strong>Category L: Sensitive personal information.</strong>
+                      <br />
+                      Examples: Account login and password information, geolocation data.
+                      <br />
+                      Collected: Yes.
+                    </li>
+                  </ul>
+
+                  <h3 className="text-lg font-semibold mt-6">Personal information does not include:</h3>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Publicly available information from government records</li>
+                    <li>Deidentified or aggregated consumer information</li>
+                    <li>
+                      Information excluded from the CCPA/CPRA's scope, such as:
+                      <ul className="list-disc pl-6 space-y-2 mt-2">
+                        <li>
+                          Health or medical information covered by the Health Insurance Portability and Accountability
+                          Act of 1996 (HIPAA) and the California Confidentiality of Medical Information Act (CMIA) or
+                          clinical trial data
+                        </li>
+                        <li>
+                          Personal Information covered by certain sector-specific privacy laws, including the Fair
+                          Credit Reporting Act (FRCA), the Gramm-Leach-Bliley Act (GLBA) or California Financial
+                          Information Privacy Act (FIPA), and the Driver's Privacy Protection Act of 1994
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
   
             <AccordionItem value="sources-of-personal-information">
               <AccordionTrigger>Sources of Personal Information</AccordionTrigger>
