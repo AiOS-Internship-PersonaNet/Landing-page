@@ -48,10 +48,10 @@ export default function PrivacyPolicy() {
             <p className="text-muted-foreground">Last updated: Dec 23, 2024</p>
           </div>
 
-          <p className="text-muted-foreground leading-normal">
-            This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-            information when You use the Service and tells You about Your privacy rights and how the law protects You.
-            We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
+          <p className="text-muted-foreground leading-normal text-smaller">
+            This Privacy Policy describes our policies and procedures on the collection, use and disclosure of your
+            information when you  use the service and tells you about your privacy rights and how the law protects you.
+            We use your Personal data to provide and improve the service. By using the service, you agree to the
             collection and use of information in accordance with this Privacy Policy.
           </p>
 
@@ -60,14 +60,14 @@ export default function PrivacyPolicy() {
               <AccordionTrigger>Interpretation and Definitions</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-4">
-                  <h3 className="font-medium">Interpretation</h3>
+                  <h3 className="font-large">Interpretation</h3>
                   <p>
                     The words of which the initial letter is capitalized have meanings defined under the following
                     conditions. The following definitions shall have the same meaning regardless of whether they appear
                     in singular or in plural.
                   </p>
 
-                  <h3 className="font-medium">Definitions</h3>
+                  <h3 className="font-large">Definitions</h3>
                   <p>For the purposes of this Privacy Policy:</p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>
@@ -380,23 +380,27 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
-            
-
             <AccordionItem value="website">
               <AccordionTrigger>Website</AccordionTrigger>
               <AccordionContent>
-                <p className="leading-relaxed">
+                <ul className="list-disc pl-6 space-y-2">
+              <p>
                 If applicable, click "Privacy Preferences", "Update Privacy Preferences" or "Do Not Sell My Personal Information" buttons 
-                listed on the service to review Your privacy preferences and opt out of cookies and other technologies that we may use. 
-                Please note that you will need to opt out from each browser that You use to access the Service. Additionally, you can opt 
+                listed on the service to review your privacy preferences and opt out of cookies and other technologies that we may use. 
+                Please note that you will need to opt out from each browser that you use to access the Service. Additionally, you can opt 
                 out of receiving ads that are personalized as served by our Service Providers by following our instructions presented on 
                 the service:
-                The NAI's opt-out platform: http://www.networkadvertising.org/choices/ 
-                The EDAA's opt-out platform http://www.youronlinechoices.com/ 
-                The DAA's opt-out platform: http://optout.aboutads.info/?c=2&lang=EN 
+              </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>  <strong> The NAI's opt-out platform: </strong>  http://www.networkadvertising.org/choices/ </li>
+                  <li>  <strong> The EDAA's opt-out platform </strong>  http://www.youronlinechoices.com/ </li>
+                  <li>  <strong> The DAA's opt-out platform: </strong>  http://optout.aboutads.info/?c=2&lang=EN </li>
+                </ul>
+                <p>
                 The opt out will place a cookie on Your computer that is unique to the browser you use to opt out. If you change browsers 
                 or delete the cookies saved by Your browser, you will need to opt out again.
                 </p>
+               </ul>
               </AccordionContent>
             </AccordionItem>
 
@@ -405,7 +409,7 @@ export default function PrivacyPolicy() {
               <AccordionContent>
                 <p className="leading-relaxed">
                 Your mobile device may give you the ability to opt out of the use of information about the apps you use in order to serve 
-                you ads that are targeted to Your interests: "Opt out of Interest-Based Ads" or "Opt out of Ads Personalization" on Android devices
+                you ads that are targeted to your interests: "Opt out of Interest-Based Ads" or "Opt out of Ads Personalization" on Android devices
                 "Limit Ad Tracking" on iOS devices you can also stop the collection of location information from your mobile device by changing
                  the preferences on your mobile device.
                 </p>
@@ -416,7 +420,7 @@ export default function PrivacyPolicy() {
               <AccordionTrigger>Limit the Use or Disclosure of my Sensitive Personal Information</AccordionTrigger>
               <AccordionContent>
                 <p className="leading-relaxed">
-                If you are a California resident, uou have the right to limit the use and disclosure of Your sensitive personal information 
+                If you are a California resident, you have the right to limit the use and disclosure of your sensitive personal information 
                 to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer who 
                 requests such services or goods. We collect, use and disclose sensitive personal information in ways that are necessary 
                 to provide the Service. For more information on how we use your personal information, please see the "Use of Your Personal Data"
@@ -498,9 +502,8 @@ export default function PrivacyPolicy() {
               <AccordionTrigger>Contact Us</AccordionTrigger>
               <AccordionContent>
                 <p className="leading-relaxed">
-                  If you have any questions about this Privacy Policy, You can contact us:
-                  <br />
-                  By email: admin@aios.agency
+                  If you have any questions about this Privacy Policy, you can contact us by email
+                  at admin@aios.agency
                 </p>
               </AccordionContent>
             </AccordionItem>
