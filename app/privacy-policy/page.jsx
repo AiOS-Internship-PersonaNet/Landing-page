@@ -362,6 +362,205 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
+            <AccordionItem value="behavioral-remarketing">
+              <AccordionTrigger>Behavioral Remarketing</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-6">
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">Overview</h3>
+                    <p>
+                      The Company uses remarketing services to advertise to You after You accessed or visited our
+                      Service. We and Our third-party vendors use cookies and non-cookie technologies to help Us
+                      recognize Your Device and understand how You use our Service so that We can improve our Service to
+                      reflect Your interests and serve You advertisements that are likely to be more interesting to you.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">How It Works</h3>
+                    <p>
+                      These third party vendors collect, store, use, process, and transfer information about Your
+                      activity on Our Service in accordance with their Privacy Policies and to enable Us to:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 mt-2">
+                      <li>Measure and analyze traffic and browsing activity on Our Service</li>
+                      <li>
+                        Show advertisements for our products and/or services to You on third-party websites or apps
+                      </li>
+                      <li>Measure and analyze the performance of Our advertising campaigns</li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">Non-Cookie Technologies and Opt-Out</h3>
+                    <p>
+                      Some of these third-party vendors may use non-cookie technologies that may not be impacted by
+                      browser settings that block cookies. Your browser may not permit You to block such technologies.
+                      You can use the following third-party tools to decline the collection and use of information for
+                      the purpose of serving You interest-based advertising:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 mt-2">
+                      <li>
+                        <a href="http://www.networkadvertising.org/choices/" className="text-blue-600 hover:underline">
+                          The NAI's opt-out platform
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://www.youronlinechoices.com/" className="text-blue-600 hover:underline">
+                          The EDAA's opt-out platform
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://optout.aboutads.info/?c=2&lang=EN" className="text-blue-600 hover:underline">
+                          The DAA's opt-out platform
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">Mobile Device Opt-Out</h3>
+                    <p>
+                      You may opt-out of all personalized advertising by enabling privacy features on Your mobile device
+                      such as Limit Ad Tracking (iOS) and Opt Out of Ads Personalization (Android). See Your mobile
+                      device Help system for more information.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">Information Sharing</h3>
+                    <p>
+                      We may share information, such as hashed email addresses (if available) or other online
+                      identifiers collected on Our Service with these third-party vendors. This allows Our third-party
+                      vendors to recognize and deliver You ads across devices and browsers. To read more about the
+                      technologies used by these third-party vendors and their cross-device capabilities please refer to
+                      the Privacy Policy of each vendor listed below.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-lg font-semibold mb-2">Third-Party Vendors</h3>
+                    <p>The third-party vendors We use are:</p>
+
+                    <div className="space-y-4 mt-4">
+                      <div>
+                        <h4 className="font-semibold">Google Ads (AdWords)</h4>
+                        <p>Google Ads (AdWords) remarketing service is provided by Google Inc.</p>
+                        <ul className="list-disc pl-6 space-y-2 mt-2">
+                          <li>
+                            You can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting the{" "}
+                            <a href="http://www.google.com/settings/ads" className="text-blue-600 hover:underline">
+                              Google Ads Settings page
+                            </a>
+                          </li>
+                          <li>
+                            Google also recommends installing the{" "}
+                            <a href="https://tools.google.com/dlpage/gaoptout" className="text-blue-600 hover:underline">
+                              Google Analytics Opt-out Browser Add-on
+                            </a>{" "}
+                            for your web browser. Google Analytics Opt-out Browser Add-on provides visitors with the ability to prevent their data from being collected and used by Google Analytics.
+                          </li>
+                          <li>
+                            For more information on the privacy practices of Google, please visit the{" "}
+                            <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline">
+                              Google Privacy & Terms web page
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold">Bing Ads Remarketing</h4>
+                        <p>Bing Ads remarketing service is provided by Microsoft Inc.</p>
+                        <ul className="list-disc pl-6 space-y-2 mt-2">
+                          <li>
+                            You can opt-out of Bing Ads interest-based ads by following their instructions:{" "}
+                            <a href="https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" className="text-blue-600 hover:underline">
+                              https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads
+                            </a>
+                          </li>
+                          <li>
+                            You can learn more about the privacy practices and policies of Microsoft by visiting their{" "}
+                            <a href="https://privacy.microsoft.com/en-us/PrivacyStatement" className="text-blue-600 hover:underline">
+                              Privacy Policy page
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold">Twitter</h4>
+                        <p>Twitter remarketing service is provided by Twitter Inc.</p>
+                        <ul className="list-disc pl-6 space-y-2 mt-2">
+                          <li>
+                            You can opt-out from Twitter's interest-based ads by following their instructions:{" "}
+                            <a href="https://support.twitter.com/articles/20170405" className="text-blue-600 hover:underline">
+                              https://support.twitter.com/articles/20170405
+                            </a>
+                          </li>
+                          <li>
+                            You can learn more about the privacy practices and policies of Twitter by visiting their{" "}
+                            <a href="https://twitter.com/privacy" className="text-blue-600 hover:underline">
+                              Privacy Policy page
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold">Facebook</h4>
+                        <p>Facebook remarketing service is provided by Facebook Inc.</p>
+                        <ul className="list-disc pl-6 space-y-2 mt-2">
+                          <li>
+                            You can learn more about interest-based advertising from Facebook by visiting this page:{" "}
+                            <a href="https://www.facebook.com/help/516147308587266" className="text-blue-600 hover:underline">
+                              https://www.facebook.com/help/516147308587266
+                            </a>
+                          </li>
+                          <li>
+                            To opt-out from Facebook's interest-based ads, follow these instructions from Facebook:{" "}
+                            <a href="https://www.facebook.com/help/568137493302217" className="text-blue-600 hover:underline">
+                              https://www.facebook.com/help/568137493302217
+                            </a>
+                          </li>
+                          <li>
+                            Facebook adheres to the Self-Regulatory Principles for Online Behavioural Advertising established by the Digital Advertising Alliance. You can also opt-out from Facebook and other participating companies through:
+                            <ul className="list-disc pl-6 space-y-2 mt-2">
+                              <li>
+                                The{" "}
+                                <a href="http://www.aboutads.info/choices/" className="text-blue-600 hover:underline">
+                                  Digital Advertising Alliance in the USA
+                                </a>
+                              </li>
+                              <li>
+                                The{" "}
+                                <a href="http://youradchoices.ca/" className="text-blue-600 hover:underline">
+                                  Digital Advertising Alliance of Canada in Canada
+                                </a>
+                              </li>
+                              <li>
+                                The{" "}
+                                <a href="http://www.youronlinechoices.eu/" className="text-blue-600 hover:underline">
+                                  European Interactive Digital Advertising Alliance in Europe
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>You can also opt-out using your mobile device settings.</li>
+                          <li>
+                            For more information on the privacy practices of Facebook, please visit{" "}
+                            <a href="https://www.facebook.com/privacy/explanation" className="text-blue-600 hover:underline">
+                              Facebook's Data Policy
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="gdpr-legal-basis">
               <AccordionTrigger>Legal Basis for Processing Personal Data under GDPR [GDPR Privacy] </AccordionTrigger>
               <AccordionContent>
