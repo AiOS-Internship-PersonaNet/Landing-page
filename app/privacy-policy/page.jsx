@@ -362,24 +362,110 @@ export default function PrivacyPolicy() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="gdpr-rights">
-              <AccordionTrigger>GDPR Privacy Rights</AccordionTrigger>
+            <AccordionItem value="gdpr-legal-basis">
+              <AccordionTrigger>Legal Basis for Processing Personal Data under GDPR [GDPR Privacy] </AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-4">
-                  <p>If you are within the EU, you have the following rights:</p>
+                  <p>We may process Personal Data under the following conditions:</p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>Request access to Your Personal Data</li>
-                    <li>Request correction of Your Personal Data</li>
-                    <li>Request erasure of Your Personal Data</li>
-                    <li>Object to processing of Your Personal Data</li>
-                    <li>Request restriction of processing Your Personal Data</li>
-                    <li>Request transfer of Your Personal Data</li>
-                    <li>Right to withdraw consent</li>
+                    <li>
+                      <strong>Consent:</strong> You have given Your consent for processing Personal Data for one or more
+                      specific purposes.
+                    </li>
+                    <li>
+                      <strong>Performance of a contract:</strong> Provision of Personal Data is necessary for the
+                      performance of an agreement with You and/or for any pre-contractual obligations thereof.
+                    </li>
+                    <li>
+                      <strong>Legal obligations:</strong> Processing Personal Data is necessary for compliance with a
+                      legal obligation to which the Company is subject.
+                    </li>
+                    <li>
+                      <strong>Vital interests:</strong> Processing Personal Data is necessary in order to protect Your
+                      vital interests or of another natural person.
+                    </li>
+                    <li>
+                      <strong>Public interests:</strong> Processing Personal Data is related to a task that is carried
+                      out in the public interest or in the exercise of official authority vested in the Company.
+                    </li>
+                    <li>
+                      <strong>Legitimate interests:</strong> Processing Personal Data is necessary for the purposes of
+                      the legitimate interests pursued by the Company.
+                    </li>
                   </ul>
+                  <p>
+                    In any case, the Company will gladly help to clarify the specific legal basis that applies to the
+                    processing, and in particular whether the provision of Personal Data is a statutory or contractual
+                    requirement, or a requirement necessary to enter into a contract.
+                  </p>
                 </div>
               </AccordionContent>
             </AccordionItem>
 
+
+            <AccordionItem value="gdpr-rights-details">
+              <AccordionTrigger>Your Rights under the GDPR</AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-relaxed">
+                  The Company undertakes to respect the confidentiality of Your Personal Data and to guarantee You can
+                  exercise Your rights. You have the right under this Privacy Policy, and by law if You are within the
+                  EU, to:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mt-2">
+                  <li>
+                    <strong>Request access to Your Personal Data.</strong> The right to access, update or delete the
+                    information We have on You. Whenever made possible, you can access, update or request deletion of
+                    Your Personal Data directly within Your account settings section. If you are unable to perform these
+                    actions yourself, please contact Us to assist You. This also enables You to receive a copy of the
+                    Personal Data We hold about You.
+                  </li>
+                  <li>
+                    <strong>Request correction of the Personal Data that We hold about You.</strong> You have the right
+                    to have any incomplete or inaccurate information We hold about You corrected.
+                  </li>
+                  <li>
+                    <strong>Object to processing of Your Personal Data.</strong> This right exists where We are relying
+                    on a legitimate interest as the legal basis for Our processing and there is something about Your
+                    particular situation, which makes You want to object to our processing of Your Personal Data on this
+                    ground. You also have the right to object where We are processing Your Personal Data for direct
+                    marketing purposes.
+                  </li>
+                  <li>
+                    <strong>Request erasure of Your Personal Data.</strong> You have the right to ask Us to delete or
+                    remove Personal Data when there is no good reason for Us to continue processing it.
+                  </li>
+                  <li>
+                    <strong>Request the transfer of Your Personal Data.</strong> We will provide to You, or to a
+                    third-party You have chosen, Your Personal Data in a structured, commonly used, machine-readable
+                    format. Please note that this right only applies to automated information which You initially
+                    provided consent for Us to use or where We used the information to perform a contract with You.
+                  </li>
+                  <li>
+                    <strong>Withdraw Your consent.</strong> You have the right to withdraw Your consent on using your
+                    Personal Data. If You withdraw Your consent, We may not be able to provide You with access to
+                    certain specific functionalities of the Service.
+                  </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="exercising-gdpr-rights">
+              <AccordionTrigger>Exercising of Your GDPR Data Protection Rights</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  <p>
+                    You may exercise Your rights of access, rectification, cancellation and opposition by contacting Us.
+                    Please note that we may ask You to verify Your identity before responding to such requests. If You
+                    make a request, We will try our best to respond to You as soon as possible.
+                  </p>
+                  <p>
+                    You have the right to complain to a Data Protection Authority about Our collection and use of Your
+                    Personal Data. For more information, if You are in the European Economic Area (EEA), please contact
+                    Your local data protection authority in the EEA.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
             <AccordionItem value="ccpa-cpra-privacy-notice">
               <AccordionTrigger>CCPA/CPRA Privacy Notice (California Privacy Rights)</AccordionTrigger>
