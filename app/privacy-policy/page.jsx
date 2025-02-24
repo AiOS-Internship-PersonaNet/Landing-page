@@ -9,7 +9,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "/home/user/Documents/Projects/SuperINTRO/LandingPage/Landing-page/components/ui/accordion.jsx" 
+} from "@/components/ui/accordion.jsx" 
 
 export default function PrivacyPolicy() {
   return (
