@@ -15,7 +15,7 @@ export default function ChatBox({ onClose }) {
     // Fetch the list of users on component mount
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/users/list");
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/list`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
