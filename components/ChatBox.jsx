@@ -49,7 +49,7 @@ export default function ChatBox({ onClose }) {
     (async () => {
       try {
         console.log("Calling endChat API due to user switch.");
-        await fetch("http://localhost:4000/api/personaChat/endChat", {
+        await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/personaChat/endChat`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -75,7 +75,7 @@ export default function ChatBox({ onClose }) {
         throw new Error("Selected user ID not found");
       }
 
-      const response = await fetch("http://localhost:4000/api/personaChat/publicchat", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/personaChat/publicchat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
