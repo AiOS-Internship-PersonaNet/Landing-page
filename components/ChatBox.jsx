@@ -61,6 +61,7 @@ export default function ChatBox({ onClose }) {
     })();
   }, [selectedUser]);
 
+  h
   // A function streams the bot response word by word
   const streamBotResponse = (fullMessage, delay = 100) => {
     const words = fullMessage.split(" ");
