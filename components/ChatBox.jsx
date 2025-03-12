@@ -49,7 +49,7 @@ export default function ChatBox({ onClose }) {
     (async () => {
       try {
         console.log("Calling endChat API due to user switch.");
-        await fetch("http://localhost:4000/api/personaChat/endChat", {
+        await fetch("http://localhost:4000/api/personaChat/endpublicChat", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -60,6 +60,30 @@ export default function ChatBox({ onClose }) {
       }
     })();
   }, [selectedUser]);
+
+  // A function streams the bot response word by word
+  const streamBotResponse = (fullMessage, delay = 100) => {
+    const words = fullMessage.split(" ");
+    let currentMessage = "";
+    let index = 0;
+
+    // First, add an empty bot message to the messages state
+    setMessages((prev) => [...prev, { sender: "bot", text: "" }]);
+    
+    const interval = setInterval(() => {
+      currentMessage += (index > 0 ? " " : "") + words[index];
+      // Update the last message in the messages array
+      setMessages((prev) => {
+        const newMessages = [...prev];
+        newMessages[newMessages.length - 1] = { sender: "bot", text: currentMessage };
+        return newMessages;
+      });
+      index++;
+      if (index === words.length) {
+        clearInterval(interval);
+      }
+    }, delay);
+  };
 
   const handleSend = async () => {
     if (!input.trim()) return;
@@ -79,7 +103,7 @@ export default function ChatBox({ onClose }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-     },
+        },
         body: JSON.stringify({
           message: userMessage,
           targetUser: targetUserId,
@@ -94,8 +118,10 @@ export default function ChatBox({ onClose }) {
       console.log("API Response:", data);
 
       if (data && data.response) {
+        // Remove commas from the response if needed
         const cleanedResponse = data.response.replace(/,/g, '');
-        setMessages((prev) => [...prev, { sender: "bot", text: cleanedResponse }]);
+        // Stream the bot's response word by word
+        streamBotResponse(cleanedResponse, 100); // adjust delay (in ms) as needed
       } else {
         setMessages((prev) => [
           ...prev,
@@ -159,7 +185,7 @@ export default function ChatBox({ onClose }) {
                   }`}
                 >
                   <p className="text-white">
-                    {msg.sender === "bot" ? "Bot: " : "User: "}
+                    {msg.sender === "bot" ? `${selectedUser}: ` : "User: "}
                     {msg.text}
                   </p>
                 </div>
