@@ -12,10 +12,13 @@ export default function CallToAction() {
           withdrawal.
         </p>
         <Button
+          asChild
           size="lg"
           className="bg-white text-purple-900 hover:bg-gray-100"
         >
-          Try Risk-Free Today
+          <a href="https://app.superintro.me/signup">
+            Try Risk-Free Today
+          </a>
         </Button>
       </div>
     </section>
