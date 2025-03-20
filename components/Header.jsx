@@ -34,10 +34,14 @@ export default function Header() {
             </button>
           </nav>
           <div className="flex gap-4">
-            <Button variant="ghost" className="text-gray-300 hover:text-white">
-              Sign in
+            <Button asChild variant="ghost" className="text-gray-300 hover:text-white">
+              <a href="https://app.superintro.me/login">Sign in</a>
             </Button>
-            <Button>Apply Now</Button>
+            <Button asChild>
+              <a href="https://app.superintro.me/signup">
+                Apply Now
+              </a>
+            </Button>
           </div>
         </div>
       </header>

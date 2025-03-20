@@ -56,10 +56,13 @@ export default function Hero() {
           </ul>
         </div>
         <Button
+        asChild
           size="lg"
           className="bg-teal-500 hover:bg-teal-600 text-white text-lg px-8 py-6 h-auto rounded-full transition duration-300 ease-in-out transform hover:scale-105"
         >
-          Try SuperIntro—No Strings Attached
+          <a href="https://app.superintro.me/signup">
+            Try SuperIntro—No Strings Attached
+          </a>
         </Button>
       </div>
     </section>
