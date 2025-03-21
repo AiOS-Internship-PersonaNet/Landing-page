@@ -28,10 +28,6 @@ export default function Header() {
             <Link href="#testimonials" className="text-gray-300 hover:text-white">
               Testimonials
             </Link>
-            {/* ChatPersona button toggles the ChatBox */}
-            <button onClick={toggleChat} className="text-gray-300 hover:text-white">
-              ChatPersona
-            </button>
           </nav>
           <div className="flex gap-4">
             <Button asChild variant="ghost" className="text-gray-300 hover:text-white">
