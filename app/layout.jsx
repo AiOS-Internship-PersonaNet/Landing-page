@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <GoogleTagManager gtmId="G-XZVM91TWBZ" /> */}
-      <body className={cn(inter.className, 'bg-black')}>{children}</body>
+      <body className={cn(inter.className, 'bg-black text-gray-300')}>{children}</body>
       <GoogleAnalytics gaId="G-XZVM91TWBZ" />
     </html>
   );

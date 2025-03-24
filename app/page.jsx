@@ -20,7 +20,7 @@ export default function Home() {
         <Hero />
         <PersonaChat />
         <EmotionalBanking />
-        <Features />
+        {/* <Features /> */}
         <HowItWorks />
         <AIFeatures />
         <Results />

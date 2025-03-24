@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AnnouncementBanner() {
   // Keep only the animation state, remove the visibility state
@@ -40,15 +41,14 @@ export default function AnnouncementBanner() {
 
                 {/* Orbiting People */}
                 <div
-                  className={`absolute w-full h-full transition-transform duration-1000 ease-in-out ${
-                    animationStep === 0
+                  className={`absolute w-full h-full transition-transform duration-1000 ease-in-out ${animationStep === 0
                       ? "rotate-0"
                       : animationStep === 1
                         ? "rotate-90"
                         : animationStep === 2
                           ? "rotate-180"
                           : "rotate-270"
-                  }`}
+                    }`}
                 >
                   {/* Person 1 */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full flex items-center justify-center shadow-md overflow-hidden border-2 border-white">
@@ -174,9 +174,11 @@ export default function AnnouncementBanner() {
                 </li>
               </ul>
 
-              <Button className="bg-white text-purple-900 hover:bg-gray-100 group">
-                Get Weekly Date Recommendations
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button asChild className="bg-white text-purple-900 hover:bg-gray-100 group">
+                <Link href={"https://app.superintro.me/login"}>
+                  Get Weekly Date Recommendations
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
             </div>
 
