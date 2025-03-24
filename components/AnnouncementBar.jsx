@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AnnouncementBanner() {
   const [animationStep, setAnimationStep] = useState(0)
@@ -206,9 +207,11 @@ export default function AnnouncementBanner() {
                 </li>
               </ul>
 
-              <Button className="bg-white text-purple-900 hover:bg-gray-100 group">
+              <Button asChild className="bg-white text-purple-900 hover:bg-gray-100 group">
+                <Link href={"https://app.superintro.me/login"}>
                 Get Weekly Matches
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
               </Button>
             </div>
           </div>
